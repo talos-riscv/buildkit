@@ -1,4 +1,4 @@
-module github.com/moby/buildkit
+module github.com/talos-riscv/buildkit
 
 go 1.25.0
 
