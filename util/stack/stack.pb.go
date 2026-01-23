@@ -161,7 +161,7 @@ var File_github_com_moby_buildkit_util_stack_stack_proto protoreflect.FileDescri
 
 const file_github_com_moby_buildkit_util_stack_stack_proto_rawDesc = "" +
 	"\n" +
-	"/github.com/talos-riscv/buildkit/util/stack/stack.proto\x12\x05stack\"\x8f\x01\n" +
+	"/github.com/moby/buildkit/util/stack/stack.proto\x12\x05stack\"\x8f\x01\n" +
 	"\x05Stack\x12$\n" +
 	"\x06frames\x18\x01 \x03(\v2\f.stack.FrameR\x06frames\x12\x18\n" +
 	"\acmdline\x18\x02 \x03(\tR\acmdline\x12\x10\n" +
@@ -171,7 +171,7 @@ const file_github_com_moby_buildkit_util_stack_stack_proto_rawDesc = "" +
 	"\x05Frame\x12\x12\n" +
 	"\x04Name\x18\x01 \x01(\tR\x04Name\x12\x12\n" +
 	"\x04File\x18\x02 \x01(\tR\x04File\x12\x12\n" +
-	"\x04Line\x18\x03 \x01(\x05R\x04LineB%Z#github.com/talos-riscv/buildkit/util/stackb\x06proto3"
+	"\x04Line\x18\x03 \x01(\x05R\x04LineB%Z#github.com/moby/buildkit/util/stackb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_util_stack_stack_proto_rawDescOnce sync.Once
