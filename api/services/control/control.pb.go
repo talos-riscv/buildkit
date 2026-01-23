@@ -2026,7 +2026,7 @@ var File_github_com_moby_buildkit_api_services_control_control_proto protoreflec
 
 const file_github_com_moby_buildkit_api_services_control_control_proto_rawDesc = "" +
 	"\n" +
-	";github.com/talos-riscv/buildkit/api/services/control/control.proto\x12\x10moby.buildkit.v1\x1a/github.com/talos-riscv/buildkit/api/types/worker.proto\x1a,github.com/talos-riscv/buildkit/solver/pb/ops.proto\x1a5github.com/talos-riscv/buildkit/sourcepolicy/pb/policy.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x17google/rpc/status.proto\"\xca\x01\n" +
+	";github.com/moby/buildkit/api/services/control/control.proto\x12\x10moby.buildkit.v1\x1a/github.com/moby/buildkit/api/types/worker.proto\x1a,github.com/moby/buildkit/solver/pb/ops.proto\x1a5github.com/moby/buildkit/sourcepolicy/pb/policy.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x17google/rpc/status.proto\"\xca\x01\n" +
 	"\fPruneRequest\x12\x16\n" +
 	"\x06filter\x18\x01 \x03(\tR\x06filter\x12\x10\n" +
 	"\x03all\x18\x02 \x01(\bR\x03all\x12\"\n" +
@@ -2241,7 +2241,7 @@ const file_github_com_moby_buildkit_api_services_control_control_proto_rawDesc =
 	"\vListWorkers\x12$.moby.buildkit.v1.ListWorkersRequest\x1a%.moby.buildkit.v1.ListWorkersResponse\x12E\n" +
 	"\x04Info\x12\x1d.moby.buildkit.v1.InfoRequest\x1a\x1e.moby.buildkit.v1.InfoResponse\x12b\n" +
 	"\x12ListenBuildHistory\x12%.moby.buildkit.v1.BuildHistoryRequest\x1a#.moby.buildkit.v1.BuildHistoryEvent0\x01\x12o\n" +
-	"\x12UpdateBuildHistory\x12+.moby.buildkit.v1.UpdateBuildHistoryRequest\x1a,.moby.buildkit.v1.UpdateBuildHistoryResponseB@Z>github.com/talos-riscv/buildkit/api/services/control;moby_buildkit_v1b\x06proto3"
+	"\x12UpdateBuildHistory\x12+.moby.buildkit.v1.UpdateBuildHistoryRequest\x1a,.moby.buildkit.v1.UpdateBuildHistoryResponseB@Z>github.com/moby/buildkit/api/services/control;moby_buildkit_v1b\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_api_services_control_control_proto_rawDescOnce sync.Once
