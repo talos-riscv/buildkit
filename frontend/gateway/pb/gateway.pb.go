@@ -3238,7 +3238,7 @@ var File_github_com_moby_buildkit_frontend_gateway_pb_gateway_proto protoreflect
 
 const file_github_com_moby_buildkit_frontend_gateway_pb_gateway_proto_rawDesc = "" +
 	"\n" +
-	":github.com/talos-riscv/buildkit/frontend/gateway/pb/gateway.proto\x12\x19moby.buildkit.v1.frontend\x1a/github.com/talos-riscv/buildkit/api/types/worker.proto\x1a,github.com/talos-riscv/buildkit/solver/pb/ops.proto\x1a5github.com/talos-riscv/buildkit/sourcepolicy/pb/policy.proto\x1a3github.com/talos-riscv/buildkit/util/apicaps/pb/caps.proto\x1a-github.com/tonistiigi/fsutil/types/stat.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x17google/rpc/status.proto\"\xcb\x04\n" +
+	":github.com/moby/buildkit/frontend/gateway/pb/gateway.proto\x12\x19moby.buildkit.v1.frontend\x1a/github.com/moby/buildkit/api/types/worker.proto\x1a,github.com/moby/buildkit/solver/pb/ops.proto\x1a5github.com/moby/buildkit/sourcepolicy/pb/policy.proto\x1a3github.com/moby/buildkit/util/apicaps/pb/caps.proto\x1a-github.com/tonistiigi/fsutil/types/stat.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x17google/rpc/status.proto\"\xcb\x04\n" +
 	"\x06Result\x12&\n" +
 	"\rrefDeprecated\x18\x01 \x01(\tH\x00R\rrefDeprecated\x12U\n" +
 	"\x0erefsDeprecated\x18\x02 \x01(\v2+.moby.buildkit.v1.frontend.RefMapDeprecatedH\x00R\x0erefsDeprecated\x122\n" +
@@ -3511,7 +3511,7 @@ const file_github_com_moby_buildkit_frontend_gateway_pb_gateway_proto_rawDesc = 
 	"\x11ReadFileContainer\x12*.moby.buildkit.v1.frontend.ReadFileRequest\x1a+.moby.buildkit.v1.frontend.ReadFileResponse\x12i\n" +
 	"\x10ReadDirContainer\x12).moby.buildkit.v1.frontend.ReadDirRequest\x1a*.moby.buildkit.v1.frontend.ReadDirResponse\x12l\n" +
 	"\x11StatFileContainer\x12*.moby.buildkit.v1.frontend.StatFileRequest\x1a+.moby.buildkit.v1.frontend.StatFileResponse\x12W\n" +
-	"\x04Warn\x12&.moby.buildkit.v1.frontend.WarnRequest\x1a'.moby.buildkit.v1.frontend.WarnResponseBHZFgithub.com/talos-riscv/buildkit/frontend/gateway/pb;moby_buildkit_v1_frontendb\x06proto3"
+	"\x04Warn\x12&.moby.buildkit.v1.frontend.WarnRequest\x1a'.moby.buildkit.v1.frontend.WarnResponseBHZFgithub.com/moby/buildkit/frontend/gateway/pb;moby_buildkit_v1_frontendb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_frontend_gateway_pb_gateway_proto_rawDescOnce sync.Once
