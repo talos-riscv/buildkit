@@ -471,7 +471,7 @@ var File_github_com_moby_buildkit_sourcepolicy_pb_policy_proto protoreflect.File
 
 const file_github_com_moby_buildkit_sourcepolicy_pb_policy_proto_rawDesc = "" +
 	"\n" +
-	"5github.com/talos-riscv/buildkit/sourcepolicy/pb/policy.proto\x12\x1dmoby.buildkit.v1.sourcepolicy\"\xd1\x01\n" +
+	"5github.com/moby/buildkit/sourcepolicy/pb/policy.proto\x12\x1dmoby.buildkit.v1.sourcepolicy\"\xd1\x01\n" +
 	"\x04Rule\x12C\n" +
 	"\x06action\x18\x01 \x01(\x0e2+.moby.buildkit.v1.sourcepolicy.PolicyActionR\x06action\x12C\n" +
 	"\bselector\x18\x02 \x01(\v2'.moby.buildkit.v1.sourcepolicy.SelectorR\bselector\x12?\n" +
@@ -510,7 +510,7 @@ const file_github_com_moby_buildkit_sourcepolicy_pb_policy_proto_rawDesc = "" +
 	"\tMatchType\x12\f\n" +
 	"\bWILDCARD\x10\x00\x12\t\n" +
 	"\x05EXACT\x10\x01\x12\t\n" +
-	"\x05REGEX\x10\x02BHZFgithub.com/talos-riscv/buildkit/sourcepolicy/pb;moby_buildkit_v1_sourcepolicyb\x06proto3"
+	"\x05REGEX\x10\x02BHZFgithub.com/moby/buildkit/sourcepolicy/pb;moby_buildkit_v1_sourcepolicyb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_sourcepolicy_pb_policy_proto_rawDescOnce sync.Once
