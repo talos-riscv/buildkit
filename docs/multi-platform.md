@@ -26,7 +26,7 @@ You do not need to set up QEMU manually in most cases.
 You may face an error like `exec user process caused: exec format error`, mostly when you are using a third-party package of BuildKit that lacks
 `buildkit-qemu-*` binaries.
 
-In such a case, you have to download the official binary release of BuildKit from https://github.com/moby/buildkit/releases , and install
+In such a case, you have to download the official binary release of BuildKit from https://github.com/talos-riscv/buildkit/releases , and install
 the `buildkit-qemu-*` binaries in the release archive into the `$PATH` of the host.
 
 You may also face `exec format error` when the container contains mix of binaries for multiple architectures.

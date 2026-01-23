@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/moby/buildkit/frontend/dockerfile/command"
-	"github.com/moby/buildkit/frontend/dockerfile/linter"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
-	"github.com/moby/buildkit/util/suggest"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/command"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/linter"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/parser"
+	"github.com/talos-riscv/buildkit/util/suggest"
 	dockerspec "github.com/moby/docker-image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

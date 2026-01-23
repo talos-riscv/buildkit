@@ -37,13 +37,13 @@ COPY --link --from=golangci-binary / /usr/bin/
 RUN [ "${GOLANGCI_FROM_SOURCE}" = "true" ] && exit 0; wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s ${GOLANGCI_LINT_VERSION}
 COPY --link --from=protolint-base /usr/local/bin/protolint /usr/local/bin/protolint
 COPY --link --from=xx / /
-WORKDIR /go/src/github.com/moby/buildkit
+WORKDIR /go/src/github.com/talos-riscv/buildkit
 
 FROM base AS golangci-lint
 ARG TARGETNAME
 ARG BUILDTAGS
 ARG TARGETPLATFORM
-RUN --mount=target=/go/src/github.com/moby/buildkit \
+RUN --mount=target=/go/src/github.com/talos-riscv/buildkit \
     --mount=target=/root/.cache,type=cache,id=lint-cache-${TARGETNAME}-${TARGETPLATFORM} \
   xx-go --wrap && \
   golangci-lint run --build-tags "${BUILDTAGS}" && \
@@ -51,7 +51,7 @@ RUN --mount=target=/go/src/github.com/moby/buildkit \
   
 
 FROM base AS golangci-verify-false
-RUN --mount=target=/go/src/github.com/moby/buildkit \
+RUN --mount=target=/go/src/github.com/talos-riscv/buildkit \
   golangci-lint config verify && \
   touch /golangci-verify.done
 
@@ -62,12 +62,12 @@ EOF
 FROM golangci-verify-${GOLANGCI_FROM_SOURCE} AS golangci-verify
 
 FROM base AS yamllint
-RUN --mount=target=/go/src/github.com/moby/buildkit \
+RUN --mount=target=/go/src/github.com/talos-riscv/buildkit \
   yamllint -c .yamllint.yml --strict . && \
   touch /yamllint.done
 
 FROM base AS protolint
-RUN --mount=target=/go/src/github.com/moby/buildkit \
+RUN --mount=target=/go/src/github.com/talos-riscv/buildkit \
   protolint lint . && \
   touch /protolint.done
 
@@ -118,7 +118,7 @@ COPY --link --from=xx / /
 ARG GOPLS_ANALYZERS
 ARG TARGETNAME
 ARG TARGETPLATFORM
-WORKDIR /go/src/github.com/moby/buildkit
+WORKDIR /go/src/github.com/talos-riscv/buildkit
 RUN --mount=target=. \
   --mount=target=/root/.cache,type=cache,id=lint-cache-${TARGETNAME}-${TARGETPLATFORM} \
   --mount=target=/gopls-analyzers,from=gopls,source=/out <<EOF
@@ -134,7 +134,7 @@ RUN apk add --no-cache git
 COPY --link --from=xx / /
 ARG TARGETNAME
 ARG TARGETPLATFORM
-WORKDIR /go/src/github.com/moby/buildkit
+WORKDIR /go/src/github.com/talos-riscv/buildkit
 RUN --mount=target=.,rw \
   --mount=target=/root/.cache,type=cache,id=lint-cache-${TARGETNAME}-${TARGETPLATFORM} \
   --mount=target=/gopls-analyzers,from=gopls,source=/out <<EOF

@@ -3,10 +3,10 @@ package exporter
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/solver/result"
-	"github.com/moby/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/util/compression"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 )
 

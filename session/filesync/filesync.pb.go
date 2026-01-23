@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/session/filesync/filesync.proto
+// source: github.com/talos-riscv/buildkit/session/filesync/filesync.proto
 
 package filesync
 
@@ -71,14 +71,14 @@ var File_github_com_moby_buildkit_session_filesync_filesync_proto protoreflect.F
 
 const file_github_com_moby_buildkit_session_filesync_filesync_proto_rawDesc = "" +
 	"\n" +
-	"8github.com/moby/buildkit/session/filesync/filesync.proto\x12\x10moby.filesync.v1\x1a-github.com/tonistiigi/fsutil/types/wire.proto\"\"\n" +
+	"8github.com/talos-riscv/buildkit/session/filesync/filesync.proto\x12\x10moby.filesync.v1\x1a-github.com/tonistiigi/fsutil/types/wire.proto\"\"\n" +
 	"\fBytesMessage\x12\x12\n" +
 	"\x04data\x18\x01 \x01(\fR\x04data2\x83\x01\n" +
 	"\bFileSync\x12:\n" +
 	"\bDiffCopy\x12\x14.fsutil.types.Packet\x1a\x14.fsutil.types.Packet(\x010\x01\x12;\n" +
 	"\tTarStream\x12\x14.fsutil.types.Packet\x1a\x14.fsutil.types.Packet(\x010\x012Z\n" +
 	"\bFileSend\x12N\n" +
-	"\bDiffCopy\x12\x1e.moby.filesync.v1.BytesMessage\x1a\x1e.moby.filesync.v1.BytesMessage(\x010\x01B+Z)github.com/moby/buildkit/session/filesyncb\x06proto3"
+	"\bDiffCopy\x12\x1e.moby.filesync.v1.BytesMessage\x1a\x1e.moby.filesync.v1.BytesMessage(\x010\x01B+Z)github.com/talos-riscv/buildkit/session/filesyncb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_session_filesync_filesync_proto_rawDescOnce sync.Once

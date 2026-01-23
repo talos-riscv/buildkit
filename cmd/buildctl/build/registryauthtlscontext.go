@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/session/auth/authprovider"
+	"github.com/talos-riscv/buildkit/session/auth/authprovider"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/go-csvvalue"
 )

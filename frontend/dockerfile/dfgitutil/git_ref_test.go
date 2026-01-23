@@ -61,17 +61,17 @@ func TestParseGitRef(t *testing.T) {
 			},
 		},
 		{
-			ref: "github.com/moby/buildkit",
+			ref: "github.com/talos-riscv/buildkit",
 			expected: &GitRef{
-				Remote:                     "github.com/moby/buildkit",
+				Remote:                     "github.com/talos-riscv/buildkit",
 				ShortName:                  "buildkit",
 				IndistinguishableFromLocal: true,
 			},
 		},
 		{
-			ref: "github.com/moby/buildkit#master",
+			ref: "github.com/talos-riscv/buildkit#master",
 			expected: &GitRef{
-				Remote:                     "github.com/moby/buildkit",
+				Remote:                     "github.com/talos-riscv/buildkit",
 				ShortName:                  "buildkit",
 				IndistinguishableFromLocal: true,
 				Ref:                        "master",
@@ -82,20 +82,20 @@ func TestParseGitRef(t *testing.T) {
 			expected: nil,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit",
+			ref:      "https://github.com/talos-riscv/buildkit",
 			expected: nil,
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git",
+			ref: "https://github.com/talos-riscv/buildkit.git",
 			expected: &GitRef{
-				Remote:    "https://github.com/moby/buildkit.git",
+				Remote:    "https://github.com/talos-riscv/buildkit.git",
 				ShortName: "buildkit",
 			},
 		},
 		{
-			ref: "https://foo:bar@github.com/moby/buildkit.git",
+			ref: "https://foo:bar@github.com/talos-riscv/buildkit.git",
 			expected: &GitRef{
-				Remote:    "https://foo:bar@github.com/moby/buildkit.git",
+				Remote:    "https://foo:bar@github.com/talos-riscv/buildkit.git",
 				ShortName: "buildkit",
 			},
 		},
@@ -159,50 +159,50 @@ func TestParseGitRef(t *testing.T) {
 			},
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git?subdir=/subdir#v1.0.0",
+			ref: "https://github.com/talos-riscv/buildkit.git?subdir=/subdir#v1.0.0",
 			expected: &GitRef{
-				Remote:    "https://github.com/moby/buildkit.git",
+				Remote:    "https://github.com/talos-riscv/buildkit.git",
 				ShortName: "buildkit",
 				Ref:       "v1.0.0",
 				SubDir:    "/subdir",
 			},
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git?tag=v1.0.0",
+			ref: "https://github.com/talos-riscv/buildkit.git?tag=v1.0.0",
 			expected: &GitRef{
-				Remote:    "https://github.com/moby/buildkit.git",
+				Remote:    "https://github.com/talos-riscv/buildkit.git",
 				ShortName: "buildkit",
 				Ref:       "refs/tags/v1.0.0",
 			},
 		},
 		{
-			ref: "github.com/moby/buildkit?tag=v1.0.0",
+			ref: "github.com/talos-riscv/buildkit?tag=v1.0.0",
 			expected: &GitRef{
-				Remote:                     "github.com/moby/buildkit",
+				Remote:                     "github.com/talos-riscv/buildkit",
 				ShortName:                  "buildkit",
 				Ref:                        "refs/tags/v1.0.0",
 				IndistinguishableFromLocal: true,
 			},
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git?branch=v1.0",
+			ref: "https://github.com/talos-riscv/buildkit.git?branch=v1.0",
 			expected: &GitRef{
-				Remote:    "https://github.com/moby/buildkit.git",
+				Remote:    "https://github.com/talos-riscv/buildkit.git",
 				ShortName: "buildkit",
 				Ref:       "refs/heads/v1.0",
 			},
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git?ref=v1.0.0#v1.2.3",
+			ref: "https://github.com/talos-riscv/buildkit.git?ref=v1.0.0#v1.2.3",
 			err: "ref conflicts",
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git?ref=v1.0.0&tag=v1.2.3",
+			ref: "https://github.com/talos-riscv/buildkit.git?ref=v1.0.0&tag=v1.2.3",
 			err: "ref conflicts",
 		},
 		{
 			// TODO: consider allowing this, when the tag actually exists on the branch
-			ref: "https://github.com/moby/buildkit.git?tag=v1.0.0&branch=v1.0",
+			ref: "https://github.com/talos-riscv/buildkit.git?tag=v1.0.0&branch=v1.0",
 			err: "branch conflicts with tag",
 		},
 		{
@@ -215,7 +215,7 @@ func TestParseGitRef(t *testing.T) {
 			},
 		},
 		{
-			ref: "https://github.com/moby/buildkit.git?invalid=123",
+			ref: "https://github.com/talos-riscv/buildkit.git?invalid=123",
 			err: "unexpected query \"invalid\"",
 		},
 	}
@@ -278,13 +278,13 @@ func TestFragmentFormat(t *testing.T) {
 			ok:       true,
 		},
 		{
-			ref:      "github.com/moby/buildkit",
-			expected: "github.com/moby/buildkit",
+			ref:      "github.com/talos-riscv/buildkit",
+			expected: "github.com/talos-riscv/buildkit",
 			ok:       true,
 		},
 		{
-			ref:      "github.com/moby/buildkit#master",
-			expected: "github.com/moby/buildkit#master",
+			ref:      "github.com/talos-riscv/buildkit#master",
+			expected: "github.com/talos-riscv/buildkit#master",
 			ok:       true,
 		},
 		{
@@ -293,18 +293,18 @@ func TestFragmentFormat(t *testing.T) {
 			ok:       false,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit",
-			expected: "https://github.com/moby/buildkit",
+			ref:      "https://github.com/talos-riscv/buildkit",
+			expected: "https://github.com/talos-riscv/buildkit",
 			ok:       false,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git",
-			expected: "https://github.com/moby/buildkit.git",
+			ref:      "https://github.com/talos-riscv/buildkit.git",
+			expected: "https://github.com/talos-riscv/buildkit.git",
 			ok:       true,
 		},
 		{
-			ref:      "https://foo:bar@github.com/moby/buildkit.git",
-			expected: "https://foo:bar@github.com/moby/buildkit.git",
+			ref:      "https://foo:bar@github.com/talos-riscv/buildkit.git",
+			expected: "https://foo:bar@github.com/talos-riscv/buildkit.git",
 			ok:       true,
 		},
 		{
@@ -353,38 +353,38 @@ func TestFragmentFormat(t *testing.T) {
 			ok:       true,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git?subdir=/subdir#v1.0.0",
-			expected: "https://github.com/moby/buildkit.git#v1.0.0",
+			ref:      "https://github.com/talos-riscv/buildkit.git?subdir=/subdir#v1.0.0",
+			expected: "https://github.com/talos-riscv/buildkit.git#v1.0.0",
 			ok:       true,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git?tag=v1.0.0",
-			expected: "https://github.com/moby/buildkit.git#refs/tags/v1.0.0",
+			ref:      "https://github.com/talos-riscv/buildkit.git?tag=v1.0.0",
+			expected: "https://github.com/talos-riscv/buildkit.git#refs/tags/v1.0.0",
 			ok:       true,
 		},
 		{
-			ref:      "github.com/moby/buildkit?tag=v1.0.0",
-			expected: "github.com/moby/buildkit#refs/tags/v1.0.0",
+			ref:      "github.com/talos-riscv/buildkit?tag=v1.0.0",
+			expected: "github.com/talos-riscv/buildkit#refs/tags/v1.0.0",
 			ok:       true,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git?branch=v1.0",
-			expected: "https://github.com/moby/buildkit.git#refs/heads/v1.0",
+			ref:      "https://github.com/talos-riscv/buildkit.git?branch=v1.0",
+			expected: "https://github.com/talos-riscv/buildkit.git#refs/heads/v1.0",
 			ok:       true,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git?ref=v1.0.0#v1.2.3",
-			expected: "https://github.com/moby/buildkit.git?ref=v1.0.0#v1.2.3",
+			ref:      "https://github.com/talos-riscv/buildkit.git?ref=v1.0.0#v1.2.3",
+			expected: "https://github.com/talos-riscv/buildkit.git?ref=v1.0.0#v1.2.3",
 			ok:       false,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git?ref=v1.0.0&tag=v1.2.3",
-			expected: "https://github.com/moby/buildkit.git?ref=v1.0.0&tag=v1.2.3",
+			ref:      "https://github.com/talos-riscv/buildkit.git?ref=v1.0.0&tag=v1.2.3",
+			expected: "https://github.com/talos-riscv/buildkit.git?ref=v1.0.0&tag=v1.2.3",
 			ok:       false,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git?tag=v1.0.0&branch=v1.0",
-			expected: "https://github.com/moby/buildkit.git?tag=v1.0.0&branch=v1.0",
+			ref:      "https://github.com/talos-riscv/buildkit.git?tag=v1.0.0&branch=v1.0",
+			expected: "https://github.com/talos-riscv/buildkit.git?tag=v1.0.0&branch=v1.0",
 			ok:       false,
 		},
 		{
@@ -393,8 +393,8 @@ func TestFragmentFormat(t *testing.T) {
 			ok:       true,
 		},
 		{
-			ref:      "https://github.com/moby/buildkit.git?invalid=123",
-			expected: "https://github.com/moby/buildkit.git?invalid=123",
+			ref:      "https://github.com/talos-riscv/buildkit.git?invalid=123",
+			expected: "https://github.com/talos-riscv/buildkit.git?invalid=123",
 			ok:       false,
 		},
 	}

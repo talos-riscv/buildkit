@@ -7,10 +7,10 @@ import (
 	"slices"
 	"time"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
 )
 

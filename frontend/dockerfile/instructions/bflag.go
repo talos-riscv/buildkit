@@ -3,7 +3,7 @@ package instructions
 import (
 	"strings"
 
-	"github.com/moby/buildkit/util/suggest"
+	"github.com/talos-riscv/buildkit/util/suggest"
 	"github.com/pkg/errors"
 )
 

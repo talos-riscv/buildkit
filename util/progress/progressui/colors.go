@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/morikuni/aec"
 	"github.com/tonistiigi/go-csvvalue"
 )

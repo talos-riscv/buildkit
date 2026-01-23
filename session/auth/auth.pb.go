@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/session/auth/auth.proto
+// source: github.com/talos-riscv/buildkit/session/auth/auth.proto
 
 package auth
 
@@ -457,7 +457,7 @@ var File_github_com_moby_buildkit_session_auth_auth_proto protoreflect.FileDescr
 
 const file_github_com_moby_buildkit_session_auth_auth_proto_rawDesc = "" +
 	"\n" +
-	"0github.com/moby/buildkit/session/auth/auth.proto\x12\x10moby.filesync.v1\"(\n" +
+	"0github.com/talos-riscv/buildkit/session/auth/auth.proto\x12\x10moby.filesync.v1\"(\n" +
 	"\x12CredentialsRequest\x12\x12\n" +
 	"\x04Host\x18\x01 \x01(\tR\x04Host\"I\n" +
 	"\x13CredentialsResponse\x12\x1a\n" +
@@ -489,7 +489,7 @@ const file_github_com_moby_buildkit_session_auth_auth_proto_rawDesc = "" +
 	"\n" +
 	"FetchToken\x12#.moby.filesync.v1.FetchTokenRequest\x1a$.moby.filesync.v1.FetchTokenResponse\x12l\n" +
 	"\x11GetTokenAuthority\x12*.moby.filesync.v1.GetTokenAuthorityRequest\x1a+.moby.filesync.v1.GetTokenAuthorityResponse\x12u\n" +
-	"\x14VerifyTokenAuthority\x12-.moby.filesync.v1.VerifyTokenAuthorityRequest\x1a..moby.filesync.v1.VerifyTokenAuthorityResponseB'Z%github.com/moby/buildkit/session/authb\x06proto3"
+	"\x14VerifyTokenAuthority\x12-.moby.filesync.v1.VerifyTokenAuthorityRequest\x1a..moby.filesync.v1.VerifyTokenAuthorityResponseB'Z%github.com/talos-riscv/buildkit/session/authb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_session_auth_auth_proto_rawDescOnce sync.Once

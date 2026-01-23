@@ -3,7 +3,7 @@ package exporterprovider
 import (
 	"context"
 
-	"github.com/moby/buildkit/session/exporter"
+	"github.com/talos-riscv/buildkit/session/exporter"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

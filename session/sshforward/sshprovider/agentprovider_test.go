@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/moby/buildkit/cmd/buildctl/build"
-	"github.com/moby/buildkit/session/sshforward/sshprovider"
+	"github.com/talos-riscv/buildkit/cmd/buildctl/build"
+	"github.com/talos-riscv/buildkit/session/sshforward/sshprovider"
 	"github.com/stretchr/testify/require"
 )
 

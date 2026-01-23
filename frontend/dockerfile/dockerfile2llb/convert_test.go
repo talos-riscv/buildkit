@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/shell"
-	"github.com/moby/buildkit/frontend/dockerui"
-	"github.com/moby/buildkit/util/appcontext"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/instructions"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/shell"
+	"github.com/talos-riscv/buildkit/frontend/dockerui"
+	"github.com/talos-riscv/buildkit/util/appcontext"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -73,13 +73,13 @@ COPY --from=0 f2 /
 	require.Error(t, err)
 
 	df = `FROM scratch
-	ADD http://github.com/moby/buildkit/blob/master/README.md /
+	ADD http://github.com/talos-riscv/buildkit/blob/master/README.md /
 		`
 	_, _, _, _, err = Dockerfile2LLB(appcontext.Context(), []byte(df), ConvertOpt{})
 	require.NoError(t, err)
 
 	df = `FROM scratch
-	COPY http://github.com/moby/buildkit/blob/master/README.md /
+	COPY http://github.com/talos-riscv/buildkit/blob/master/README.md /
 		`
 	_, _, _, _, err = Dockerfile2LLB(appcontext.Context(), []byte(df), ConvertOpt{})
 	require.EqualError(t, err, "source can't be a URL for COPY")

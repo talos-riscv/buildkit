@@ -5,8 +5,8 @@ package netproviders
 import (
 	"runtime"
 
-	"github.com/moby/buildkit/util/network"
-	"github.com/moby/buildkit/util/network/cniprovider"
+	"github.com/talos-riscv/buildkit/util/network"
+	"github.com/talos-riscv/buildkit/util/network/cniprovider"
 	"github.com/pkg/errors"
 )
 

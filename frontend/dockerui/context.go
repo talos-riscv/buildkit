@@ -8,10 +8,10 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/dockerfile/dfgitutil"
-	"github.com/moby/buildkit/frontend/gateway/client"
-	gwpb "github.com/moby/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/dfgitutil"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	gwpb "github.com/talos-riscv/buildkit/frontend/gateway/pb"
 	"github.com/pkg/errors"
 )
 

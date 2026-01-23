@@ -7,9 +7,9 @@ import (
 	"io"
 	"text/tabwriter"
 
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/frontend/subrequests"
+	"github.com/talos-riscv/buildkit/solver/pb"
 )
 
 const RequestTargets = "frontend.targets"

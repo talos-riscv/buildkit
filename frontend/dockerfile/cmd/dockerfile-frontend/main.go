@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	dockerfile "github.com/moby/buildkit/frontend/dockerfile/builder"
-	"github.com/moby/buildkit/frontend/gateway/grpcclient"
-	"github.com/moby/buildkit/util/appcontext"
-	"github.com/moby/buildkit/util/bklog"
-	_ "github.com/moby/buildkit/util/grpcutil/encoding/proto"
-	"github.com/moby/buildkit/util/stack"
+	dockerfile "github.com/talos-riscv/buildkit/frontend/dockerfile/builder"
+	"github.com/talos-riscv/buildkit/frontend/gateway/grpcclient"
+	"github.com/talos-riscv/buildkit/util/appcontext"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	_ "github.com/talos-riscv/buildkit/util/grpcutil/encoding/proto"
+	"github.com/talos-riscv/buildkit/util/stack"
 )
 
 func init() {

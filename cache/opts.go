@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/containerd/containerd/v2/core/content"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
 )
 

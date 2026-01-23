@@ -10,7 +10,7 @@ import (
 	"syscall"
 
 	"github.com/containerd/containerd/v2/pkg/oci"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"

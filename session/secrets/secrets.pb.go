@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/session/secrets/secrets.proto
+// source: github.com/talos-riscv/buildkit/session/secrets/secrets.proto
 
 package secrets
 
@@ -121,7 +121,7 @@ var File_github_com_moby_buildkit_session_secrets_secrets_proto protoreflect.Fil
 
 const file_github_com_moby_buildkit_session_secrets_secrets_proto_rawDesc = "" +
 	"\n" +
-	"6github.com/moby/buildkit/session/secrets/secrets.proto\x12\x18moby.buildkit.secrets.v1\"\xc1\x01\n" +
+	"6github.com/talos-riscv/buildkit/session/secrets/secrets.proto\x12\x18moby.buildkit.secrets.v1\"\xc1\x01\n" +
 	"\x10GetSecretRequest\x12\x0e\n" +
 	"\x02ID\x18\x01 \x01(\tR\x02ID\x12]\n" +
 	"\vannotations\x18\x02 \x03(\v2;.moby.buildkit.secrets.v1.GetSecretRequest.AnnotationsEntryR\vannotations\x1a>\n" +
@@ -131,7 +131,7 @@ const file_github_com_moby_buildkit_session_secrets_secrets_proto_rawDesc = "" +
 	"\x11GetSecretResponse\x12\x12\n" +
 	"\x04data\x18\x01 \x01(\fR\x04data2o\n" +
 	"\aSecrets\x12d\n" +
-	"\tGetSecret\x12*.moby.buildkit.secrets.v1.GetSecretRequest\x1a+.moby.buildkit.secrets.v1.GetSecretResponseB*Z(github.com/moby/buildkit/session/secretsb\x06proto3"
+	"\tGetSecret\x12*.moby.buildkit.secrets.v1.GetSecretRequest\x1a+.moby.buildkit.secrets.v1.GetSecretResponseB*Z(github.com/talos-riscv/buildkit/session/secretsb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_session_secrets_secrets_proto_rawDescOnce sync.Once

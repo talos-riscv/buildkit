@@ -3,7 +3,7 @@ package workers
 import (
 	"testing"
 
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 )
 
 const (

@@ -24,7 +24,7 @@ A great way to contribute to the project is to send a detailed report when you
 encounter an issue. We always appreciate a well-written, thorough bug report,
 and will thank you for it!
 
-Check that [our issue database](https://github.com/moby/buildkit/issues)
+Check that [our issue database](https://github.com/talos-riscv/buildkit/issues)
 doesn't already include that problem or suggestion before submitting an issue.
 If you find a match, you can use the "subscribe" button to get notified on
 updates. Do *not* leave random "+1" or "I have this too" comments, as they
@@ -71,7 +71,7 @@ You can launch the backend BuildKit daemon either in a container, or directly:
 $ docker run --rm -d --name buildkitd --privileged moby/buildkit:local
 $ export BUILDKIT_HOST=docker-container://buildkitd
 $ buildctl debug info
-BuildKit: github.com/moby/buildkit v0.11.0-rc3-623-g2ff0d2a2f.m 2ff0d2a2f53663aae917980fa27eada7950ff69c.m
+BuildKit: github.com/talos-riscv/buildkit v0.11.0-rc3-623-g2ff0d2a2f.m 2ff0d2a2f53663aae917980fa27eada7950ff69c.m
 ```
 
 ```bash
@@ -79,7 +79,7 @@ BuildKit: github.com/moby/buildkit v0.11.0-rc3-623-g2ff0d2a2f.m 2ff0d2a2f53663aa
 $ sudo buildkitd
 $ export BUILDKIT_HOST=unix:///run/buildkit/buildkitd.sock
 $ sudo buildctl debug info
-BuildKit: github.com/moby/buildkit v0.11.0-rc3-506-g539bab193.m 539bab193c28d3ce731e6013f471ba24848f5c41.m
+BuildKit: github.com/talos-riscv/buildkit v0.11.0-rc3-506-g539bab193.m 539bab193c28d3ce731e6013f471ba24848f5c41.m
 ```
 
 You can also connect buildx to the BuildKit daemon using the [`remote` driver](https://docs.docker.com/build/drivers/remote/):

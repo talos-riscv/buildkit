@@ -6,7 +6,7 @@ import (
 	"context"
 
 	"github.com/containerd/containerd/v2/pkg/oci"
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 )
 

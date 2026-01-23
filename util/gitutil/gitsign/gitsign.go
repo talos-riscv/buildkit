@@ -13,7 +13,7 @@ import (
 	"github.com/ProtonMail/go-crypto/openpgp/armor"
 	"github.com/ProtonMail/go-crypto/openpgp/packet"
 	"github.com/hiddeco/sshsig"
-	"github.com/moby/buildkit/util/gitutil/gitobject"
+	"github.com/talos-riscv/buildkit/util/gitutil/gitobject"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/ssh"
 )

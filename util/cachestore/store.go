@@ -7,7 +7,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/moby/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

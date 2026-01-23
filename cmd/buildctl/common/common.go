@@ -11,8 +11,8 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/tracing/delegated"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/util/tracing/delegated"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"
 	"go.opentelemetry.io/otel/trace"

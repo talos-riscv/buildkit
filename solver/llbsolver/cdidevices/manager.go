@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/moby/locker"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"

@@ -19,18 +19,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/secrets"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/source"
-	srctypes "github.com/moby/buildkit/source/types"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/cachedigest"
-	"github.com/moby/buildkit/util/tracing"
-	"github.com/moby/buildkit/version"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/session/secrets"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/source"
+	srctypes "github.com/talos-riscv/buildkit/source/types"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/cachedigest"
+	"github.com/talos-riscv/buildkit/util/tracing"
+	"github.com/talos-riscv/buildkit/version"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )
@@ -299,7 +299,7 @@ func (hs *httpSourceHandler) resolveMetadata(ctx context.Context, jobCtx solver.
 
 	// If we request a single ETag in 'If-None-Match', some servers omit the
 	// unambiguous ETag in their response.
-	// See: https://github.com/moby/buildkit/issues/905
+	// See: https://github.com/talos-riscv/buildkit/issues/905
 	var onlyETag string
 
 	if len(mds) > 0 {

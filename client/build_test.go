@@ -13,21 +13,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/gateway/client"
-	gatewayapi "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/secrets/secretsprovider"
-	"github.com/moby/buildkit/session/sshforward/sshprovider"
-	"github.com/moby/buildkit/solver/errdefs"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/entitlements"
-	"github.com/moby/buildkit/util/grpcerrors"
-	utilsystem "github.com/moby/buildkit/util/system"
-	"github.com/moby/buildkit/util/testutil/echoserver"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/util/testutil/workers"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	gatewayapi "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/session/secrets/secretsprovider"
+	"github.com/talos-riscv/buildkit/session/sshforward/sshprovider"
+	"github.com/talos-riscv/buildkit/solver/errdefs"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/entitlements"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
+	utilsystem "github.com/talos-riscv/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/util/testutil/echoserver"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/workers"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 	"github.com/tonistiigi/fsutil"
@@ -2088,7 +2088,7 @@ func testClientGatewayContainerHostNetworking(t *testing.T, sb integration.Sandb
 
 	if sb.Rootless() && sb.Value("netmode") == defaultNetwork {
 		// skip "default" network test for rootless, it always runs with "host" network
-		// https://github.com/moby/buildkit/blob/v0.9.0/docs/rootless.md#known-limitations
+		// https://github.com/talos-riscv/buildkit/blob/v0.9.0/docs/rootless.md#known-limitations
 		t.SkipNow()
 	}
 

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/moby/buildkit/session/sshforward"
+	"github.com/talos-riscv/buildkit/session/sshforward"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"

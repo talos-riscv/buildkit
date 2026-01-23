@@ -3,7 +3,7 @@ package dockerfile2llb
 import (
 	"slices"
 
-	"github.com/moby/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/util/system"
 	dockerspec "github.com/moby/docker-image-spec/specs-go/v1"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 )

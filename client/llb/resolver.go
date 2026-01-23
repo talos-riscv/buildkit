@@ -1,7 +1,7 @@
 package llb
 
 import (
-	"github.com/moby/buildkit/client/llb/sourceresolver"
+	"github.com/talos-riscv/buildkit/client/llb/sourceresolver"
 	digest "github.com/opencontainers/go-digest"
 )
 

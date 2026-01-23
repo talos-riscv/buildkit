@@ -12,9 +12,9 @@ import (
 
 	"github.com/containerd/console"
 	runc "github.com/containerd/go-runc"
-	"github.com/moby/buildkit/executor"
-	gatewayapi "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/executor"
+	gatewayapi "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/moby/sys/signal"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"

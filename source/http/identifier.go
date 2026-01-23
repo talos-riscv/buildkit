@@ -1,10 +1,10 @@
 package http
 
 import (
-	"github.com/moby/buildkit/solver/llbsolver/provenance"
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
-	"github.com/moby/buildkit/source"
-	srctypes "github.com/moby/buildkit/source/types"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/provenance"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
+	"github.com/talos-riscv/buildkit/source"
+	srctypes "github.com/talos-riscv/buildkit/source/types"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

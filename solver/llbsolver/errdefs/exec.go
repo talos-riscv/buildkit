@@ -4,8 +4,8 @@ import (
 	"context"
 	"runtime"
 
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/bklog"
 )
 
 // ExecError will be returned when an error is encountered when evaluating an op.

@@ -3,8 +3,8 @@ package progresswriter
 import (
 	"time"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/identity"
 	digest "github.com/opencontainers/go-digest"
 )
 

@@ -3,8 +3,8 @@ package container
 import (
 	"net"
 
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/executor"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/pkg/errors"
 )
 

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/docker/go-units"
-	"github.com/moby/buildkit/util/disk"
+	"github.com/talos-riscv/buildkit/util/disk"
 	"github.com/pkg/errors"
 )
 

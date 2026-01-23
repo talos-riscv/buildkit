@@ -3,9 +3,9 @@ package boltutil
 import (
 	"os"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/db"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/db"
 	"github.com/pkg/errors"
 	bolt "go.etcd.io/bbolt"
 )
@@ -38,7 +38,7 @@ func fallbackOpen(dbPath string, mode os.FileMode, opts *bolt.Options, openErr e
 	backupPath := dbPath + "." + identity.NewID() + ".bak"
 	bklog.L.Errorf("failed to open database file %s, resetting to empty. Old database is backed up to %s. "+
 		"This error signifies that buildkitd likely crashed or was sigkilled abruptly, leaving the database corrupted. "+
-		"If you see logs from a previous panic then please report in the issue tracker at https://github.com/moby/buildkit . %+v", dbPath, backupPath, openErr)
+		"If you see logs from a previous panic then please report in the issue tracker at https://github.com/talos-riscv/buildkit . %+v", dbPath, backupPath, openErr)
 	if err := os.Rename(dbPath, backupPath); err != nil {
 		return nil, errors.Wrapf(err, "failed to rename database file %s to %s", dbPath, backupPath)
 	}

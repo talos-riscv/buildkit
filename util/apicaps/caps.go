@@ -6,7 +6,7 @@ import (
 	"slices"
 	"strings"
 
-	pb "github.com/moby/buildkit/util/apicaps/pb"
+	pb "github.com/talos-riscv/buildkit/util/apicaps/pb"
 	"github.com/pkg/errors"
 )
 

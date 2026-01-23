@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"

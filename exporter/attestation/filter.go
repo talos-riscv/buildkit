@@ -3,7 +3,7 @@ package attestation
 import (
 	"bytes"
 
-	"github.com/moby/buildkit/exporter"
+	"github.com/talos-riscv/buildkit/exporter"
 )
 
 func Filter(attestations []exporter.Attestation, include map[string][]byte, exclude map[string][]byte) []exporter.Attestation {

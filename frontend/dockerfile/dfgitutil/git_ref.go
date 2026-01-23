@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	cerrdefs "github.com/containerd/errdefs"
-	"github.com/moby/buildkit/util/gitutil"
+	"github.com/talos-riscv/buildkit/util/gitutil"
 	"github.com/pkg/errors"
 )
 

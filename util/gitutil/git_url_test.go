@@ -14,7 +14,7 @@ func TestParseURL(t *testing.T) {
 		err    bool
 	}{
 		{
-			url: "http://github.com/moby/buildkit",
+			url: "http://github.com/talos-riscv/buildkit",
 			result: GitURL{
 				Scheme: HTTPProtocol,
 				Host:   "github.com",
@@ -22,7 +22,7 @@ func TestParseURL(t *testing.T) {
 			},
 		},
 		{
-			url: "https://github.com/moby/buildkit",
+			url: "https://github.com/talos-riscv/buildkit",
 			result: GitURL{
 				Scheme: HTTPSProtocol,
 				Host:   "github.com",
@@ -30,7 +30,7 @@ func TestParseURL(t *testing.T) {
 			},
 		},
 		{
-			url: "http://github.com/moby/buildkit#v1.0.0",
+			url: "http://github.com/talos-riscv/buildkit#v1.0.0",
 			result: GitURL{
 				Scheme: HTTPProtocol,
 				Host:   "github.com",
@@ -39,7 +39,7 @@ func TestParseURL(t *testing.T) {
 			},
 		},
 		{
-			url: "http://github.com/moby/buildkit#v1.0.0:subdir",
+			url: "http://github.com/talos-riscv/buildkit#v1.0.0:subdir",
 			result: GitURL{
 				Scheme: HTTPProtocol,
 				Host:   "github.com",
@@ -48,7 +48,7 @@ func TestParseURL(t *testing.T) {
 			},
 		},
 		{
-			url: "http://foo:bar@github.com/moby/buildkit#v1.0.0",
+			url: "http://foo:bar@github.com/talos-riscv/buildkit#v1.0.0",
 			result: GitURL{
 				Scheme: HTTPProtocol,
 				Host:   "github.com",
@@ -58,7 +58,7 @@ func TestParseURL(t *testing.T) {
 			},
 		},
 		{
-			url: "ssh://git@github.com/moby/buildkit.git",
+			url: "ssh://git@github.com/talos-riscv/buildkit.git",
 			result: GitURL{
 				Scheme: SSHProtocol,
 				Host:   "github.com",
@@ -140,11 +140,11 @@ func TestParseURL(t *testing.T) {
 			},
 		},
 		{
-			url: "httpx://github.com/moby/buildkit",
+			url: "httpx://github.com/talos-riscv/buildkit",
 			err: true,
 		},
 		{
-			url: "HTTP://github.com/moby/buildkit",
+			url: "HTTP://github.com/talos-riscv/buildkit",
 			result: GitURL{
 				Scheme: HTTPProtocol,
 				Host:   "github.com",
@@ -152,7 +152,7 @@ func TestParseURL(t *testing.T) {
 			},
 		},
 		{
-			url: "https://github.com/moby/buildkit?ref=v1.0.0&foo=bar#v1.2.3",
+			url: "https://github.com/talos-riscv/buildkit?ref=v1.0.0&foo=bar#v1.2.3",
 			result: GitURL{
 				Scheme: HTTPSProtocol,
 				Host:   "github.com",

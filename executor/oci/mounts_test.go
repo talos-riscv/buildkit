@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd/v2/pkg/oci"
-	"github.com/moby/buildkit/util/appcontext"
+	"github.com/talos-riscv/buildkit/util/appcontext"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

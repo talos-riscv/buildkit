@@ -7,7 +7,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
 )
 
 type Annotations struct {

@@ -6,9 +6,9 @@ import (
 
 	"github.com/containerd/containerd/v2/core/leases"
 	"github.com/containerd/containerd/v2/core/snapshots"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/leaseutil"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/leaseutil"
 	"github.com/moby/sys/userns"
 	"github.com/pkg/errors"
 )

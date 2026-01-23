@@ -5,11 +5,11 @@ import (
 	"strconv"
 	"time"
 
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/exporter/util/epoch"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/compression"
+	cacheconfig "github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/exporter/util/epoch"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/compression"
 	"github.com/pkg/errors"
 )
 

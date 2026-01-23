@@ -5,9 +5,9 @@ import (
 	"net"
 	"sync"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/grpcerrors"
-	"github.com/moby/buildkit/util/tracing"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/tracing"
 	"github.com/pkg/errors"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"
 	"go.opentelemetry.io/otel/propagation"

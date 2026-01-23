@@ -7,9 +7,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/cachedigest"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/cachedigest"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/sirupsen/logrus"
 )

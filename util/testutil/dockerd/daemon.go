@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/identity"
+	"github.com/talos-riscv/buildkit/identity"
 	"github.com/pkg/errors"
 )
 

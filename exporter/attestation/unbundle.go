@@ -10,11 +10,11 @@ import (
 
 	"github.com/containerd/continuity/fs"
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
-	"github.com/moby/buildkit/exporter"
-	gatewaypb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/exporter"
+	gatewaypb "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/solver/result"
 	"github.com/pkg/errors"
 	"golang.org/x/sync/errgroup"
 )

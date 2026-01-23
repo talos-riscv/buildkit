@@ -14,7 +14,7 @@ import (
 	cdcompression "github.com/containerd/containerd/v2/pkg/archive/compression"
 	"github.com/containerd/containerd/v2/pkg/labels"
 	"github.com/containerd/stargz-snapshotter/estargz"
-	"github.com/moby/buildkit/util/iohelper"
+	"github.com/talos-riscv/buildkit/util/iohelper"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"

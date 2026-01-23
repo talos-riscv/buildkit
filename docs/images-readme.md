@@ -2,7 +2,7 @@
 
 BuildKit is a concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit.
 
-Report issues at https://github.com/moby/buildkit
+Report issues at https://github.com/talos-riscv/buildkit
 
 Join `#buildkit` channel on [Docker Community Slack](https://dockr.ly/comm-slack)
 
@@ -10,18 +10,18 @@ Join `#buildkit` channel on [Docker Community Slack](https://dockr.ly/comm-slack
 
 ### Latest stable release
 
-- [`v0.10.0`, `latest`](https://github.com/moby/buildkit/blob/v0.10.0/Dockerfile)
+- [`v0.10.0`, `latest`](https://github.com/talos-riscv/buildkit/blob/v0.10.0/Dockerfile)
 
-- [`v0.10.0-rootless`, `rootless`](https://github.com/moby/buildkit/blob/v0.10.0/Dockerfile) (see [`docs/rootless.md`](https://github.com/moby/buildkit/blob/master/docs/rootless.md) for usage)
+- [`v0.10.0-rootless`, `rootless`](https://github.com/talos-riscv/buildkit/blob/v0.10.0/Dockerfile) (see [`docs/rootless.md`](https://github.com/talos-riscv/buildkit/blob/master/docs/rootless.md) for usage)
 
 ### Development build from master branch
 
-- [`master`](https://github.com/moby/buildkit/blob/master/Dockerfile)
+- [`master`](https://github.com/talos-riscv/buildkit/blob/master/Dockerfile)
 
-- [`master-rootless`](https://github.com/moby/buildkit/blob/master/Dockerfile)
+- [`master-rootless`](https://github.com/talos-riscv/buildkit/blob/master/Dockerfile)
 
 
-Binary releases and changelog can be found from https://github.com/moby/buildkit/releases
+Binary releases and changelog can be found from https://github.com/talos-riscv/buildkit/releases
 
 # Usage
 
@@ -34,7 +34,7 @@ export BUILDKIT_HOST=docker-container://buildkitd
 buildctl build --help
 ```
 
-See https://github.com/moby/buildkit#buildkit for general BuildKit usage instructions
+See https://github.com/talos-riscv/buildkit#buildkit for general BuildKit usage instructions
 
 
 ## Docker Buildx
@@ -48,12 +48,12 @@ docker buildx create --driver-opt image=moby/buildkit:master --use
 
 ## Rootless
 
-For Rootless deployments, see [`docs/rootless.md`](https://github.com/moby/buildkit/blob/master/docs/rootless.md)
+For Rootless deployments, see [`docs/rootless.md`](https://github.com/talos-riscv/buildkit/blob/master/docs/rootless.md)
 
 
 ## Kubernetes
 
-For Kubernetes deployments, see [`examples/kubernetes`](https://github.com/moby/buildkit/tree/master/examples/kubernetes)
+For Kubernetes deployments, see [`examples/kubernetes`](https://github.com/talos-riscv/buildkit/tree/master/examples/kubernetes)
 
 
 ## Daemonless

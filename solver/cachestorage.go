@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/util/compression"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

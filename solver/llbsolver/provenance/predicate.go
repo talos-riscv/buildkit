@@ -7,10 +7,10 @@ import (
 	"github.com/containerd/platforms"
 	slsa "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/common"
 	slsa02 "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/v0.2"
-	"github.com/moby/buildkit/frontend/dockerfile/dfgitutil"
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
-	"github.com/moby/buildkit/util/purl"
-	"github.com/moby/buildkit/util/urlutil"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/dfgitutil"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
+	"github.com/talos-riscv/buildkit/util/purl"
+	"github.com/talos-riscv/buildkit/util/urlutil"
 	"github.com/package-url/packageurl-go"
 )
 

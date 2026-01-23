@@ -8,15 +8,15 @@ import (
 	slsa "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/common"
 	slsa02 "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/v0.2"
 	slsa1 "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/v1"
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
-	"github.com/moby/buildkit/solver/pb"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )
 
 const (
-	BuildKitBuildType1  = "https://github.com/moby/buildkit/blob/master/docs/attestations/slsa-definitions.md"
+	BuildKitBuildType1  = "https://github.com/talos-riscv/buildkit/blob/master/docs/attestations/slsa-definitions.md"
 	BuildKitBuildType02 = "https://mobyproject.org/buildkit@v1"
 
 	ProvenanceSLSA1  = ProvenanceSLSA("v1")

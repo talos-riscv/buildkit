@@ -3,7 +3,7 @@ package exptypes
 import (
 	"context"
 
-	"github.com/moby/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/solver/result"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 )
 

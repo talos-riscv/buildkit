@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/containerd/console"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/session/filesync"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/session/filesync"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/go-csvvalue"
 )

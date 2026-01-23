@@ -9,7 +9,7 @@ import (
 	"syscall"
 
 	"github.com/containerd/continuity/fs"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 )
 
 func MountStubsCleaner(ctx context.Context, dir string, mounts []Mount, recursive bool) func() {
@@ -74,7 +74,7 @@ func MountStubsCleaner(ctx context.Context, dir string, mounts []Mount, recursiv
 			}
 
 			// Back up the timestamps of the dir for reproducible builds
-			// https://github.com/moby/buildkit/issues/3148
+			// https://github.com/talos-riscv/buildkit/issues/3148
 			parent := filepath.Dir(p)
 			if realPath, err := fs.RootPath(dir, strings.TrimPrefix(parent, dir)); err != nil || realPath != parent {
 				continue

@@ -3,16 +3,16 @@ package proc
 import (
 	"context"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/client/llb/sourceresolver"
-	"github.com/moby/buildkit/executor/resources"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/frontend"
-	"github.com/moby/buildkit/frontend/attestations/sbom"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver"
-	"github.com/moby/buildkit/solver/result"
-	"github.com/moby/buildkit/util/tracing"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/client/llb/sourceresolver"
+	"github.com/talos-riscv/buildkit/executor/resources"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/frontend"
+	"github.com/talos-riscv/buildkit/frontend/attestations/sbom"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/llbsolver"
+	"github.com/talos-riscv/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/util/tracing"
 	"github.com/pkg/errors"
 )
 

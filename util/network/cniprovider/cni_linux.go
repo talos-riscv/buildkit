@@ -9,8 +9,8 @@ import (
 	"syscall"
 
 	"github.com/containernetworking/plugins/pkg/ns"
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
-	"github.com/moby/buildkit/util/bklog"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/pkg/errors"
 )
 

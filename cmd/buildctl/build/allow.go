@@ -1,7 +1,7 @@
 package build
 
 import (
-	"github.com/moby/buildkit/util/entitlements"
+	"github.com/talos-riscv/buildkit/util/entitlements"
 )
 
 // ValidateAllow parses --allow

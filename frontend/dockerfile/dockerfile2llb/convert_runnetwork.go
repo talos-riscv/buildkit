@@ -3,9 +3,9 @@ package dockerfile2llb
 import (
 	"github.com/pkg/errors"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/instructions"
+	"github.com/talos-riscv/buildkit/solver/pb"
 )
 
 func dispatchRunNetwork(c *instructions.RunCommand) (llb.RunOption, error) {

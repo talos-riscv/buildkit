@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/moby/buildkit/util/stack"
+	"github.com/talos-riscv/buildkit/util/stack"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

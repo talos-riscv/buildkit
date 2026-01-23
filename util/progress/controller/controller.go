@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/progress"
 	digest "github.com/opencontainers/go-digest"
 )
 

@@ -4,9 +4,9 @@ import (
 	"context"
 	"os"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/client/llb/llbbuild"
-	"github.com/moby/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/client/llb/llbbuild"
+	"github.com/talos-riscv/buildkit/util/system"
 )
 
 const url = "https://gist.githubusercontent.com/tonistiigi/03b4049f8cc3de059bd2a1a1d8643714/raw/b5960995d570d8c6d94db527e805edc6d5854268/buildprs.go"
@@ -16,7 +16,7 @@ func main() {
 		Run(llb.Shlex("apk add --no-cache curl")).
 		Run(llb.Shlexf("curl -o /buildprs.go \"%s\"", url))
 
-	buildkitRepo := "github.com/moby/buildkit"
+	buildkitRepo := "github.com/talos-riscv/buildkit"
 
 	build = build.Run(llb.Shlex("sh -c \"go run /buildprs.go > /out/buildkit.llb.definition\""))
 	build.AddMount("/go/src/"+buildkitRepo, llb.Git(buildkitRepo, "master"))

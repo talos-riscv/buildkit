@@ -614,7 +614,7 @@ func TestProcessWithMatchesPlatform(t *testing.T) {
 	shlex := NewLex('\\')
 
 	const (
-		// corresponds to the filename convention used in https://github.com/moby/buildkit/releases
+		// corresponds to the filename convention used in https://github.com/talos-riscv/buildkit/releases
 		release = "something-${VERSION}.${TARGETOS}-${TARGETARCH}${TARGETVARIANT:+-${TARGETVARIANT}}.tar.gz"
 		version = "v1.2.3"
 	)

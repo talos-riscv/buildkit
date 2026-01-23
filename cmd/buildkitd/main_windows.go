@@ -8,8 +8,8 @@ import (
 	"strings"
 
 	"github.com/Microsoft/go-winio"
-	_ "github.com/moby/buildkit/solver/llbsolver/ops"
-	_ "github.com/moby/buildkit/util/system/getuserinfo"
+	_ "github.com/talos-riscv/buildkit/solver/llbsolver/ops"
+	_ "github.com/talos-riscv/buildkit/util/system/getuserinfo"
 	"github.com/pkg/errors"
 )
 

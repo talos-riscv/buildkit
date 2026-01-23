@@ -87,7 +87,7 @@ COPY --from=exit-mips64 /src/exit mips64
 COPY --from=exit-loong64 / /
 
 FROM golang:${GO_VERSION}-alpine${ALPINE_VERSION} AS generate
-WORKDIR /go/src/github.com/moby/buildkit
+WORKDIR /go/src/github.com/talos-riscv/buildkit
 ARG BUILD_LOONG64
 RUN --mount=type=bind,target=.,rw \
     --mount=from=exits,target=./bin/archutil,rw <<EOT

@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/moby/sys/user"
 	"github.com/pkg/errors"
 )

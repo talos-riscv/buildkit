@@ -15,10 +15,10 @@ import (
 	"github.com/containerd/containerd/v2/plugins/snapshots/overlay/overlayutils"
 	"github.com/containerd/continuity/fs"
 	"github.com/containerd/continuity/sysx"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/overlay"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/leaseutil"
+	"github.com/talos-riscv/buildkit/util/overlay"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"
 )
@@ -404,7 +404,7 @@ func (a *applier) applyCopy(ctx context.Context, ca *changeApply) error {
 				return errors.Wrapf(err, "failed to get xattr %s of src path %s", xattr, ca.srcPath)
 			}
 			if err := sysx.LSetxattr(ca.dstPath, xattr, xattrVal, 0); err != nil {
-				// This can often fail, so just log it: https://github.com/moby/buildkit/issues/1189
+				// This can often fail, so just log it: https://github.com/talos-riscv/buildkit/issues/1189
 				bklog.G(ctx).Debugf("failed to set xattr %s of path %s during apply", xattr, ca.dstPath)
 			}
 		}

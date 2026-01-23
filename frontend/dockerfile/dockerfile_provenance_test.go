@@ -23,19 +23,19 @@ import (
 	"github.com/containerd/platforms"
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
 	provenanceCommon "github.com/in-toto/in-toto-golang/in_toto/slsa_provenance/common"
-	controlapi "github.com/moby/buildkit/api/services/control"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/frontend/dockerui"
-	gateway "github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/identity"
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/testutil"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/util/testutil/workers"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/frontend/dockerui"
+	gateway "github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/identity"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/contentutil"
+	"github.com/talos-riscv/buildkit/util/testutil"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/workers"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
@@ -197,7 +197,7 @@ RUN echo ok> /foo
 					require.NoError(t, json.Unmarshal(att.LayersRaw[0], &stmt))
 					pred := stmt.Predicate
 
-					require.Equal(t, "https://github.com/moby/buildkit/blob/master/docs/attestations/slsa-definitions.md", pred.BuildDefinition.BuildType)
+					require.Equal(t, "https://github.com/talos-riscv/buildkit/blob/master/docs/attestations/slsa-definitions.md", pred.BuildDefinition.BuildType)
 					require.Equal(t, "", pred.RunDetails.Builder.ID)
 
 					require.Equal(t, "", pred.BuildDefinition.ExternalParameters.ConfigSource.URI)
@@ -1347,7 +1347,7 @@ ENV FOO=bar
 	}
 }
 
-// https://github.com/moby/buildkit/issues/3562
+// https://github.com/talos-riscv/buildkit/issues/3562
 func testDuplicatePlatformProvenance(t *testing.T, sb integration.Sandbox) {
 	integration.SkipOnPlatform(t, "windows")
 	workers.CheckFeatureCompat(t, sb, workers.FeatureProvenance)
@@ -1383,7 +1383,7 @@ FROM base-$TARGETOS
 	require.NoError(t, err)
 }
 
-// https://github.com/moby/buildkit/issues/3928
+// https://github.com/talos-riscv/buildkit/issues/3928
 func testDockerIgnoreMissingProvenance(t *testing.T, sb integration.Sandbox) {
 	workers.CheckFeatureCompat(t, sb, workers.FeatureProvenance)
 	c, err := client.New(sb.Context(), sb.Address())

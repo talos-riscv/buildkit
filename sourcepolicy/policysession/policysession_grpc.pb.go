@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.11.4
-// source: github.com/moby/buildkit/sourcepolicy/policysession/policysession.proto
+// source: github.com/talos-riscv/buildkit/sourcepolicy/policysession/policysession.proto
 
 package policysession
 
@@ -115,5 +115,5 @@ var PolicyVerifier_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "github.com/moby/buildkit/sourcepolicy/policysession/policysession.proto",
+	Metadata: "github.com/talos-riscv/buildkit/sourcepolicy/policysession/policysession.proto",
 }

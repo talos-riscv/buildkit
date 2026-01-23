@@ -2,7 +2,7 @@
 Description=BuildKit
 Requires=buildkit.socket
 After=buildkit.socket
-Documentation=https://github.com/moby/buildkit
+Documentation=https://github.com/talos-riscv/buildkit
 
 [Service]
 Type=notify

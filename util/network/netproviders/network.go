@@ -4,9 +4,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/network"
-	"github.com/moby/buildkit/util/network/cniprovider"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/network"
+	"github.com/talos-riscv/buildkit/util/network/cniprovider"
 	"github.com/pkg/errors"
 )
 

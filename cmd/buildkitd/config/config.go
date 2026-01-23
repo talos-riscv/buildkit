@@ -1,8 +1,8 @@
 package config
 
 import (
-	"github.com/moby/buildkit/cache/remotecache/gha/ghatypes"
-	resolverconfig "github.com/moby/buildkit/util/resolver/config"
+	"github.com/talos-riscv/buildkit/cache/remotecache/gha/ghatypes"
+	resolverconfig "github.com/talos-riscv/buildkit/util/resolver/config"
 )
 
 // Config provides containerd configuration data for the server

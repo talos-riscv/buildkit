@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/session"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"

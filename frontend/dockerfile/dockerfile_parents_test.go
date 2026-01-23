@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/containerd/continuity/fs/fstest"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/frontend/dockerui"
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/frontend/dockerui"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 	"github.com/tonistiigi/fsutil"
 )

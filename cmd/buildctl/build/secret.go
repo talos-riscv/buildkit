@@ -3,8 +3,8 @@ package build
 import (
 	"strings"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/secrets/secretsprovider"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/session/secrets/secretsprovider"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/go-csvvalue"
 )

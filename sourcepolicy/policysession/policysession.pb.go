@@ -2,14 +2,14 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/sourcepolicy/policysession/policysession.proto
+// source: github.com/talos-riscv/buildkit/sourcepolicy/policysession/policysession.proto
 
 package policysession
 
 import (
-	pb1 "github.com/moby/buildkit/frontend/gateway/pb"
-	pb "github.com/moby/buildkit/solver/pb"
-	pb2 "github.com/moby/buildkit/sourcepolicy/pb"
+	pb1 "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	pb "github.com/talos-riscv/buildkit/solver/pb"
+	pb2 "github.com/talos-riscv/buildkit/sourcepolicy/pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -274,7 +274,7 @@ var File_github_com_moby_buildkit_sourcepolicy_policysession_policysession_proto
 
 const file_github_com_moby_buildkit_sourcepolicy_policysession_policysession_proto_rawDesc = "" +
 	"\n" +
-	"Ggithub.com/moby/buildkit/sourcepolicy/policysession/policysession.proto\x12+moby.buildkit.v1.sourcepolicy.policysession\x1a:github.com/moby/buildkit/frontend/gateway/pb/gateway.proto\x1a,github.com/moby/buildkit/solver/pb/ops.proto\x1a5github.com/moby/buildkit/sourcepolicy/pb/policy.proto\"\xa4\x02\n" +
+	"Ggithub.com/talos-riscv/buildkit/sourcepolicy/policysession/policysession.proto\x12+moby.buildkit.v1.sourcepolicy.policysession\x1a:github.com/talos-riscv/buildkit/frontend/gateway/pb/gateway.proto\x1a,github.com/talos-riscv/buildkit/solver/pb/ops.proto\x1a5github.com/talos-riscv/buildkit/sourcepolicy/pb/policy.proto\"\xa4\x02\n" +
 	"\x12CheckPolicyRequest\x12(\n" +
 	"\bPlatform\x18\x01 \x01(\v2\f.pb.PlatformR\bPlatform\x12L\n" +
 	"\x06Source\x18\x02 \x01(\v24.moby.buildkit.v1.frontend.ResolveSourceMetaResponseR\x06Source\x12]\n" +
@@ -293,7 +293,7 @@ const file_github_com_moby_buildkit_sourcepolicy_policysession_policysession_pro
 	"\vDenyMessage\x12\x18\n" +
 	"\amessage\x18\x01 \x01(\tR\amessage2\xa3\x01\n" +
 	"\x0ePolicyVerifier\x12\x90\x01\n" +
-	"\vCheckPolicy\x12?.moby.buildkit.v1.sourcepolicy.policysession.CheckPolicyRequest\x1a@.moby.buildkit.v1.sourcepolicy.policysession.CheckPolicyResponseB5Z3github.com/moby/buildkit/sourcepolicy/policysessionb\x06proto3"
+	"\vCheckPolicy\x12?.moby.buildkit.v1.sourcepolicy.policysession.CheckPolicyRequest\x1a@.moby.buildkit.v1.sourcepolicy.policysession.CheckPolicyResponseB5Z3github.com/talos-riscv/buildkit/sourcepolicy/policysessionb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_sourcepolicy_policysession_policysession_proto_rawDescOnce sync.Once

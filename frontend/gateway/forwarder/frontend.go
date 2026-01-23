@@ -3,12 +3,12 @@ package forwarder
 import (
 	"context"
 
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/frontend"
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/worker"
+	"github.com/talos-riscv/buildkit/executor"
+	"github.com/talos-riscv/buildkit/frontend"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/worker"
 )
 
 func NewGatewayForwarder(w worker.Infos, f client.BuildFunc) frontend.Frontend {

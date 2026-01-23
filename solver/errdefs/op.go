@@ -1,6 +1,6 @@
 package errdefs
 
-import "github.com/moby/buildkit/solver/pb"
+import "github.com/talos-riscv/buildkit/solver/pb"
 
 type OpError struct {
 	error

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/moby/buildkit/solver/errdefs"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/solver/errdefs"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

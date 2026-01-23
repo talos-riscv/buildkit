@@ -11,15 +11,15 @@ import (
 	"github.com/containerd/containerd/v2/core/content"
 	"github.com/containerd/containerd/v2/pkg/reference"
 	cerrdefs "github.com/containerd/errdefs"
-	"github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/progress/logs"
-	"github.com/moby/buildkit/util/pull/pullprogress"
+	"github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/util/contentutil"
+	"github.com/talos-riscv/buildkit/util/leaseutil"
+	"github.com/talos-riscv/buildkit/util/progress/logs"
+	"github.com/talos-riscv/buildkit/util/pull/pullprogress"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
@@ -170,7 +170,7 @@ func (sr *immutableRef) getRemote(ctx context.Context, createIfNeeded bool, refC
 		// from before lease based storage. If so, we should detect
 		// the media type from blob data.
 		//
-		// Discussion: https://github.com/moby/buildkit/pull/1277#discussion_r352795429
+		// Discussion: https://github.com/talos-riscv/buildkit/pull/1277#discussion_r352795429
 		if desc.MediaType == "" {
 			desc.MediaType, err = compression.DetectLayerMediaType(ctx, sr.cm.ContentStore, desc.Digest, false)
 			if err != nil {

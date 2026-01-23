@@ -10,9 +10,9 @@ import (
 	"text/tabwriter"
 
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/client"
-	bccommon "github.com/moby/buildkit/cmd/buildctl/common"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/client"
+	bccommon "github.com/talos-riscv/buildkit/cmd/buildctl/common"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/tonistiigi/units"
 	"github.com/urfave/cli"

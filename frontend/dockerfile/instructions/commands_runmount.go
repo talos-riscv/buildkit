@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/docker/go-units"
-	"github.com/moby/buildkit/util/suggest"
+	"github.com/talos-riscv/buildkit/util/suggest"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/go-csvvalue"
 )

@@ -20,19 +20,19 @@ import (
 	"github.com/containerd/containerd/v2/pkg/rootfs"
 	cerrdefs "github.com/containerd/errdefs"
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/cache"
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/exporter"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/errutil"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/progress"
-	"github.com/moby/buildkit/util/push"
+	"github.com/talos-riscv/buildkit/cache"
+	cacheconfig "github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/exporter"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/util/contentutil"
+	"github.com/talos-riscv/buildkit/util/errutil"
+	"github.com/talos-riscv/buildkit/util/leaseutil"
+	"github.com/talos-riscv/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/util/push"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/opencontainers/image-spec/identity"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
@@ -314,7 +314,7 @@ func (e *imageExporterInstance) Export(ctx context.Context, src *exporter.Source
 						// e.unpackImage cannot be used because src ref does not point to the rewritten image
 						// /
 						// TODO: change e.unpackImage so that it takes Result[Remote] as parameter.
-						// https://github.com/moby/buildkit/pull/4057#discussion_r1324106088
+						// https://github.com/talos-riscv/buildkit/pull/4057#discussion_r1324106088
 						return nil, nil, errors.New("exporter option \"rewrite-timestamp\" conflicts with \"unpack\"")
 					}
 					if err := e.unpackImage(ctx, img, src, session.NewGroup(buildInfo.SessionID)); err != nil {

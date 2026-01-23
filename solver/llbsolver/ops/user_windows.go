@@ -3,10 +3,10 @@ package ops
 import (
 	"context"
 
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/windows"
-	"github.com/moby/buildkit/worker"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/windows"
+	"github.com/talos-riscv/buildkit/worker"
 	"github.com/pkg/errors"
 	copy "github.com/tonistiigi/fsutil/copy"
 )

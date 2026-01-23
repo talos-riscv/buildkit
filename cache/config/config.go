@@ -1,6 +1,6 @@
 package config
 
-import "github.com/moby/buildkit/util/compression"
+import "github.com/talos-riscv/buildkit/util/compression"
 
 type RefConfig struct {
 	Compression            compression.Config

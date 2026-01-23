@@ -61,7 +61,7 @@ This can be accessed using delve or any GUI client that uses delve (such as JetB
 $ dlv connect localhost:5000
 ```
 
-More detailed documentation on remote debugging is [here](https://github.com/moby/buildkit/blob/master/docs/dev/remote-debugging.md#connecting-to-the-port-command-line).
+More detailed documentation on remote debugging is [here](https://github.com/talos-riscv/buildkit/blob/master/docs/dev/remote-debugging.md#connecting-to-the-port-command-line).
 
 ## OpenTelemetry
 

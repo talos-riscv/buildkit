@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 )
 
 // Handler is function called to handle incoming connection

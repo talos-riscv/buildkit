@@ -21,24 +21,24 @@ import (
 
 	"github.com/containerd/platforms"
 	"github.com/distribution/reference"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/client/llb/imagemetaresolver"
-	"github.com/moby/buildkit/client/llb/sourceresolver"
-	"github.com/moby/buildkit/frontend/dockerfile/dfgitutil"
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/linter"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
-	"github.com/moby/buildkit/frontend/dockerfile/shell"
-	"github.com/moby/buildkit/frontend/dockerui"
-	"github.com/moby/buildkit/frontend/subrequests/convertllb"
-	"github.com/moby/buildkit/frontend/subrequests/lint"
-	"github.com/moby/buildkit/frontend/subrequests/outline"
-	"github.com/moby/buildkit/frontend/subrequests/targets"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/apicaps"
-	"github.com/moby/buildkit/util/suggest"
-	"github.com/moby/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/client/llb/imagemetaresolver"
+	"github.com/talos-riscv/buildkit/client/llb/sourceresolver"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/dfgitutil"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/instructions"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/linter"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/parser"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/shell"
+	"github.com/talos-riscv/buildkit/frontend/dockerui"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/convertllb"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/lint"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/outline"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/targets"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/apicaps"
+	"github.com/talos-riscv/buildkit/util/suggest"
+	"github.com/talos-riscv/buildkit/util/system"
 	dockerspec "github.com/moby/docker-image-spec/specs-go/v1"
 	"github.com/moby/patternmatcher"
 	"github.com/moby/sys/signal"
@@ -1581,7 +1581,7 @@ func dispatchCopy(d *dispatchState, cfg copyConfig) error {
 			// https://docs.docker.com/engine/reference/builder/#add
 			//
 			// Note: mixing up remote archives and local archives in a single ADD instruction
-			// would result in undefined behavior: https://github.com/moby/buildkit/pull/387#discussion_r189494717
+			// would result in undefined behavior: https://github.com/talos-riscv/buildkit/pull/387#discussion_r189494717
 			u, err := url.Parse(src)
 			f := "__unnamed__"
 			if err == nil {

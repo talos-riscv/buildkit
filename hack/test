@@ -150,7 +150,7 @@ if [ "$TEST_INTEGRATION" == 1 ]; then
 fi
 
 if [ "$TEST_GATEWAY" == 1 ]; then
-  # Build-test "github.com/moby/buildkit/frontend/gateway/client", which isn't otherwise built by CI
+  # Build-test "github.com/talos-riscv/buildkit/frontend/gateway/client", which isn't otherwise built by CI
   # It really only needs buildkit-base. We have integration-tests in $TEST_IMAGE_NAME, which is a direct child of buildkit-base.
   cid=$(dockerCmd create --rm --volumes-from=$cacheVolume --entrypoint="" $TEST_IMAGE_NAME go build -v ./frontend/gateway/client)
   dockerCmd start -a $cid

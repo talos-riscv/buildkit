@@ -28,7 +28,7 @@ func createTar(t testing.TB, name string, b []byte) []byte {
 	return buf.Bytes()
 }
 
-// https://github.com/moby/buildkit/pull/4057#issuecomment-1693484361
+// https://github.com/talos-riscv/buildkit/pull/4057#issuecomment-1693484361
 func TestPaddingForReader(t *testing.T) {
 	inB := createTar(t, "foo", []byte("hi"))
 	assert.Equal(t, 2048, len(inB))

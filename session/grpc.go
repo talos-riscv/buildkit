@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/v2/defaults"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/grpcerrors"
-	"github.com/moby/buildkit/util/tracing"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/tracing"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc"

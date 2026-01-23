@@ -3,11 +3,11 @@ package file
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/llbsolver/ops/fileoptypes"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/ops/fileoptypes"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/pkg/errors"
 )
 

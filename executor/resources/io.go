@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
 	"github.com/pkg/errors"
 )
 

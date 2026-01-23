@@ -1,7 +1,7 @@
 package source
 
 import (
-	"github.com/moby/buildkit/solver/llbsolver/provenance"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/provenance"
 	"github.com/pkg/errors"
 )
 

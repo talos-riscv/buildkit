@@ -5,7 +5,7 @@ package cniprovider
 import (
 	"context"
 
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
 )
 
 func (ns *cniNS) sample() (*resourcestypes.NetworkSample, error) {

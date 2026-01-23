@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"

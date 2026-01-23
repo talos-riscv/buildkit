@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 )
 
 func initOCIWorker() {

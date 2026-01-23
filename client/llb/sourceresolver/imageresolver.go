@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/distribution/reference"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/imageutil"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/imageutil"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

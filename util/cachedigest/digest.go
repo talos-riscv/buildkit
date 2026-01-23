@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	digest "github.com/opencontainers/go-digest"
 )
 

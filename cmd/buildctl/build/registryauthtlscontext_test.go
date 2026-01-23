@@ -3,7 +3,7 @@ package build
 import (
 	"testing"
 
-	"github.com/moby/buildkit/session/auth/authprovider"
+	"github.com/talos-riscv/buildkit/session/auth/authprovider"
 	"github.com/stretchr/testify/require"
 )
 

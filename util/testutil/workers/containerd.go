@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 	"github.com/pkg/errors"
 )
 
@@ -211,7 +211,7 @@ disabled_plugins = ["io.containerd.grpc.v1.cri"]
 		"--containerd-worker-gc=false",
 		"--containerd-worker=true",
 		"--containerd-worker-addr", address,
-		"--containerd-worker-labels=org.mobyproject.buildkit.worker.sandbox=true", // Include use of --containerd-worker-labels to trigger https://github.com/moby/buildkit/pull/603
+		"--containerd-worker-labels=org.mobyproject.buildkit.worker.sandbox=true", // Include use of --containerd-worker-labels to trigger https://github.com/talos-riscv/buildkit/pull/603
 	}
 	buildkitdArgs = applyBuildkitdPlatformFlags(buildkitdArgs)
 	buildkitdArgs = append(buildkitdArgs, snBuildkitdArgs...)

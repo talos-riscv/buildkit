@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/containerd/console"
-	"github.com/moby/buildkit/client"
+	"github.com/talos-riscv/buildkit/client"
 	"github.com/morikuni/aec"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"

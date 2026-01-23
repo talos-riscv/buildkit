@@ -3,10 +3,10 @@ package dockerfile2llb
 import (
 	"path"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
-	"github.com/moby/buildkit/frontend/dockerfile/shell"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/instructions"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/parser"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/shell"
 	"github.com/pkg/errors"
 )
 

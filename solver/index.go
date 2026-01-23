@@ -3,7 +3,7 @@ package solver
 import (
 	"sync"
 
-	"github.com/moby/buildkit/identity"
+	"github.com/talos-riscv/buildkit/identity"
 )
 
 // edgeIndex is a synchronous map for detecting edge collisions.

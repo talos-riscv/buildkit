@@ -2,12 +2,12 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/solver/errdefs/errdefs.proto
+// source: github.com/talos-riscv/buildkit/solver/errdefs/errdefs.proto
 
 package errdefs
 
 import (
-	pb "github.com/moby/buildkit/solver/pb"
+	pb "github.com/talos-riscv/buildkit/solver/pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -466,7 +466,7 @@ var File_github_com_moby_buildkit_solver_errdefs_errdefs_proto protoreflect.File
 
 const file_github_com_moby_buildkit_solver_errdefs_errdefs_proto_rawDesc = "" +
 	"\n" +
-	"5github.com/moby/buildkit/solver/errdefs/errdefs.proto\x12\aerrdefs\x1a,github.com/moby/buildkit/solver/pb/ops.proto\" \n" +
+	"5github.com/talos-riscv/buildkit/solver/errdefs/errdefs.proto\x12\aerrdefs\x1a,github.com/talos-riscv/buildkit/solver/pb/ops.proto\" \n" +
 	"\x06Vertex\x12\x16\n" +
 	"\x06digest\x18\x01 \x01(\tR\x06digest\"O\n" +
 	"\x06Source\x12\"\n" +
@@ -495,7 +495,7 @@ const file_github_com_moby_buildkit_solver_errdefs_errdefs_proto_rawDesc = "" +
 	"FileAction\x12\x14\n" +
 	"\x05index\x18\x01 \x01(\x03R\x05index\"$\n" +
 	"\fContentCache\x12\x14\n" +
-	"\x05index\x18\x01 \x01(\x03R\x05indexB)Z'github.com/moby/buildkit/solver/errdefsb\x06proto3"
+	"\x05index\x18\x01 \x01(\x03R\x05indexB)Z'github.com/talos-riscv/buildkit/solver/errdefsb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_solver_errdefs_errdefs_proto_rawDescOnce sync.Once

@@ -225,7 +225,7 @@ func CheckSystemDriveAndRemoveDriveLetter(path string, inputOS string, keepSlash
 
 // An adaptation of filepath.Clean to allow an option to
 // retain the trailing slash, on either of the platforms.
-// See https://github.com/moby/buildkit/issues/5249
+// See https://github.com/talos-riscv/buildkit/issues/5249
 func cleanPath(origPath, inputOS string, keepSlash bool) string {
 	// so as to handle cases like \\a\\b\\..\\c\\
 	// on Linux, when inputOS is Windows

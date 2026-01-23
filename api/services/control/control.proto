@@ -2,12 +2,12 @@ syntax = "proto3";
 
 package moby.buildkit.v1;
 
-option go_package = "github.com/moby/buildkit/api/services/control;moby_buildkit_v1";
+option go_package = "github.com/talos-riscv/buildkit/api/services/control;moby_buildkit_v1";
 
 // import "github.com/containerd/containerd/api/types/descriptor.proto";
-import "github.com/moby/buildkit/api/types/worker.proto";
-import "github.com/moby/buildkit/solver/pb/ops.proto";
-import "github.com/moby/buildkit/sourcepolicy/pb/policy.proto";
+import "github.com/talos-riscv/buildkit/api/types/worker.proto";
+import "github.com/talos-riscv/buildkit/solver/pb/ops.proto";
+import "github.com/talos-riscv/buildkit/sourcepolicy/pb/policy.proto";
 import "google/protobuf/timestamp.proto";
 import "google/rpc/status.proto";
 

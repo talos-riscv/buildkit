@@ -8,9 +8,9 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/moby/buildkit/frontend/gateway/client"
-	gwpb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/solver/errdefs"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	gwpb "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/solver/errdefs"
 	"github.com/pkg/errors"
 )
 

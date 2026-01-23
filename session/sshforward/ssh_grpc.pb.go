@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.11.4
-// source: github.com/moby/buildkit/session/sshforward/ssh.proto
+// source: github.com/talos-riscv/buildkit/session/sshforward/ssh.proto
 
 package sshforward
 
@@ -148,5 +148,5 @@ var SSH_ServiceDesc = grpc.ServiceDesc{
 			ClientStreams: true,
 		},
 	},
-	Metadata: "github.com/moby/buildkit/session/sshforward/ssh.proto",
+	Metadata: "github.com/talos-riscv/buildkit/session/sshforward/ssh.proto",
 }

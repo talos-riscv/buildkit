@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/solver/internal/pipe"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/solver/internal/pipe"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

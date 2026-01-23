@@ -43,36 +43,36 @@ import (
 	"github.com/containerd/platforms"
 	"github.com/distribution/reference"
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
-	controlapi "github.com/moby/buildkit/api/services/control"
-	cacheimporttypes "github.com/moby/buildkit/cache/remotecache/v1/types"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/client/llb/sourceresolver"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	gateway "github.com/moby/buildkit/frontend/gateway/client"
-	gatewaypb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/exporter"
-	"github.com/moby/buildkit/session/exporter/exporterprovider"
-	"github.com/moby/buildkit/session/filesync"
-	"github.com/moby/buildkit/session/secrets/secretsprovider"
-	"github.com/moby/buildkit/session/sshforward/sshprovider"
-	"github.com/moby/buildkit/solver/errdefs"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/solver/result"
-	"github.com/moby/buildkit/sourcepolicy"
-	sourcepolicypb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/attestation"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/entitlements"
-	"github.com/moby/buildkit/util/gitutil/gitobject"
-	"github.com/moby/buildkit/util/testutil"
-	containerdutil "github.com/moby/buildkit/util/testutil/containerd"
-	"github.com/moby/buildkit/util/testutil/echoserver"
-	"github.com/moby/buildkit/util/testutil/helpers"
-	"github.com/moby/buildkit/util/testutil/httpserver"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/util/testutil/workers"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
+	cacheimporttypes "github.com/talos-riscv/buildkit/cache/remotecache/v1/types"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/client/llb/sourceresolver"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	gateway "github.com/talos-riscv/buildkit/frontend/gateway/client"
+	gatewaypb "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/session/exporter"
+	"github.com/talos-riscv/buildkit/session/exporter/exporterprovider"
+	"github.com/talos-riscv/buildkit/session/filesync"
+	"github.com/talos-riscv/buildkit/session/secrets/secretsprovider"
+	"github.com/talos-riscv/buildkit/session/sshforward/sshprovider"
+	"github.com/talos-riscv/buildkit/solver/errdefs"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/sourcepolicy"
+	sourcepolicypb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
+	"github.com/talos-riscv/buildkit/util/attestation"
+	"github.com/talos-riscv/buildkit/util/contentutil"
+	"github.com/talos-riscv/buildkit/util/entitlements"
+	"github.com/talos-riscv/buildkit/util/gitutil/gitobject"
+	"github.com/talos-riscv/buildkit/util/testutil"
+	containerdutil "github.com/talos-riscv/buildkit/util/testutil/containerd"
+	"github.com/talos-riscv/buildkit/util/testutil/echoserver"
+	"github.com/talos-riscv/buildkit/util/testutil/helpers"
+	"github.com/talos-riscv/buildkit/util/testutil/httpserver"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/workers"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
@@ -1964,7 +1964,7 @@ func testRelativeWorkDir(t *testing.T, sb integration.Sandbox) {
 
 // TODO: remove this test once `client.SolveOpt.LocalDirs`, now marked as deprecated, is removed.
 // For more context on this test, please check:
-// https://github.com/moby/buildkit/pull/4583#pullrequestreview-1847043452
+// https://github.com/talos-riscv/buildkit/pull/4583#pullrequestreview-1847043452
 func testSolverOptLocalDirsStillWorks(t *testing.T, sb integration.Sandbox) {
 	c, err := New(sb.Context(), sb.Address())
 	require.NoError(t, err)
@@ -7003,7 +7003,7 @@ func testMultipleRecordsWithSameLayersCacheImportExport(t *testing.T, sb integra
 
 	// Ensure that even though layerA and layerB were both loaded as possible results
 	// and only was used, all the cache refs are released
-	// More context: https://github.com/moby/buildkit/pull/3815
+	// More context: https://github.com/talos-riscv/buildkit/pull/3815
 	ensurePruneAll(t, c, sb)
 }
 
@@ -11350,7 +11350,7 @@ func testMountStubsDirectory(t *testing.T, sb integration.Sandbox) {
 	}, keys)
 }
 
-// https://github.com/moby/buildkit/issues/3148
+// https://github.com/talos-riscv/buildkit/issues/3148
 func testMountStubsTimestamp(t *testing.T, sb integration.Sandbox) {
 	integration.SkipOnPlatform(t, "windows")
 	c, err := New(sb.Context(), sb.Address())

@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 )
 
 func withOTELSocketPath(socketPath string) integration.ConfigUpdater {

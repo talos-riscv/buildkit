@@ -9,8 +9,8 @@ import (
 	"github.com/containerd/containerd/v2/core/content"
 	"github.com/containerd/containerd/v2/core/images"
 	cerrdefs "github.com/containerd/errdefs"
-	"github.com/moby/buildkit/util/resolver/limited"
-	"github.com/moby/buildkit/util/resolver/retryhandler"
+	"github.com/talos-riscv/buildkit/util/resolver/limited"
+	"github.com/talos-riscv/buildkit/util/resolver/retryhandler"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

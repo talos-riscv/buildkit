@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/db"
-	"github.com/moby/buildkit/util/db/boltutil"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/db"
+	"github.com/talos-riscv/buildkit/util/db/boltutil"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 	bolt "go.etcd.io/bbolt"

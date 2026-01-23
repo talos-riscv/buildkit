@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"

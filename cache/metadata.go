@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/cache/metadata"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 	bolt "go.etcd.io/bbolt"
@@ -468,7 +468,7 @@ func (md *cacheMetadata) ClearValueAndIndex(key string, index string) error {
 			return err
 		}
 		if currentVal != "" {
-			// force clearing index, see #1836 https://github.com/moby/buildkit/pull/1836
+			// force clearing index, see #1836 https://github.com/talos-riscv/buildkit/pull/1836
 			return md.si.ClearIndex(b.Tx(), index+currentVal)
 		}
 		return nil

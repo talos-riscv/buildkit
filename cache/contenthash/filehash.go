@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/moby/buildkit/util/cachedigest"
+	"github.com/talos-riscv/buildkit/util/cachedigest"
 	"github.com/pkg/errors"
 	fstypes "github.com/tonistiigi/fsutil/types"
 )

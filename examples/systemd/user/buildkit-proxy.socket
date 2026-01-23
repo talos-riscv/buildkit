@@ -1,6 +1,6 @@
 [Unit]
 Description=BuildKit
-Documentation=https://github.com/moby/buildkit
+Documentation=https://github.com/talos-riscv/buildkit
 
 [Socket]
 ListenStream=%t/buildkit/buildkitd.sock

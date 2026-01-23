@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/cmd/buildkitd/config"
-	"github.com/moby/buildkit/util/appdefaults"
-	"github.com/moby/buildkit/util/disk"
+	"github.com/talos-riscv/buildkit/cmd/buildkitd/config"
+	"github.com/talos-riscv/buildkit/util/appdefaults"
+	"github.com/talos-riscv/buildkit/util/disk"
 	"github.com/pkg/errors"
 )
 

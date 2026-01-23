@@ -2,11 +2,11 @@ syntax = "proto3";
 
 package moby.buildkit.v1.sourcepolicy.policysession;
 
-option go_package = "github.com/moby/buildkit/sourcepolicy/policysession";
+option go_package = "github.com/talos-riscv/buildkit/sourcepolicy/policysession";
 
-import "github.com/moby/buildkit/frontend/gateway/pb/gateway.proto";
-import "github.com/moby/buildkit/solver/pb/ops.proto";
-import "github.com/moby/buildkit/sourcepolicy/pb/policy.proto";
+import "github.com/talos-riscv/buildkit/frontend/gateway/pb/gateway.proto";
+import "github.com/talos-riscv/buildkit/solver/pb/ops.proto";
+import "github.com/talos-riscv/buildkit/sourcepolicy/pb/policy.proto";
 
 service PolicyVerifier {
 	rpc CheckPolicy(CheckPolicyRequest) returns (CheckPolicyResponse);

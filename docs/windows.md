@@ -16,7 +16,7 @@
 
 As from `v0.13`, Buildkit now has experimental support for Windows containers (WCOW). Both `buildctl.exe` and `buildkitd.exe` binaries are being released for testing purposes.
 
-We will apprecate any feedback by [opening an issue here](https://github.com/moby/buildkit/issues/new), as we stabilize the product, especially `buildkitd.exe`.
+We will apprecate any feedback by [opening an issue here](https://github.com/talos-riscv/buildkit/issues/new), as we stabilize the product, especially `buildkitd.exe`.
 
 ## Quick start guide
 
@@ -48,7 +48,7 @@ You will be asked to restart your machine, do so, and then continue with the res
     $url = "https://api.github.com/repos/moby/buildkit/releases/latest"
     $version = (Invoke-RestMethod -Uri $url -UseBasicParsing).tag_name
     $arch = "amd64" # arm64 binary available too
-    curl.exe -fSLO https://github.com/moby/buildkit/releases/download/$version/buildkit-$version.windows-$arch.tar.gz
+    curl.exe -fSLO https://github.com/talos-riscv/buildkit/releases/download/$version/buildkit-$version.windows-$arch.tar.gz
     # there could be another `.\bin` directory from containerd instructions
     # you can move those
     mv bin bin2
@@ -128,7 +128,7 @@ You will be asked to restart your machine, do so, and then continue with the res
 1. In another terminal (still elevated), try out a `buildctl` command to test that the setup is good:
     ```
     PS> buildctl debug info
-    BuildKit: github.com/moby/buildkit v0.0.0+unknown
+    BuildKit: github.com/talos-riscv/buildkit v0.0.0+unknown
     ```
     > **NOTE:** the version is `v0.0.0+unknown` since this is still a _release candidate (RC)_.
 
@@ -159,7 +159,7 @@ Now that everything is setup, let's build a [simple _hello world_ image](https:/
     ```
 
     > **NOTE:** Writing to a file directly under `C:\` needs extra permissions that are `ContainerAdministrator`.
-    > The `ContainerUser` is default user for `nanoserver` image. See more details at [#4731](https://github.com/moby/buildkit/issues/4731).
+    > The `ContainerUser` is default user for `nanoserver` image. See more details at [#4731](https://github.com/talos-riscv/buildkit/issues/4731).
 
 1. Build and push to your registry (or set to `push=false`). For Docker Hub, make sure you've done `docker login`. See more details on registry configuration [here](../README.md#imageregistry)
 

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/moby/buildkit/client"
+	"github.com/talos-riscv/buildkit/client"
 	digest "github.com/opencontainers/go-digest"
 )
 

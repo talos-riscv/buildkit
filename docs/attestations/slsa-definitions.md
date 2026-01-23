@@ -19,12 +19,12 @@ included when you generate attestations `mode=min` and `mode=max`.
 * Ref: https://slsa.dev/spec/v1.1/provenance#buildType
 * Included with `mode=min` and `mode=max`.
 
-The `buildDefinition.buildType` field is set to `https://github.com/moby/buildkit/blob/master/docs/attestations/slsa-definitions.md`
+The `buildDefinition.buildType` field is set to `https://github.com/talos-riscv/buildkit/blob/master/docs/attestations/slsa-definitions.md`
 and can be used to determine the structure of the provenance content.
 
 ```json
     "buildDefinition": {
-      "buildType": "https://github.com/moby/buildkit/blob/master/docs/attestations/slsa-definitions.md",
+      "buildType": "https://github.com/talos-riscv/buildkit/blob/master/docs/attestations/slsa-definitions.md",
       ...
     }
 ```
@@ -40,7 +40,7 @@ Describes the config that initialized the build.
     "buildDefinition": {
       "externalParameters": {
         "configSource": {
-          "uri": "https://github.com/moby/buildkit.git#refs/tags/v0.11.0",
+          "uri": "https://github.com/talos-riscv/buildkit.git#refs/tags/v0.11.0",
           "digest": {
             "sha1": "4b220de5058abfd01ff619c9d2ff6b09a049bea0"
           },
@@ -122,7 +122,7 @@ definition of the build steps is defined in the
 `buildDefinition.internalParameters.buildConfig.llbDefinition` field.
 
 Each LLB step is the JSON definition of the
-[LLB ProtoBuf API](https://github.com/moby/buildkit/blob/v0.10.0/solver/pb/ops.proto).
+[LLB ProtoBuf API](https://github.com/talos-riscv/buildkit/blob/v0.10.0/solver/pb/ops.proto).
 The dependencies for a vertex in the LLB graph can be found in the `inputs`
 field for every step.
 
@@ -214,7 +214,7 @@ determine if the artifact has been updated compared to when the build ran.
           }
         },
         {
-          "uri": "https://github.com/moby/buildkit.git#refs/tags/v0.11.0",
+          "uri": "https://github.com/talos-riscv/buildkit.git#refs/tags/v0.11.0",
           "digest": {
             "sha1": "4b220de5058abfd01ff619c9d2ff6b09a049bea0"
           }
@@ -464,7 +464,7 @@ Describes the config that initialized the build.
 ```json
     "invocation": {
       "configSource": {
-        "uri": "https://github.com/moby/buildkit.git#refs/tags/v0.11.0",
+        "uri": "https://github.com/talos-riscv/buildkit.git#refs/tags/v0.11.0",
         "digest": {
           "sha1": "4b220de5058abfd01ff619c9d2ff6b09a049bea0"
         },
@@ -578,7 +578,7 @@ determine if the artifact has been updated compared to when the build ran.
         }
       },
       {
-        "uri": "https://github.com/moby/buildkit.git#refs/tags/v0.11.0",
+        "uri": "https://github.com/talos-riscv/buildkit.git#refs/tags/v0.11.0",
         "digest": {
           "sha1": "4b220de5058abfd01ff619c9d2ff6b09a049bea0"
         }
@@ -598,7 +598,7 @@ BuildKit internally uses LLB definition to execute the build steps. The LLB
 definition of the build steps is defined in `buildConfig.llbDefinition` field.
 
 Each LLB step is the JSON definition of the
-[LLB ProtoBuf API](https://github.com/moby/buildkit/blob/v0.10.0/solver/pb/ops.proto).
+[LLB ProtoBuf API](https://github.com/talos-riscv/buildkit/blob/v0.10.0/solver/pb/ops.proto).
 The dependencies for a vertex in the LLB graph can be found in the `inputs`
 field for every step.
 

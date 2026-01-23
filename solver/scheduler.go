@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/moby/buildkit/errdefs"
-	"github.com/moby/buildkit/solver/internal/pipe"
-	"github.com/moby/buildkit/util/cond"
+	"github.com/talos-riscv/buildkit/errdefs"
+	"github.com/talos-riscv/buildkit/solver/internal/pipe"
+	"github.com/talos-riscv/buildkit/util/cond"
 	"github.com/pkg/errors"
 )
 

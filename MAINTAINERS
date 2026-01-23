@@ -112,7 +112,7 @@ surprised by a pull request removing them.
 
 		text = """
 The [DCO or `Sign your work`](
-https://github.com/moby/buildkit/blob/master/CONTRIBUTING.md#sign-your-work)
+https://github.com/talos-riscv/buildkit/blob/master/CONTRIBUTING.md#sign-your-work)
 requirement is not intended as a roadblock or speed bump.
 
 Some BuildKit contributors are not as familiar with `git`, or have

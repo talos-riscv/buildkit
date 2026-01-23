@@ -5,10 +5,10 @@ import (
 	"slices"
 
 	distreference "github.com/distribution/reference"
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
-	"github.com/moby/buildkit/solver/result"
-	"github.com/moby/buildkit/util/urlutil"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
+	"github.com/talos-riscv/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/util/urlutil"
 	digest "github.com/opencontainers/go-digest"
 )
 
@@ -116,7 +116,7 @@ func (c *Capture) AddImage(i provenancetypes.ImageSource) {
 			}
 			if v.Platform != nil && i.Platform != nil {
 				// NOTE: Deliberately excluding OSFeatures, as there's no extant (or rational) case where a source image is an index and contains images distinguished only by OSFeature
-				// See https://github.com/moby/buildkit/pull/4387#discussion_r1376234241 and https://github.com/opencontainers/image-spec/issues/1147
+				// See https://github.com/talos-riscv/buildkit/pull/4387#discussion_r1376234241 and https://github.com/opencontainers/image-spec/issues/1147
 				if v.Platform.Architecture == i.Platform.Architecture && v.Platform.OS == i.Platform.OS && v.Platform.OSVersion == i.Platform.OSVersion && v.Platform.Variant == i.Platform.Variant {
 					return
 				}

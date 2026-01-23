@@ -24,18 +24,18 @@ import (
 	"github.com/containerd/containerd/v2/plugins/content/local"
 	"github.com/containerd/containerd/v2/plugins/diff/walking"
 	"github.com/containerd/containerd/v2/plugins/snapshots/native"
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/snapshot"
-	containerdsnapshot "github.com/moby/buildkit/snapshot/containerd"
-	"github.com/moby/buildkit/util/gitutil"
-	"github.com/moby/buildkit/util/gitutil/gitobject"
-	"github.com/moby/buildkit/util/gitutil/gitsign"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/progress"
-	"github.com/moby/buildkit/util/progress/logs"
-	"github.com/moby/buildkit/util/winlayers"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/cache/metadata"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/snapshot"
+	containerdsnapshot "github.com/talos-riscv/buildkit/snapshot/containerd"
+	"github.com/talos-riscv/buildkit/util/gitutil"
+	"github.com/talos-riscv/buildkit/util/gitutil/gitobject"
+	"github.com/talos-riscv/buildkit/util/gitutil/gitsign"
+	"github.com/talos-riscv/buildkit/util/leaseutil"
+	"github.com/talos-riscv/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/util/progress/logs"
+	"github.com/talos-riscv/buildkit/util/winlayers"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 	bolt "go.etcd.io/bbolt"
@@ -165,7 +165,7 @@ func testRepeatedFetch(t *testing.T, keepGitDir bool, format string) {
 	require.Equal(t, "subcontents\n", string(dt))
 
 	// The key should not change regardless to the existence of Checksum
-	// https://github.com/moby/buildkit/pull/5975#discussion_r2092206059
+	// https://github.com/talos-riscv/buildkit/pull/5975#discussion_r2092206059
 	id.Checksum = pin3
 	g, err = gs.Resolve(ctx, id, nil, nil)
 	require.NoError(t, err)

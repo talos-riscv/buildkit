@@ -3,8 +3,8 @@ package secrets
 import (
 	"context"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc/codes"
 )

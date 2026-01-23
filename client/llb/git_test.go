@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/stretchr/testify/require"
 )
 

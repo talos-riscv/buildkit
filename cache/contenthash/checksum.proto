@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package contenthash;
 
-option go_package = "github.com/moby/buildkit/cache/contenthash";
+option go_package = "github.com/talos-riscv/buildkit/cache/contenthash";
 
 enum CacheRecordType {
 	FILE = 0;

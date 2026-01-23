@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 )
 

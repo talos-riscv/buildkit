@@ -16,7 +16,7 @@ import (
 	"time"
 
 	"github.com/google/shlex"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/pkg/errors"
 )
 

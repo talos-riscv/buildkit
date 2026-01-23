@@ -35,21 +35,21 @@ import (
 	cerrdefs "github.com/containerd/errdefs"
 	"github.com/containerd/stargz-snapshotter/estargz"
 	"github.com/klauspost/compress/zstd"
-	"github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	containerdsnapshot "github.com/moby/buildkit/snapshot/containerd"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/converter"
-	"github.com/moby/buildkit/util/disk"
-	"github.com/moby/buildkit/util/iohelper"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/overlay"
-	"github.com/moby/buildkit/util/winlayers"
+	"github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/cache/metadata"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	containerdsnapshot "github.com/talos-riscv/buildkit/snapshot/containerd"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/util/contentutil"
+	"github.com/talos-riscv/buildkit/util/converter"
+	"github.com/talos-riscv/buildkit/util/disk"
+	"github.com/talos-riscv/buildkit/util/iohelper"
+	"github.com/talos-riscv/buildkit/util/leaseutil"
+	"github.com/talos-riscv/buildkit/util/overlay"
+	"github.com/talos-riscv/buildkit/util/winlayers"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
@@ -344,7 +344,7 @@ func TestLazyGetByBlob(t *testing.T) {
 	t.Cleanup(cleanup)
 	cm := co.manager
 
-	// Test for #2226 https://github.com/moby/buildkit/issues/2226, create lazy blobs with the same diff ID but
+	// Test for #2226 https://github.com/talos-riscv/buildkit/issues/2226, create lazy blobs with the same diff ID but
 	// different digests (due to different compression) and make sure GetByBlob still works
 	_, desc, err := mapToBlob(map[string]string{"foo": "bar"}, true)
 	require.NoError(t, err)

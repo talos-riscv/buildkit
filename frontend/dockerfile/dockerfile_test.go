@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	cacheimporttypes "github.com/moby/buildkit/cache/remotecache/v1/types"
+	cacheimporttypes "github.com/talos-riscv/buildkit/cache/remotecache/v1/types"
 	"github.com/tonistiigi/fsutil"
 	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc/status"
@@ -38,27 +38,27 @@ import (
 	"github.com/containerd/continuity/fs/fstest"
 	"github.com/containerd/platforms"
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
-	controlapi "github.com/moby/buildkit/api/services/control"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/dockerfile/builder"
-	"github.com/moby/buildkit/frontend/dockerui"
-	gateway "github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/filesync"
-	"github.com/moby/buildkit/session/upload/uploadprovider"
-	"github.com/moby/buildkit/solver/errdefs"
-	"github.com/moby/buildkit/solver/pb"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/grpcerrors"
-	"github.com/moby/buildkit/util/stack"
-	"github.com/moby/buildkit/util/testutil"
-	"github.com/moby/buildkit/util/testutil/httpserver"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/util/testutil/workers"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/builder"
+	"github.com/talos-riscv/buildkit/frontend/dockerui"
+	gateway "github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/frontend/subrequests"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/session/filesync"
+	"github.com/talos-riscv/buildkit/session/upload/uploadprovider"
+	"github.com/talos-riscv/buildkit/solver/errdefs"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	spb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
+	"github.com/talos-riscv/buildkit/util/contentutil"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/stack"
+	"github.com/talos-riscv/buildkit/util/testutil"
+	"github.com/talos-riscv/buildkit/util/testutil/httpserver"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/workers"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
@@ -3367,7 +3367,7 @@ ADD --unpack=true %s /dest/
 	require.NoError(t, err)
 	require.Equal(t, expectedContent, dt)
 
-	// https://github.com/moby/buildkit/issues/386
+	// https://github.com/talos-riscv/buildkit/issues/386
 	dockerfile = fmt.Appendf(nil, `
 FROM %s
 ADD %s /newname.tar.gz
@@ -4736,7 +4736,7 @@ RUN for /f %i in ('type \test1\test2\bar\baz2') do (if %i NEQ hello (exit 1))
 WORKDIR ..
 COPY foo ./
 RUN for /f %i in ('type \test1\foo') do (if %i NEQ hello (exit 1))
-# COPY foo /test3/ # TODO -> https://github.com/moby/buildkit/issues/5249
+# COPY foo /test3/ # TODO -> https://github.com/talos-riscv/buildkit/issues/5249
 COPY foo /test3/foo
 RUN for /f %i in ('type \test3\foo') do (if %i == hello (exit 0) else (exit 1))
 WORKDIR /test4
@@ -9347,7 +9347,7 @@ func testReproSourceDateEpoch(t *testing.T, sb integration.Sandbox) {
 	integration.SkipOnPlatform(t, "windows", "COPY --link requires diffApply which is not supported on Windows")
 	workers.CheckFeatureCompat(t, sb, workers.FeatureOCIExporter, workers.FeatureSourceDateEpoch)
 	if sb.Snapshotter() == "native" {
-		t.Skip("the digest is not reproducible with the \"native\" snapshotter because hardlinks are processed in a different way: https://github.com/moby/buildkit/pull/3456#discussion_r1062650263")
+		t.Skip("the digest is not reproducible with the \"native\" snapshotter because hardlinks are processed in a different way: https://github.com/talos-riscv/buildkit/pull/3456#discussion_r1062650263")
 	}
 
 	registry, err := sb.NewRegistry()
@@ -9371,7 +9371,7 @@ func testReproSourceDateEpoch(t *testing.T, sb integration.Sandbox) {
 	testCases := []testCase{
 		{
 			name: "Basic",
-			dockerfile: `# The base image could not be busybox, due to https://github.com/moby/buildkit/issues/3455
+			dockerfile: `# The base image could not be busybox, due to https://github.com/talos-riscv/buildkit/issues/3455
 FROM amd64/debian:bullseye-20230109-slim
 RUN touch /foo
 RUN touch /foo.1
@@ -9386,7 +9386,7 @@ RUN rm -f /foo-2030.1
 			expectedDigest: "sha256:04e5d0cbee3317c79f50494cfeb4d8a728402a970ef32582ee47c62050037e3f",
 		},
 		{
-			// https://github.com/moby/buildkit/issues/4746
+			// https://github.com/talos-riscv/buildkit/issues/4746
 			name: "CopyLink",
 			dockerfile: `FROM amd64/debian:bullseye-20230109-slim
 COPY --link foo foo
@@ -9395,7 +9395,7 @@ COPY --link foo foo
 			expectedDigest: "sha256:9f75e4bdbf3d825acb36bb603ddef4a25742afb8ccb674763ffc611ae047d8a6",
 		},
 		{
-			// https://github.com/moby/buildkit/issues/4793
+			// https://github.com/talos-riscv/buildkit/issues/4793
 			name: "NoAdditionalLayer",
 			dockerfile: `FROM amd64/debian:bullseye-20230109-slim
 `,
@@ -9489,7 +9489,7 @@ COPY --link foo foo
 			}
 
 			// Build again, after pruning the base image layer cache.
-			// For testing https://github.com/moby/buildkit/issues/4746
+			// For testing https://github.com/talos-riscv/buildkit/issues/4746
 			ensurePruneAll(t, c, sb)
 			_, err = f.Solve(ctx, c, solveOpt, nil)
 			require.NoError(t, err)

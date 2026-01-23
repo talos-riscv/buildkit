@@ -3,7 +3,7 @@ package cdidevices
 import (
 	"testing"
 
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/stretchr/testify/require"
 	"tags.cncf.io/container-device-interface/pkg/cdi"
 )

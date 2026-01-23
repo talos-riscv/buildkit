@@ -6,8 +6,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/moby/buildkit/solver/internal/pipe"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/solver/internal/pipe"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/tonistiigi/go-csvvalue"
 )
 

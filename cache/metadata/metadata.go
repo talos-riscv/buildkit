@@ -7,9 +7,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/db"
-	"github.com/moby/buildkit/util/db/boltutil"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/db"
+	"github.com/talos-riscv/buildkit/util/db/boltutil"
 	"github.com/pkg/errors"
 	bolt "go.etcd.io/bbolt"
 )

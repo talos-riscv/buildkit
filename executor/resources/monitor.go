@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
-	"github.com/moby/buildkit/util/bklog"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/prometheus/procfs"
 )
 

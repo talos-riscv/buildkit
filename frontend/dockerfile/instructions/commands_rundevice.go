@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/util/suggest"
+	"github.com/talos-riscv/buildkit/util/suggest"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/go-csvvalue"
 )

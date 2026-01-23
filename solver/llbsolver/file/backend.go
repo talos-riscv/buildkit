@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/containerd/continuity/fs"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/llbsolver/ops/fileoptypes"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/ops/fileoptypes"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/moby/sys/user"
 	"github.com/pkg/errors"
 	copy "github.com/tonistiigi/fsutil/copy"

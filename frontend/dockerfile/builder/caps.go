@@ -3,9 +3,9 @@ package builder
 import (
 	"strings"
 
-	"github.com/moby/buildkit/solver/errdefs"
-	"github.com/moby/buildkit/util/grpcerrors"
-	"github.com/moby/buildkit/util/stack"
+	"github.com/talos-riscv/buildkit/solver/errdefs"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/stack"
 	"google.golang.org/grpc/codes"
 )
 

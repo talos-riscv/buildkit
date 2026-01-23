@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.11.4
-// source: github.com/moby/buildkit/session/filesync/filesync.proto
+// source: github.com/talos-riscv/buildkit/session/filesync/filesync.proto
 
 package filesync
 
@@ -146,7 +146,7 @@ var FileSync_ServiceDesc = grpc.ServiceDesc{
 			ClientStreams: true,
 		},
 	},
-	Metadata: "github.com/moby/buildkit/session/filesync/filesync.proto",
+	Metadata: "github.com/talos-riscv/buildkit/session/filesync/filesync.proto",
 }
 
 const (
@@ -244,5 +244,5 @@ var FileSend_ServiceDesc = grpc.ServiceDesc{
 			ClientStreams: true,
 		},
 	},
-	Metadata: "github.com/moby/buildkit/session/filesync/filesync.proto",
+	Metadata: "github.com/talos-riscv/buildkit/session/filesync/filesync.proto",
 }

@@ -102,7 +102,7 @@ const (
 	RootfsQuotaLabel = "containerd.io/snapshot/disk_quota"
 )
 
-// used in filterAnnotationsForSave (https://github.com/moby/buildkit/blob/v0.11/cache/refs.go#L882)
+// used in filterAnnotationsForSave (https://github.com/talos-riscv/buildkit/blob/v0.11/cache/refs.go#L882)
 var OverlayBDAnnotations = []string{
 	LocalOverlayBDPath,
 	OverlayBDBlobDigest,

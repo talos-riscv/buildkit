@@ -5,7 +5,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 	"google.golang.org/grpc/codes"
 )
 

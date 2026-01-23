@@ -3,7 +3,7 @@ package sourcepolicy
 import (
 	"regexp"
 
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
+	spb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
 	"github.com/pkg/errors"
 )
 

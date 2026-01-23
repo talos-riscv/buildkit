@@ -4,8 +4,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/pkg/errors"
 )
 

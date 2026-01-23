@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/solver/result"
 )
 
 const requestOptsKeys = "verifier.requestopts"

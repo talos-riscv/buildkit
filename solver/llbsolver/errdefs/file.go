@@ -1,7 +1,7 @@
 package errdefs
 
 import (
-	serrdefs "github.com/moby/buildkit/solver/errdefs"
+	serrdefs "github.com/talos-riscv/buildkit/solver/errdefs"
 )
 
 // FileActionError will be returned when an error is encountered when solving

@@ -10,9 +10,9 @@ import (
 	"github.com/containerd/containerd/v2/pkg/namespaces"
 	"github.com/containerd/continuity/fs/fstest"
 	cerrdefs "github.com/containerd/errdefs"
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/util/testutil/workers"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/workers"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
@@ -1223,7 +1223,7 @@ func (tc verifyContents) Run(t *testing.T, sb integration.Sandbox) {
 	switch tc.name {
 	case "TestDiffUpperScratch":
 		if workers.IsTestDockerdMoby(sb) {
-			t.Skip("failed to handle changes: lstat ... no such file or directory: https://github.com/moby/buildkit/pull/2726#issuecomment-1070978499")
+			t.Skip("failed to handle changes: lstat ... no such file or directory: https://github.com/talos-riscv/buildkit/pull/2726#issuecomment-1070978499")
 		}
 	}
 

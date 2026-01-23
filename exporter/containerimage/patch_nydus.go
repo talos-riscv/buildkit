@@ -5,10 +5,10 @@ package containerimage
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/compression"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

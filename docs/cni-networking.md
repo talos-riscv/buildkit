@@ -2,7 +2,7 @@
 
 It can be useful to use a bridge network for your builder if for example you
 encounter a network port contention during multiple builds. If you're using
-the BuildKit image, CNI is not [(yet)](https://github.com/moby/buildkit/issues/28)
+the BuildKit image, CNI is not [(yet)](https://github.com/talos-riscv/buildkit/issues/28)
 available in it.
 
 But you can create your own BuildKit image with CNI support:

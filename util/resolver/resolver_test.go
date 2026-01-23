@@ -5,7 +5,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/moby/buildkit/cmd/buildkitd/config"
+	"github.com/talos-riscv/buildkit/cmd/buildkitd/config"
 	"github.com/stretchr/testify/require"
 )
 

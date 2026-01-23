@@ -3,10 +3,10 @@ package worker
 import (
 	"context"
 
-	"github.com/moby/buildkit/cache"
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
+	"github.com/talos-riscv/buildkit/cache"
+	cacheconfig "github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
 )
 
 func NewWorkerRefResult(ref cache.ImmutableRef, worker Worker) solver.Result {

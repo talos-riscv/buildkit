@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/cache/contenthash/checksum.proto
+// source: github.com/talos-riscv/buildkit/cache/contenthash/checksum.proto
 
 package contenthash
 
@@ -233,7 +233,7 @@ var File_github_com_moby_buildkit_cache_contenthash_checksum_proto protoreflect.
 
 const file_github_com_moby_buildkit_cache_contenthash_checksum_proto_rawDesc = "" +
 	"\n" +
-	"9github.com/moby/buildkit/cache/contenthash/checksum.proto\x12\vcontenthash\"s\n" +
+	"9github.com/talos-riscv/buildkit/cache/contenthash/checksum.proto\x12\vcontenthash\"s\n" +
 	"\vCacheRecord\x12\x16\n" +
 	"\x06digest\x18\x01 \x01(\tR\x06digest\x120\n" +
 	"\x04type\x18\x02 \x01(\x0e2\x1c.contenthash.CacheRecordTypeR\x04type\x12\x1a\n" +
@@ -248,7 +248,7 @@ const file_github_com_moby_buildkit_cache_contenthash_checksum_proto_rawDesc = "
 	"\x03DIR\x10\x01\x12\x0e\n" +
 	"\n" +
 	"DIR_HEADER\x10\x02\x12\v\n" +
-	"\aSYMLINK\x10\x03B,Z*github.com/moby/buildkit/cache/contenthashb\x06proto3"
+	"\aSYMLINK\x10\x03B,Z*github.com/talos-riscv/buildkit/cache/contenthashb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_cache_contenthash_checksum_proto_rawDescOnce sync.Once

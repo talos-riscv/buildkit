@@ -3,8 +3,8 @@ package build
 import (
 	"strings"
 
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/go-csvvalue"
 )
@@ -49,7 +49,7 @@ func ParseExportCache(exportCaches []string) ([]client.CacheOptionsEntry, error)
 	for _, exportCache := range exportCaches {
 		legacy := !strings.Contains(exportCache, "type=")
 		if legacy {
-			// Deprecated since BuildKit v0.4.0, but no plan to remove: https://github.com/moby/buildkit/pull/2783#issuecomment-1093449772
+			// Deprecated since BuildKit v0.4.0, but no plan to remove: https://github.com/talos-riscv/buildkit/pull/2783#issuecomment-1093449772
 			bklog.L.Warnf("--export-cache <ref> is deprecated. Please use --export-cache type=registry,ref=<ref>,<opt>=<optval>[,<opt>=<optval>] instead")
 			exports = append(exports, client.CacheOptionsEntry{
 				Type: "registry",

@@ -718,13 +718,13 @@ The cache for `RUN` instructions can be invalidated by [`ADD`](#add) and [`COPY`
 RUN --device=name,[required]
 ```
 
-`RUN --device` allows build to request [CDI devices](https://github.com/moby/buildkit/blob/master/docs/cdi.md)
+`RUN --device` allows build to request [CDI devices](https://github.com/talos-riscv/buildkit/blob/master/docs/cdi.md)
 to be available to the build step.
 
 > [!WARNING]
 > The use of `--device` is protected by the `device` entitlement, which needs
 > to be enabled when starting the buildkitd daemon with
-> `--allow-insecure-entitlement device` flag or in [buildkitd config](https://github.com/moby/buildkit/blob/master/docs/buildkitd.toml.md),
+> `--allow-insecure-entitlement device` flag or in [buildkitd config](https://github.com/talos-riscv/buildkit/blob/master/docs/buildkitd.toml.md),
 > and for a build request with [`--allow device` flag](https://docs.docker.com/engine/reference/commandline/buildx_build/#allow).
 
 The device `name` is provided by the CDI specification registered in BuildKit.
@@ -1034,7 +1034,7 @@ The command is run in the host's network environment (similar to
 > [!WARNING]
 > The use of `--network=host` is protected by the `network.host` entitlement,
 > which needs to be enabled when starting the buildkitd daemon with
-> `--allow-insecure-entitlement network.host` flag or in [buildkitd config](https://github.com/moby/buildkit/blob/master/docs/buildkitd.toml.md),
+> `--allow-insecure-entitlement network.host` flag or in [buildkitd config](https://github.com/talos-riscv/buildkit/blob/master/docs/buildkitd.toml.md),
 > and for a build request with [`--allow network.host` flag](https://docs.docker.com/engine/reference/commandline/buildx_build/#allow).
 
 ### RUN --security
@@ -1051,7 +1051,7 @@ This is equivalent to running `docker run --privileged`.
 > [!WARNING]
 > In order to access this feature, entitlement `security.insecure` should be
 > enabled when starting the buildkitd daemon with
-> `--allow-insecure-entitlement security.insecure` flag or in [buildkitd config](https://github.com/moby/buildkit/blob/master/docs/buildkitd.toml.md),
+> `--allow-insecure-entitlement security.insecure` flag or in [buildkitd config](https://github.com/talos-riscv/buildkit/blob/master/docs/buildkitd.toml.md),
 > and for a build request with [`--allow security.insecure` flag](https://docs.docker.com/engine/reference/commandline/buildx_build/#allow).
 
 Default sandbox mode can be activated via `--security=sandbox`, but that is no-op.
@@ -1564,7 +1564,7 @@ The `--keep-git-dir=true` flag lets you preserve the `.git` directory.
 ```dockerfile
 # syntax=docker/dockerfile:1
 FROM alpine
-ADD --keep-git-dir=true https://github.com/moby/buildkit.git#v0.10.1 /buildkit
+ADD --keep-git-dir=true https://github.com/talos-riscv/buildkit.git#v0.10.1 /buildkit
 ```
 
 ### ADD --checksum
@@ -1582,7 +1582,7 @@ resource:
   `sha256:<hash>`. SHA-256 is the only supported hash algorithm.
 
 ```dockerfile
-ADD --checksum=be1f38e https://github.com/moby/buildkit.git#v0.26.2 /
+ADD --checksum=be1f38e https://github.com/talos-riscv/buildkit.git#v0.26.2 /
 ADD --checksum=sha256:24454f830cdb571e2c4ad15481119c43b3cafd48dd869a9b2945d1036d1dc68d https://mirrors.edge.kernel.org/pub/linux/kernel/Historic/linux-0.01.tar.gz /
 ```
 

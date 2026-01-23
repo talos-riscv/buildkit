@@ -5,13 +5,13 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/frontend/subrequests/convertllb"
-	"github.com/moby/buildkit/frontend/subrequests/lint"
-	"github.com/moby/buildkit/frontend/subrequests/outline"
-	"github.com/moby/buildkit/frontend/subrequests/targets"
-	"github.com/moby/buildkit/solver/errdefs"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/frontend/subrequests"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/convertllb"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/lint"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/outline"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/targets"
+	"github.com/talos-riscv/buildkit/solver/errdefs"
 )
 
 const (

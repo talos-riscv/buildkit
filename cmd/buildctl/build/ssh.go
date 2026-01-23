@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/session/sshforward/sshprovider"
+	"github.com/talos-riscv/buildkit/session/sshforward/sshprovider"
 	"github.com/pkg/errors"
 )
 

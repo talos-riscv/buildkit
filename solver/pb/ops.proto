@@ -4,7 +4,7 @@ syntax = "proto3";
 // LLB is DAG-structured; Op represents a vertex, and Definition represents a graph.
 package pb;
 
-option go_package = "github.com/moby/buildkit/solver/pb";
+option go_package = "github.com/talos-riscv/buildkit/solver/pb";
 
 // Op represents a vertex of the LLB DAG.
 message Op {

@@ -7,8 +7,8 @@ import (
 )
 
 func TestIsImplicitSSHTransport(t *testing.T) {
-	require.False(t, IsImplicitSSHTransport("http://github.com/moby/buildkit"))
-	require.False(t, IsImplicitSSHTransport("github.com/moby/buildkit"))
+	require.False(t, IsImplicitSSHTransport("http://github.com/talos-riscv/buildkit"))
+	require.False(t, IsImplicitSSHTransport("github.com/talos-riscv/buildkit"))
 	require.False(t, IsImplicitSSHTransport("github.com:moby/buildkit.git"))
 	require.False(t, IsImplicitSSHTransport("helloworld.net"))
 	require.False(t, IsImplicitSSHTransport("git@helloworld.net"))
@@ -35,7 +35,7 @@ func TestParseSCPStyleURL(t *testing.T) {
 		err      bool
 	}{
 		{
-			url: "http://github.com/moby/buildkit",
+			url: "http://github.com/talos-riscv/buildkit",
 			err: true,
 		},
 		{

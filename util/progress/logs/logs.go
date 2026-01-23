@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/armon/circbuf"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/util/progress"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/units"
 )

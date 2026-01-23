@@ -6,11 +6,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/moby/buildkit/util/network/netproviders"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/util/testutil/workers"
-	"github.com/moby/buildkit/worker/base"
-	"github.com/moby/buildkit/worker/tests"
+	"github.com/talos-riscv/buildkit/util/network/netproviders"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/workers"
+	"github.com/talos-riscv/buildkit/worker/base"
+	"github.com/talos-riscv/buildkit/worker/tests"
 	"github.com/stretchr/testify/require"
 )
 

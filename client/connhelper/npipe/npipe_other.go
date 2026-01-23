@@ -6,7 +6,7 @@ import (
 	"errors"
 	"net/url"
 
-	"github.com/moby/buildkit/client/connhelper"
+	"github.com/talos-riscv/buildkit/client/connhelper"
 )
 
 func Helper(u *url.URL) (*connhelper.ConnectionHelper, error) {

@@ -2,15 +2,15 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/api/services/control/control.proto
+// source: github.com/talos-riscv/buildkit/api/services/control/control.proto
 
 package moby_buildkit_v1
 
 import (
 	timestamp "github.com/golang/protobuf/ptypes/timestamp"
-	types "github.com/moby/buildkit/api/types"
-	pb "github.com/moby/buildkit/solver/pb"
-	pb1 "github.com/moby/buildkit/sourcepolicy/pb"
+	types "github.com/talos-riscv/buildkit/api/types"
+	pb "github.com/talos-riscv/buildkit/solver/pb"
+	pb1 "github.com/talos-riscv/buildkit/sourcepolicy/pb"
 	status "google.golang.org/genproto/googleapis/rpc/status"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
@@ -261,7 +261,7 @@ type UsageRecord struct {
 	Mutable bool                   `protobuf:"varint,2,opt,name=Mutable,proto3" json:"Mutable,omitempty"`
 	InUse   bool                   `protobuf:"varint,3,opt,name=InUse,proto3" json:"InUse,omitempty"`
 	Size    int64                  `protobuf:"varint,4,opt,name=Size,proto3" json:"Size,omitempty"`
-	// Deprecated: Marked as deprecated in github.com/moby/buildkit/api/services/control/control.proto.
+	// Deprecated: Marked as deprecated in github.com/talos-riscv/buildkit/api/services/control/control.proto.
 	Parent        string               `protobuf:"bytes,5,opt,name=Parent,proto3" json:"Parent,omitempty"`
 	CreatedAt     *timestamp.Timestamp `protobuf:"bytes,6,opt,name=CreatedAt,proto3" json:"CreatedAt,omitempty"`
 	LastUsedAt    *timestamp.Timestamp `protobuf:"bytes,7,opt,name=LastUsedAt,proto3" json:"LastUsedAt,omitempty"`
@@ -332,7 +332,7 @@ func (x *UsageRecord) GetSize() int64 {
 	return 0
 }
 
-// Deprecated: Marked as deprecated in github.com/moby/buildkit/api/services/control/control.proto.
+// Deprecated: Marked as deprecated in github.com/talos-riscv/buildkit/api/services/control/control.proto.
 func (x *UsageRecord) GetParent() string {
 	if x != nil {
 		return x.Parent
@@ -2026,7 +2026,7 @@ var File_github_com_moby_buildkit_api_services_control_control_proto protoreflec
 
 const file_github_com_moby_buildkit_api_services_control_control_proto_rawDesc = "" +
 	"\n" +
-	";github.com/moby/buildkit/api/services/control/control.proto\x12\x10moby.buildkit.v1\x1a/github.com/moby/buildkit/api/types/worker.proto\x1a,github.com/moby/buildkit/solver/pb/ops.proto\x1a5github.com/moby/buildkit/sourcepolicy/pb/policy.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x17google/rpc/status.proto\"\xca\x01\n" +
+	";github.com/talos-riscv/buildkit/api/services/control/control.proto\x12\x10moby.buildkit.v1\x1a/github.com/talos-riscv/buildkit/api/types/worker.proto\x1a,github.com/talos-riscv/buildkit/solver/pb/ops.proto\x1a5github.com/talos-riscv/buildkit/sourcepolicy/pb/policy.proto\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x17google/rpc/status.proto\"\xca\x01\n" +
 	"\fPruneRequest\x12\x16\n" +
 	"\x06filter\x18\x01 \x03(\tR\x06filter\x12\x10\n" +
 	"\x03all\x18\x02 \x01(\bR\x03all\x12\"\n" +
@@ -2241,7 +2241,7 @@ const file_github_com_moby_buildkit_api_services_control_control_proto_rawDesc =
 	"\vListWorkers\x12$.moby.buildkit.v1.ListWorkersRequest\x1a%.moby.buildkit.v1.ListWorkersResponse\x12E\n" +
 	"\x04Info\x12\x1d.moby.buildkit.v1.InfoRequest\x1a\x1e.moby.buildkit.v1.InfoResponse\x12b\n" +
 	"\x12ListenBuildHistory\x12%.moby.buildkit.v1.BuildHistoryRequest\x1a#.moby.buildkit.v1.BuildHistoryEvent0\x01\x12o\n" +
-	"\x12UpdateBuildHistory\x12+.moby.buildkit.v1.UpdateBuildHistoryRequest\x1a,.moby.buildkit.v1.UpdateBuildHistoryResponseB@Z>github.com/moby/buildkit/api/services/control;moby_buildkit_v1b\x06proto3"
+	"\x12UpdateBuildHistory\x12+.moby.buildkit.v1.UpdateBuildHistoryRequest\x1a,.moby.buildkit.v1.UpdateBuildHistoryResponseB@Z>github.com/talos-riscv/buildkit/api/services/control;moby_buildkit_v1b\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_api_services_control_control_proto_rawDescOnce sync.Once

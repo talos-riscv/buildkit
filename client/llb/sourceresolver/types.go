@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/moby/buildkit/solver/pb"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	spb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 )

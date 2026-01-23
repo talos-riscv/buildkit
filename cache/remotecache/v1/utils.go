@@ -8,8 +8,8 @@ import (
 	"sort"
 
 	cerrdefs "github.com/containerd/errdefs"
-	cacheimporttypes "github.com/moby/buildkit/cache/remotecache/v1/types"
-	"github.com/moby/buildkit/solver"
+	cacheimporttypes "github.com/talos-riscv/buildkit/cache/remotecache/v1/types"
+	"github.com/talos-riscv/buildkit/solver"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

@@ -3,7 +3,7 @@ package attestations
 import (
 	"strings"
 
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/go-csvvalue"
 )

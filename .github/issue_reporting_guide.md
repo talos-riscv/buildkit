@@ -15,7 +15,7 @@
 
 ## Security issues
 
-Do NOT report security issues publicly. See [https://github.com/moby/buildkit/security/policy](https://github.com/moby/buildkit/security/policy) 
+Do NOT report security issues publicly. See [https://github.com/talos-riscv/buildkit/security/policy](https://github.com/talos-riscv/buildkit/security/policy) 
 
 ## Search for an existing issue
 
@@ -74,7 +74,7 @@ docker buildx inspect
 If you also want to check if the issue still appears in the `master` development branch you can run:
 
 ```bash
-docker buildx build --load -t moby/buildkit:dev "https://github.com/moby/buildkit.git" --build-arg BUILDKIT_CONTEXT_KEEP_GIT_DIR=1
+docker buildx build --load -t moby/buildkit:dev "https://github.com/talos-riscv/buildkit.git" --build-arg BUILDKIT_CONTEXT_KEEP_GIT_DIR=1
 docker buildx create --name buildkit-dev --driver-opt image=moby/buildkit:dev --bootstrap
 export BUILDX_BUILDER=buildkit-dev
 docker buildx inspect
@@ -83,7 +83,7 @@ docker buildx inspect
 To check if a specific existing PR is fixing the problem you can replace the first line with:
 
 ```bash
-docker buildx build --load -t moby/buildkit:dev "https://github.com/moby/buildkit.git#pull/NR/head" --build-arg BUILDKIT_CONTEXT_KEEP_GIT_DIR=1
+docker buildx build --load -t moby/buildkit:dev "https://github.com/talos-riscv/buildkit.git#pull/NR/head" --build-arg BUILDKIT_CONTEXT_KEEP_GIT_DIR=1
 ```
 
 If your issue requires a specific environment or you have only encountered it in a specific environment then make sure to describe that.
@@ -123,7 +123,7 @@ All BuildKit/Docker tools are written in Go programming language and Go has a bu
 
 Additionally, `buildkitd` supports running a Debug server that can be used to get stacktraces (and other debug information) from running process without killing it. Debug server can be started by setting `--debugaddr` flag, eg. `--debugaddr 127.0.0.1:6060` . In Buildx such flags can be set in `docker buildx create --buildkitd-flags '--debugaddr 127.0.0.1:6060'` . 
 
-That server handles many debug request, you can find full list from [https://github.com/moby/buildkit/blob/master/cmd/buildkitd/debug.go#L15](https://github.com/moby/buildkit/blob/master/cmd/buildkitd/debug.go#L15) . To capture stacktraces of a process run:
+That server handles many debug request, you can find full list from [https://github.com/talos-riscv/buildkit/blob/master/cmd/buildkitd/debug.go#L15](https://github.com/talos-riscv/buildkit/blob/master/cmd/buildkitd/debug.go#L15) . To capture stacktraces of a process run:
 
 ```bash
 curl "http://127.0.0.1:6060/debug/pprof/goroutine?debug=2"
@@ -237,7 +237,7 @@ dlv attach <buildkitd-pid> $(which buildkitd)
 
 Refer to Delve documentation for how to use it. You need to add breakpoints to interesting lines of code or functions and after the debugger has stopped in such lines you can follow the execution path, see contents of variables etc. Capture this information for the report.
 
-For best debugging experience you may need to disable optimizations such as function inlining when building `buildkitd` binary for interactive debugging. This may have some(but not drastical) impact of performance of the binary. [https://github.com/moby/buildkit/blob/d736391494e1159883f5a8b4757f4dfd290462de/Dockerfile#L118](https://github.com/moby/buildkit/blob/d736391494e1159883f5a8b4757f4dfd290462de/Dockerfile#L118)
+For best debugging experience you may need to disable optimizations such as function inlining when building `buildkitd` binary for interactive debugging. This may have some(but not drastical) impact of performance of the binary. [https://github.com/talos-riscv/buildkit/blob/d736391494e1159883f5a8b4757f4dfd290462de/Dockerfile#L118](https://github.com/talos-riscv/buildkit/blob/d736391494e1159883f5a8b4757f4dfd290462de/Dockerfile#L118)
 
 ## Follow the progress of your issue
 
@@ -253,7 +253,7 @@ If you notice that a specific maintainer has worked on the feature your report i
 
 ## Try fixing your issue yourself
 
-We appreciate if you can take initiative for fixing your issue yourself and can help you through the process. Start by reading through contributing guide [https://github.com/moby/buildkit/blob/master/.github/CONTRIBUTING.md](https://github.com/moby/buildkit/blob/master/.github/CONTRIBUTING.md) and relevant developer docs [https://github.com/moby/buildkit/tree/master/docs/dev](https://github.com/moby/buildkit/tree/master/docs/dev) .
+We appreciate if you can take initiative for fixing your issue yourself and can help you through the process. Start by reading through contributing guide [https://github.com/talos-riscv/buildkit/blob/master/.github/CONTRIBUTING.md](https://github.com/talos-riscv/buildkit/blob/master/.github/CONTRIBUTING.md) and relevant developer docs [https://github.com/talos-riscv/buildkit/tree/master/docs/dev](https://github.com/talos-riscv/buildkit/tree/master/docs/dev) .
 
 For bigger items please confirm your proposed design with the maintainers first to make sure the review process goes smoothly.
 

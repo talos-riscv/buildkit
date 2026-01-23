@@ -3,7 +3,7 @@ package control
 import (
 	"testing"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
 	"github.com/stretchr/testify/require"
 )
 

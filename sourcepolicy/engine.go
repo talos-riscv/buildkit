@@ -4,9 +4,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/moby/buildkit/solver/pb"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	spb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

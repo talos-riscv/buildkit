@@ -17,8 +17,8 @@ import (
 	"github.com/containerd/containerd/v2/core/remotes/docker"
 	"github.com/pkg/errors"
 
-	"github.com/moby/buildkit/util/resolver/config"
-	"github.com/moby/buildkit/util/tracing"
+	"github.com/talos-riscv/buildkit/util/resolver/config"
+	"github.com/talos-riscv/buildkit/util/tracing"
 )
 
 const (

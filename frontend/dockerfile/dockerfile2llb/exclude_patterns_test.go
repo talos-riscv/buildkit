@@ -3,7 +3,7 @@ package dockerfile2llb
 import (
 	"testing"
 
-	"github.com/moby/buildkit/util/appcontext"
+	"github.com/talos-riscv/buildkit/util/appcontext"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/moby/buildkit/session/secrets"
+	"github.com/talos-riscv/buildkit/session/secrets"
 	"github.com/pkg/errors"
 	"github.com/tonistiigi/units"
 )

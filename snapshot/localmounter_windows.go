@@ -55,7 +55,7 @@ func (lm *localMounter) Mount() (string, error) {
 			return "", errors.Wrapf(err, "failed to mount %v", m)
 		}
 	} else {
-		// see https://github.com/moby/buildkit/issues/5807
+		// see https://github.com/talos-riscv/buildkit/issues/5807
 		// if it's a race condition issue, do max 2 retries with some backoff
 		// should adjust the retries if this persists but 1 retry
 		// seems to be enough.

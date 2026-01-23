@@ -23,7 +23,7 @@ const (
 
 var (
 	// Package is filled at linking time
-	Package = "github.com/moby/buildkit"
+	Package = "github.com/talos-riscv/buildkit"
 
 	// Version holds the complete version number. Filled in at linking time.
 	Version = defaultVersion

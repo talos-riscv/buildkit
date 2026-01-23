@@ -19,15 +19,15 @@ import (
 	"github.com/containerd/containerd/v2/pkg/gc"
 	"github.com/containerd/containerd/v2/pkg/labels"
 	cerrdefs "github.com/containerd/errdefs"
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/disk"
-	"github.com/moby/buildkit/util/flightcontrol"
-	"github.com/moby/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/cache/metadata"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/disk"
+	"github.com/talos-riscv/buildkit/util/flightcontrol"
+	"github.com/talos-riscv/buildkit/util/progress"
 	"github.com/moby/sys/user"
 	digest "github.com/opencontainers/go-digest"
 	imagespecidentity "github.com/opencontainers/image-spec/identity"
@@ -478,7 +478,7 @@ func (cm *cacheManager) getRecord(ctx context.Context, id string, opts ...RefOpt
 
 	// TODO:(sipsma) this is kludge to deal with a bug in v0.10.{0,1} where
 	// merge and diff refs didn't have committed set to true:
-	// https://github.com/moby/buildkit/issues/2740
+	// https://github.com/talos-riscv/buildkit/issues/2740
 	if kind := rec.kind(); kind == Merge || kind == Diff {
 		rec.mutable = false
 	}

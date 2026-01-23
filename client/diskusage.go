@@ -6,7 +6,7 @@ import (
 	"slices"
 	"time"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
 	"github.com/pkg/errors"
 )
 

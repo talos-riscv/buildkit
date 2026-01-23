@@ -3,7 +3,7 @@ package policysession
 import (
 	context "context"
 
-	"github.com/moby/buildkit/session"
+	"github.com/talos-riscv/buildkit/session"
 )
 
 func NewVerifier(ctx context.Context, sm *session.Manager, gid string) (*PolicyVerifier, error) {

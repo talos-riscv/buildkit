@@ -2,12 +2,12 @@ package containerimage
 
 import (
 	"github.com/containerd/containerd/v2/pkg/reference"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/solver/llbsolver/provenance"
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
-	"github.com/moby/buildkit/source"
-	srctypes "github.com/moby/buildkit/source/types"
-	"github.com/moby/buildkit/util/resolver"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/provenance"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
+	"github.com/talos-riscv/buildkit/source"
+	srctypes "github.com/talos-riscv/buildkit/source/types"
+	"github.com/talos-riscv/buildkit/util/resolver"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"

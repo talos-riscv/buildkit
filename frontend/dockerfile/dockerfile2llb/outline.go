@@ -4,10 +4,10 @@ import (
 	"maps"
 	"sort"
 
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
-	"github.com/moby/buildkit/frontend/subrequests/outline"
-	pb "github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/instructions"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/parser"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/outline"
+	pb "github.com/talos-riscv/buildkit/solver/pb"
 )
 
 type outlineCapture struct {

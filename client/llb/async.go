@@ -3,8 +3,8 @@ package llb
 import (
 	"context"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/flightcontrol"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/flightcontrol"
 	digest "github.com/opencontainers/go-digest"
 )
 

@@ -3,10 +3,10 @@ package convertllb
 import (
 	"encoding/json"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/subrequests"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/frontend/subrequests"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 	"google.golang.org/protobuf/encoding/protojson"
 )

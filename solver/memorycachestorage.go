@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/util/compression"
 	"github.com/pkg/errors"
 )
 

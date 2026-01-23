@@ -6,12 +6,12 @@ import (
 
 	"github.com/containerd/typeurl/v2"
 	"github.com/golang/protobuf/jsonpb" //nolint:staticcheck
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 )
 
 func init() {
-	typeurl.Register((*Solve)(nil), "github.com/moby/buildkit", "errdefs.Solve+json")
+	typeurl.Register((*Solve)(nil), "github.com/talos-riscv/buildkit", "errdefs.Solve+json")
 }
 
 //nolint:staticcheck

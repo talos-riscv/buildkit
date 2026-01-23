@@ -4,8 +4,8 @@ import (
 	stderrors "errors"
 
 	"github.com/containerd/containerd/v2/pkg/filters"
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/client"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/client"
 	"github.com/pkg/errors"
 )
 

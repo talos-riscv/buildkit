@@ -3,7 +3,7 @@ package result
 import (
 	"context"
 
-	pb "github.com/moby/buildkit/frontend/gateway/pb"
+	pb "github.com/talos-riscv/buildkit/frontend/gateway/pb"
 	digest "github.com/opencontainers/go-digest"
 )
 

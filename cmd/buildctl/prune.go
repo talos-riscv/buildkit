@@ -5,9 +5,9 @@ import (
 	"os"
 	"text/tabwriter"
 
-	"github.com/moby/buildkit/client"
-	bccommon "github.com/moby/buildkit/cmd/buildctl/common"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/client"
+	bccommon "github.com/talos-riscv/buildkit/cmd/buildctl/common"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/tonistiigi/units"
 	"github.com/urfave/cli"
 )

@@ -6,7 +6,7 @@ import (
 	"log"
 	"runtime"
 
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 	"github.com/pkg/errors"
 )
 
@@ -46,7 +46,7 @@ func (s *OCI) New(ctx context.Context, cfg *integration.BackendConfig) (integrat
 	if err := requireRoot(); err != nil {
 		return nil, nil, err
 	}
-	// Include use of --oci-worker-labels to trigger https://github.com/moby/buildkit/pull/603
+	// Include use of --oci-worker-labels to trigger https://github.com/talos-riscv/buildkit/pull/603
 	buildkitdArgs := []string{"buildkitd",
 		"--oci-worker=true",
 		"--containerd-worker=false",

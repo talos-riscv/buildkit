@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/sshforward"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/session/sshforward"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/crypto/ssh/agent"

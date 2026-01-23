@@ -2,13 +2,13 @@ package errdefs
 
 import (
 	"github.com/containerd/typeurl/v2"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 	digest "github.com/opencontainers/go-digest"
 )
 
 func init() {
-	typeurl.Register((*Vertex)(nil), "github.com/moby/buildkit", "errdefs.Vertex+json")
-	typeurl.Register((*Source)(nil), "github.com/moby/buildkit", "errdefs.Source+json")
+	typeurl.Register((*Vertex)(nil), "github.com/talos-riscv/buildkit", "errdefs.Vertex+json")
+	typeurl.Register((*Source)(nil), "github.com/talos-riscv/buildkit", "errdefs.Source+json")
 }
 
 type VertexError struct {

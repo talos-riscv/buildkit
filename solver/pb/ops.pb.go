@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/solver/pb/ops.proto
+// source: github.com/talos-riscv/buildkit/solver/pb/ops.proto
 
 // Package pb provides the protobuf definition of LLB: low-level builder instruction.
 // LLB is DAG-structured; Op represents a vertex, and Definition represents a graph.
@@ -3394,7 +3394,7 @@ var File_github_com_moby_buildkit_solver_pb_ops_proto protoreflect.FileDescripto
 
 const file_github_com_moby_buildkit_solver_pb_ops_proto_rawDesc = "" +
 	"\n" +
-	",github.com/moby/buildkit/solver/pb/ops.proto\x12\x02pb\"\xe8\x02\n" +
+	",github.com/talos-riscv/buildkit/solver/pb/ops.proto\x12\x02pb\"\xe8\x02\n" +
 	"\x02Op\x12!\n" +
 	"\x06inputs\x18\x01 \x03(\v2\t.pb.InputR\x06inputs\x12 \n" +
 	"\x04exec\x18\x02 \x01(\v2\n" +
@@ -3676,7 +3676,7 @@ const file_github_com_moby_buildkit_solver_pb_ops_proto_rawDesc = "" +
 	"\x06SHARED\x10\x00\x12\v\n" +
 	"\aPRIVATE\x10\x01\x12\n" +
 	"\n" +
-	"\x06LOCKED\x10\x02B$Z\"github.com/moby/buildkit/solver/pbb\x06proto3"
+	"\x06LOCKED\x10\x02B$Z\"github.com/talos-riscv/buildkit/solver/pbb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_solver_pb_ops_proto_rawDescOnce sync.Once

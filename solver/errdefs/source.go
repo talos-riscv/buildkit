@@ -5,8 +5,8 @@ import (
 	"io"
 	"strings"
 
-	pb "github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/grpcerrors"
+	pb "github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
 )
 

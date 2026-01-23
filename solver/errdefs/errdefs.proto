@@ -2,9 +2,9 @@ syntax = "proto3";
 
 package errdefs;
 
-option go_package = "github.com/moby/buildkit/solver/errdefs";
+option go_package = "github.com/talos-riscv/buildkit/solver/errdefs";
 
-import "github.com/moby/buildkit/solver/pb/ops.proto";
+import "github.com/talos-riscv/buildkit/solver/pb/ops.proto";
 
 message Vertex {
 	string digest = 1;

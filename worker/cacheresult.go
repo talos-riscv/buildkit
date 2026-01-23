@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
+	cacheconfig "github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/compression"
 	"github.com/pkg/errors"
 )
 

@@ -3,9 +3,9 @@ package llbbuild
 import (
 	"context"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/apicaps"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/apicaps"
 	digest "github.com/opencontainers/go-digest"
 )
 

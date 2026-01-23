@@ -3,7 +3,7 @@ package testutil
 import (
 	"testing"
 
-	"github.com/moby/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver"
 )
 
 func TestMemoryCacheStorage(t *testing.T) {

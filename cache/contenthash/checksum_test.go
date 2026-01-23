@@ -17,13 +17,13 @@ import (
 	"github.com/containerd/containerd/v2/plugins/content/local"
 	"github.com/containerd/containerd/v2/plugins/diff/walking"
 	"github.com/containerd/containerd/v2/plugins/snapshots/native"
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/cache/metadata"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	containerdsnapshot "github.com/moby/buildkit/snapshot/containerd"
-	"github.com/moby/buildkit/util/leaseutil"
-	"github.com/moby/buildkit/util/winlayers"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/cache/metadata"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	containerdsnapshot "github.com/talos-riscv/buildkit/snapshot/containerd"
+	"github.com/talos-riscv/buildkit/util/leaseutil"
+	"github.com/talos-riscv/buildkit/util/winlayers"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
@@ -110,7 +110,7 @@ func TestChecksumSymlinkNoParentScan(t *testing.T) {
 	require.Truef(t, needs2, "needsScan(%q, followTrailing=true)", path)
 }
 
-// https://github.com/moby/buildkit/issues/5042
+// https://github.com/talos-riscv/buildkit/issues/5042
 func TestNeedScanChecksumRegression(t *testing.T) {
 	// This test cannot be run in parallel because we use scanCounter.
 	scanCounterEnable = true
@@ -182,7 +182,7 @@ func TestNeedScanChecksumRegression(t *testing.T) {
 	require.Equal(t, initialScanCounter, scanCounter.Load())
 
 	// Looking up a non-existent path in / will checksum the whole tree. See
-	// <https://github.com/moby/buildkit/issues/5042> for more information.
+	// <https://github.com/talos-riscv/buildkit/issues/5042> for more information.
 	// This means that needsScan will return true for any path.
 	_, err = cc.Checksum(context.TODO(), ref, "/non-existent", ChecksumOpts{FollowLinks: true}, nil)
 	require.Error(t, err)

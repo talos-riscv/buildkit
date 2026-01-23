@@ -43,7 +43,7 @@ Start BuildKit and check the list of available devices for the default worker:
 buildctl debug workers -v
 
 Platforms:      linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6
-BuildKit:       github.com/moby/buildkit v0.19.0-rc3-72-gb89ee491b.m b89ee491bc1c40b8533f098dab18e414c8b70885.m
+BuildKit:       github.com/talos-riscv/buildkit v0.19.0-rc3-72-gb89ee491b.m b89ee491bc1c40b8533f098dab18e414c8b70885.m
 Labels:
         org.mobyproject.buildkit.worker.executor:               oci
         org.mobyproject.buildkit.worker.hostname:               cc39352c87dd

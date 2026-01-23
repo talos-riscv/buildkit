@@ -77,7 +77,7 @@ RUN --mount=target=. <<'EOT'
   if [ -f .git ] && head -1 .git | grep -q "^gitdir:"; then
     echo >&2 "Skipping version check for worktree"
     # set dev stubs
-    echo "-X github.com/moby/buildkit/version.Version=dev -X github.com/moby/buildkit/version.Revision=dev -X github.com/moby/buildkit/version.Package=github.com/moby/buildkit" > /tmp/.ldflags;
+    echo "-X github.com/talos-riscv/buildkit/version.Version=dev -X github.com/talos-riscv/buildkit/version.Revision=dev -X github.com/talos-riscv/buildkit/version.Package=github.com/talos-riscv/buildkit" > /tmp/.ldflags;
     echo -n "dev" > /tmp/.version;
     echo -n "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > /tmp/.commit_date;
     exit 0
@@ -87,7 +87,7 @@ RUN --mount=target=. <<'EOT'
     exit 1
   fi
   set -ex
-  export PKG=github.com/moby/buildkit VERSION=$(git describe --match 'v[0-9]*' --dirty='.m' --always --tags) REVISION=$(git rev-parse HEAD)$(if ! git diff --no-ext-diff --quiet --exit-code; then echo .m; fi) COMMIT_DATE=$(git show -s --format=%cI HEAD);
+  export PKG=github.com/talos-riscv/buildkit VERSION=$(git describe --match 'v[0-9]*' --dirty='.m' --always --tags) REVISION=$(git rev-parse HEAD)$(if ! git diff --no-ext-diff --quiet --exit-code; then echo .m; fi) COMMIT_DATE=$(git show -s --format=%cI HEAD);
   echo "-X ${PKG}/version.Version=${VERSION} -X ${PKG}/version.Revision=${REVISION} -X ${PKG}/version.Package=${PKG}" > /tmp/.ldflags;
   echo -n "${VERSION}" > /tmp/.version;
   echo -n "${COMMIT_DATE}" > /tmp/.commit_date;
@@ -125,7 +125,7 @@ RUN --mount=target=. --mount=target=/root/.cache,type=cache \
   xx-verify ${VERIFYFLAGS} /usr/bin/buildkitd
 
   # buildkitd --version can be flaky when running through emulation related to
-  # https://github.com/moby/buildkit/pull/4491. Retry a few times as a workaround.
+  # https://github.com/talos-riscv/buildkit/pull/4491. Retry a few times as a workaround.
   set +ex
   if [ "$(xx-info os)" = "linux" ]; then
     max_retries=5
@@ -247,7 +247,7 @@ RUN mkdir -p /etc/cdi /var/run/cdi /etc/buildkit/cdi
 FROM gobuild-base AS containerd-build
 WORKDIR /go/src/github.com/containerd/containerd
 ARG TARGETPLATFORM
-# nri_no_wasm: workaround for a compilation error https://github.com/moby/buildkit/pull/6340
+# nri_no_wasm: workaround for a compilation error https://github.com/talos-riscv/buildkit/pull/6340
 ENV CGO_ENABLED=1 CGO_LDFLAGS="-fuse-ld=lld" BUILDTAGS="no_btrfs nri_no_wasm" GO111MODULE=off
 RUN xx-apk add musl-dev gcc && xx-go --wrap
 COPY --chmod=755 <<-EOT /build.sh
@@ -383,7 +383,7 @@ RUN --mount=target=/root/.cache,type=cache\
   set -ex
   mkdir /out
   if [ "$(xx-info os)" = "freebsd" ]; then
-    echo "WARN: dlv requires cgo enabled on FreeBSD, skipping: https://github.com/moby/buildkit/pull/5497#issuecomment-2462031339"
+    echo "WARN: dlv requires cgo enabled on FreeBSD, skipping: https://github.com/talos-riscv/buildkit/pull/5497#issuecomment-2462031339"
     exit 0
   fi
   xx-go install "github.com/go-delve/delve/cmd/dlv@${DELVE_VERSION}"
@@ -444,7 +444,7 @@ RUN curl -fsSL https://raw.githubusercontent.com/containerd/nerdctl/$NERDCTL_VER
 ARG AZURITE_VERSION
 RUN apk add --no-cache nodejs npm \
   && npm install -g azurite@${AZURITE_VERSION}
-# The entrypoint script is needed for enabling nested cgroup v2 (https://github.com/moby/buildkit/issues/3265#issuecomment-1309631736)
+# The entrypoint script is needed for enabling nested cgroup v2 (https://github.com/talos-riscv/buildkit/issues/3265#issuecomment-1309631736)
 RUN curl -fsSL https://raw.githubusercontent.com/moby/moby/v25.0.1/hack/dind > /docker-entrypoint.sh \
   && chmod 0755 /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]

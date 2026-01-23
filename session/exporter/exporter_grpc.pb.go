@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.11.4
-// source: github.com/moby/buildkit/session/exporter/exporter.proto
+// source: github.com/talos-riscv/buildkit/session/exporter/exporter.proto
 
 package exporter
 
@@ -115,5 +115,5 @@ var Exporter_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "github.com/moby/buildkit/session/exporter/exporter.proto",
+	Metadata: "github.com/talos-riscv/buildkit/session/exporter/exporter.proto",
 }

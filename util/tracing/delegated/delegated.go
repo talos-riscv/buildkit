@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/moby/buildkit/client"
+	"github.com/talos-riscv/buildkit/client"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 )
 

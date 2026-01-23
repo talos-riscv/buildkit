@@ -61,7 +61,7 @@ To apply the build arg value to the timestamps of the files inside the image, sp
 ```
 
 The `rewrite-timestamp` option is available since BuildKit v0.13.
-See [v0.12 documentation](https://github.com/moby/buildkit/blob/v0.12/docs/build-repro.md#caveats) for dealing with timestamps
+See [v0.12 documentation](https://github.com/talos-riscv/buildkit/blob/v0.12/docs/build-repro.md#caveats) for dealing with timestamps
 in BuildKit v0.12 and v0.11.
 
 See also the [documentation](/frontend/dockerfile/docs/reference.md#buildkit-built-in-build-args) of the Dockerfile frontend.

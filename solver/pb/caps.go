@@ -1,6 +1,6 @@
 package pb
 
-import "github.com/moby/buildkit/util/apicaps"
+import "github.com/talos-riscv/buildkit/util/apicaps"
 
 var Caps apicaps.CapList
 

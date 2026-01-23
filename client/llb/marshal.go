@@ -7,7 +7,7 @@ import (
 
 	cerrdefs "github.com/containerd/errdefs"
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 	"google.golang.org/protobuf/proto"
 )

@@ -5,14 +5,14 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/moby/buildkit/executor/resources"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	gatewaypb "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver"
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
-	"github.com/moby/buildkit/solver/result"
-	"github.com/moby/buildkit/util/tracing"
+	"github.com/talos-riscv/buildkit/executor/resources"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	gatewaypb "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/llbsolver"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
+	"github.com/talos-riscv/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/util/tracing"
 	"github.com/pkg/errors"
 )
 

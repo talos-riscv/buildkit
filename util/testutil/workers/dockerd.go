@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/moby/buildkit/cmd/buildkitd/config"
-	"github.com/moby/buildkit/util/testutil/dockerd"
-	"github.com/moby/buildkit/util/testutil/dockerd/client"
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/cmd/buildkitd/config"
+	"github.com/talos-riscv/buildkit/util/testutil/dockerd"
+	"github.com/talos-riscv/buildkit/util/testutil/dockerd/client"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 	"github.com/pkg/errors"
 	"golang.org/x/sync/errgroup"
 )

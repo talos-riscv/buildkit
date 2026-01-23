@@ -6,8 +6,8 @@ import (
 
 	"github.com/containerd/containerd/v2/core/content"
 	"github.com/containerd/containerd/v2/core/content/proxy"
-	bccommon "github.com/moby/buildkit/cmd/buildctl/common"
-	"github.com/moby/buildkit/util/appcontext"
+	bccommon "github.com/talos-riscv/buildkit/cmd/buildctl/common"
+	"github.com/talos-riscv/buildkit/util/appcontext"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"

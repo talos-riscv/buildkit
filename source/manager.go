@@ -5,10 +5,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/pkg/errors"
 )
 

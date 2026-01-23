@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/Microsoft/go-winio"
-	"github.com/moby/buildkit/client/connhelper"
+	"github.com/talos-riscv/buildkit/client/connhelper"
 	"github.com/pkg/errors"
 )
 

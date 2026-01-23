@@ -186,7 +186,7 @@ spec:
         # Dockerfile has `VOLUME /home/user/.local/share/buildkit` by default too,
         # but the default VOLUME does not work with rootless on Google's Container-Optimized OS
         # as it is mounted with `nosuid,nodev`.
-        # https://github.com/moby/buildkit/issues/879#issuecomment-1240347038
+        # https://github.com/talos-riscv/buildkit/issues/879#issuecomment-1240347038
         - mountPath: /home/user/.local/share/buildkit
           name: buildkitd
   volumes:

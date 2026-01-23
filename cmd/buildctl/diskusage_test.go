@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/moby/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
 	"github.com/stretchr/testify/require"
 )
 

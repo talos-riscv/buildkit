@@ -3,8 +3,8 @@ package client
 import (
 	"context"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
-	apitypes "github.com/moby/buildkit/api/types"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
+	apitypes "github.com/talos-riscv/buildkit/api/types"
 	"github.com/pkg/errors"
 )
 

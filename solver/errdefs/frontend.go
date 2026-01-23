@@ -5,11 +5,11 @@ import (
 	"fmt"
 
 	"github.com/containerd/typeurl/v2"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 )
 
 func init() {
-	typeurl.Register((*Frontend)(nil), "github.com/moby/buildkit", "errdefs.Frontend+json")
+	typeurl.Register((*Frontend)(nil), "github.com/talos-riscv/buildkit", "errdefs.Frontend+json")
 }
 
 type FrontendError struct {

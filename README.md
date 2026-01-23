@@ -2,11 +2,11 @@
 
 # BuildKit <!-- omit in toc -->
 
-[![GitHub Release](https://img.shields.io/github/release/moby/buildkit.svg?style=flat-square)](https://github.com/moby/buildkit/releases/latest)
-[![PkgGoDev](https://img.shields.io/badge/go.dev-docs-007d9c?style=flat-square&logo=go&logoColor=white)](https://pkg.go.dev/github.com/moby/buildkit/client/llb)
-[![CI BuildKit Status](https://img.shields.io/github/actions/workflow/status/moby/buildkit/buildkit.yml?label=buildkit&logo=github&style=flat-square)](https://github.com/moby/buildkit/actions?query=workflow%3Abuildkit)
-[![CI Frontend Status](https://img.shields.io/github/actions/workflow/status/moby/buildkit/frontend.yml?label=frontend&logo=github&style=flat-square)](https://github.com/moby/buildkit/actions?query=workflow%3Afrontend)
-[![Go Report Card](https://goreportcard.com/badge/github.com/moby/buildkit?style=flat-square)](https://goreportcard.com/report/github.com/moby/buildkit)
+[![GitHub Release](https://img.shields.io/github/release/moby/buildkit.svg?style=flat-square)](https://github.com/talos-riscv/buildkit/releases/latest)
+[![PkgGoDev](https://img.shields.io/badge/go.dev-docs-007d9c?style=flat-square&logo=go&logoColor=white)](https://pkg.go.dev/github.com/talos-riscv/buildkit/client/llb)
+[![CI BuildKit Status](https://img.shields.io/github/actions/workflow/status/moby/buildkit/buildkit.yml?label=buildkit&logo=github&style=flat-square)](https://github.com/talos-riscv/buildkit/actions?query=workflow%3Abuildkit)
+[![CI Frontend Status](https://img.shields.io/github/actions/workflow/status/moby/buildkit/frontend.yml?label=frontend&logo=github&style=flat-square)](https://github.com/talos-riscv/buildkit/actions?query=workflow%3Afrontend)
+[![Go Report Card](https://goreportcard.com/badge/github.com/talos-riscv/buildkit?style=flat-square)](https://goreportcard.com/report/github.com/talos-riscv/buildkit)
 [![Codecov](https://img.shields.io/codecov/c/github/moby/buildkit?logo=codecov&style=flat-square)](https://codecov.io/gh/moby/buildkit)
 
 BuildKit is a toolkit for converting source code to build artifacts in an efficient, expressive and repeatable manner.
@@ -121,7 +121,7 @@ BuildKit is used by the following projects:
 BuildKit is composed of the `buildkitd` daemon and the `buildctl` client.
 While the `buildctl` client is available for Linux, macOS, and Windows, the `buildkitd` daemon is only available for Linux and *Windows currently.
 
-The latest binaries of BuildKit are available [here](https://github.com/moby/buildkit/releases) for Linux, macOS, and Windows.
+The latest binaries of BuildKit are available [here](https://github.com/talos-riscv/buildkit/releases) for Linux, macOS, and Windows.
 
 
 ### Linux Setup
@@ -237,7 +237,7 @@ If the Dockerfile has a different filename it can be specified with `--opt filen
 
 #### Building a Dockerfile using external frontend
 
-External versions of the Dockerfile frontend are pushed to https://hub.docker.com/r/docker/dockerfile-upstream and https://hub.docker.com/r/docker/dockerfile and can be used with the gateway frontend. The source for the external frontend is currently located in `./frontend/dockerfile/cmd/dockerfile-frontend` but will move out of this repository in the future ([#163](https://github.com/moby/buildkit/issues/163)). For automatic build from master branch of this repository `docker/dockerfile-upstream:master` or `docker/dockerfile-upstream:master-labs` image can be used.
+External versions of the Dockerfile frontend are pushed to https://hub.docker.com/r/docker/dockerfile-upstream and https://hub.docker.com/r/docker/dockerfile and can be used with the gateway frontend. The source for the external frontend is currently located in `./frontend/dockerfile/cmd/dockerfile-frontend` but will move out of this repository in the future ([#163](https://github.com/talos-riscv/buildkit/issues/163)). For automatic build from master branch of this repository `docker/dockerfile-upstream:master` or `docker/dockerfile-upstream:master-labs` image can be used.
 
 ```bash
 buildctl build \
@@ -718,7 +718,7 @@ BuildKit can also be used by running the `buildkitd` daemon inside a Docker cont
 
 We provide the container images as [`moby/buildkit`](https://hub.docker.com/r/moby/buildkit/tags/):
 
--   `moby/buildkit:latest`: built from the latest regular [release](https://github.com/moby/buildkit/releases)
+-   `moby/buildkit:latest`: built from the latest regular [release](https://github.com/talos-riscv/buildkit/releases)
 -   `moby/buildkit:rootless`: same as `latest` but runs as an unprivileged user, see [`docs/rootless.md`](docs/rootless.md)
 -   `moby/buildkit:master`: built from the master branch
 -   `moby/buildkit:master-rootless`: same as master but runs as an unprivileged user, see [`docs/rootless.md`](docs/rootless.md)
@@ -826,7 +826,7 @@ Please refer to [`docs/multi-platform.md`](docs/multi-platform.md).
 
 Parsing errors will be reported but ignored. This will result in default color values being used where needed.
 
-- [The list of pre-defined colors](https://github.com/moby/buildkit/blob/master/util/progress/progressui/colors.go).
+- [The list of pre-defined colors](https://github.com/talos-riscv/buildkit/blob/master/util/progress/progressui/colors.go).
 
 #### Number of log lines (for active steps in tty mode)
 You can change how many log lines are visible for active steps in tty mode by setting `BUILDKIT_TTY_LOG_LINES` to a number (default: 6).

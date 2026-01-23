@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/http/httptrace"
 
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/stack"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/stack"
 	"github.com/pkg/errors"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/httptrace/otelhttptrace"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"

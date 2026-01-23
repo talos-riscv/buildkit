@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package moby.exporter.v1;
 
-option go_package = "github.com/moby/buildkit/session/exporter";
+option go_package = "github.com/talos-riscv/buildkit/session/exporter";
 
 service Exporter {
 	rpc FindExporters(FindExportersRequest) returns (FindExportersResponse);

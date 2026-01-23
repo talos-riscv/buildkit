@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/moby/buildkit/exporter"
-	commonexptypes "github.com/moby/buildkit/exporter/exptypes"
+	"github.com/talos-riscv/buildkit/exporter"
+	commonexptypes "github.com/talos-riscv/buildkit/exporter/exptypes"
 	"github.com/pkg/errors"
 )
 

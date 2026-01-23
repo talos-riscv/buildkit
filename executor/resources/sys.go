@@ -1,6 +1,6 @@
 package resources
 
-import resourcestypes "github.com/moby/buildkit/executor/resources/types"
+import resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
 
 type SysSampler = Sub[*resourcestypes.SysSample]
 

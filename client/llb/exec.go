@@ -8,8 +8,8 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/system"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

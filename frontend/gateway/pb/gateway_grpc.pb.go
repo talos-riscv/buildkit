@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v3.11.4
-// source: github.com/moby/buildkit/frontend/gateway/pb/gateway.proto
+// source: github.com/talos-riscv/buildkit/frontend/gateway/pb/gateway.proto
 
 package moby_buildkit_v1_frontend
 
@@ -738,5 +738,5 @@ var LLBBridge_ServiceDesc = grpc.ServiceDesc{
 			ClientStreams: true,
 		},
 	},
-	Metadata: "github.com/moby/buildkit/frontend/gateway/pb/gateway.proto",
+	Metadata: "github.com/talos-riscv/buildkit/frontend/gateway/pb/gateway.proto",
 }

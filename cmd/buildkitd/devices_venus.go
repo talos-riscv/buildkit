@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/moby/buildkit/contrib/cdisetup/venus"
+	_ "github.com/talos-riscv/buildkit/contrib/cdisetup/venus"
 )

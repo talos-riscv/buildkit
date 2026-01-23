@@ -4,7 +4,7 @@ import (
 	"context"
 	"path/filepath"
 
-	"github.com/moby/buildkit/util/windows"
+	"github.com/talos-riscv/buildkit/util/windows"
 	"github.com/moby/sys/user"
 	copy "github.com/tonistiigi/fsutil/copy"
 )

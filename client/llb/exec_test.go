@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/stretchr/testify/require"
 )
 
@@ -28,7 +28,7 @@ func TestTmpfsMountError(t *testing.T) {
 }
 
 func TestValidGetMountIndex(t *testing.T) {
-	// tests for https://github.com/moby/buildkit/issues/1520
+	// tests for https://github.com/talos-riscv/buildkit/issues/1520
 
 	// tmpfs mount /c will sort later than target mount /b, /b will have output index==1
 	st := Image("foo").Run(Shlex("args"), AddMount("/b", Scratch()), AddMount("/c", Scratch(), Tmpfs())).GetMount("/b")

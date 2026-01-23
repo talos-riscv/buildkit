@@ -7,12 +7,12 @@ import (
 	"io"
 	"os"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/client/llb/imagemetaresolver"
-	"github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb"
-	"github.com/moby/buildkit/frontend/dockerui"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/appcontext"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/client/llb/imagemetaresolver"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/dockerfile2llb"
+	"github.com/talos-riscv/buildkit/frontend/dockerui"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/appcontext"
 	"github.com/sirupsen/logrus"
 )
 

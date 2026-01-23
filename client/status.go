@@ -3,7 +3,7 @@ package client
 import (
 	"time"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
 	digest "github.com/opencontainers/go-digest"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )

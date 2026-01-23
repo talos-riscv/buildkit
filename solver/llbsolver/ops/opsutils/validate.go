@@ -1,7 +1,7 @@
 package opsutils
 
 import (
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/pkg/errors"
 )
 

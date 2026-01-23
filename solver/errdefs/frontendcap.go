@@ -4,11 +4,11 @@ import (
 	fmt "fmt"
 
 	"github.com/containerd/typeurl/v2"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 )
 
 func init() {
-	typeurl.Register((*FrontendCap)(nil), "github.com/moby/buildkit", "errdefs.FrontendCap+json")
+	typeurl.Register((*FrontendCap)(nil), "github.com/talos-riscv/buildkit", "errdefs.FrontendCap+json")
 }
 
 type UnsupportedFrontendCapError struct {

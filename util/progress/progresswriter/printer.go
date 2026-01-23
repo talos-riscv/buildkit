@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/containerd/console"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/util/progress/progressui"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/util/progress/progressui"
 )
 
 type printer struct {

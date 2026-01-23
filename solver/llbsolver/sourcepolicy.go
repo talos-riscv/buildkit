@@ -3,7 +3,7 @@ package llbsolver
 import (
 	"context"
 
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 )
 
 type SourcePolicyEvaluator interface {

@@ -1,6 +1,6 @@
 package exptypes
 
-import commonexptypes "github.com/moby/buildkit/exporter/exptypes"
+import commonexptypes "github.com/talos-riscv/buildkit/exporter/exptypes"
 
 type ImageExporterOptKey string
 

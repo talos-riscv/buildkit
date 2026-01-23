@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/frontend/dockerfile/instructions"
-	"github.com/moby/buildkit/frontend/dockerfile/linter"
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/instructions"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/linter"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/parser"
 	"github.com/pkg/errors"
 )
 
@@ -102,7 +102,7 @@ func (ps *portSpecs) parsePort(rawPort string) (portProto []string, _ error) {
 		}
 	}
 
-	// TODO(thaJeztah): mapping IP-addresses should not be allowed for EXPOSE; see https://github.com/moby/buildkit/issues/2173
+	// TODO(thaJeztah): mapping IP-addresses should not be allowed for EXPOSE; see https://github.com/talos-riscv/buildkit/issues/2173
 	if ip != "" && ip[0] == '[' {
 		// Strip [] from IPV6 addresses
 		rawIP, _, err := net.SplitHostPort(ip + ":")
@@ -120,7 +120,7 @@ func (ps *portSpecs) parsePort(rawPort string) (portProto []string, _ error) {
 		return nil, errors.New("invalid containerPort: " + containerPort)
 	}
 
-	// TODO(thaJeztah): mapping host-ports should not be allowed for EXPOSE; see https://github.com/moby/buildkit/issues/2173
+	// TODO(thaJeztah): mapping host-ports should not be allowed for EXPOSE; see https://github.com/talos-riscv/buildkit/issues/2173
 	if hostPort != "" {
 		startHostPort, endHostPort, err := ps.parsePortRange(hostPort)
 		if err != nil {

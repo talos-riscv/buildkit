@@ -28,7 +28,7 @@ RUN --mount=target=. <<EOT
   else
     VERSION=$(git describe --always --tags --match "dockerfile/[0-9]*-$CHANNEL")
   fi
-  PKG=github.com/moby/buildkit/frontend/dockerfile/cmd/dockerfile-frontend
+  PKG=github.com/talos-riscv/buildkit/frontend/dockerfile/cmd/dockerfile-frontend
   REVISION=$(git rev-parse HEAD)$(if ! git diff --no-ext-diff --quiet --exit-code; then echo .m; fi)
   echo "-X main.Version=${VERSION} -X main.Revision=${REVISION} -X main.Package=${PKG}" | tee /tmp/.ldflags
   echo -n "$BUILDTAGS $(cat $tagsFile)" | tee /tmp/.buildtags

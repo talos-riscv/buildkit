@@ -5,8 +5,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/session/upload"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/session/upload"
 	"github.com/pkg/errors"
 )
 

@@ -5,8 +5,8 @@ import (
 	"flag"
 	"os"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/util/system"
 )
 
 type buildOpt struct {
@@ -60,8 +60,8 @@ func containerd(version string) llb.State {
 
 func buildkit(opt buildOpt) llb.State {
 	src := goBuildBase().
-		Run(llb.Shlex("git clone https://github.com/moby/buildkit.git /go/src/github.com/moby/buildkit")).
-		Dir("/go/src/github.com/moby/buildkit")
+		Run(llb.Shlex("git clone https://github.com/talos-riscv/buildkit.git /go/src/github.com/talos-riscv/buildkit")).
+		Dir("/go/src/github.com/talos-riscv/buildkit")
 
 	buildkitd := src.
 		Run(llb.Shlex("go build -o /bin/buildkitd ./cmd/buildkitd"))

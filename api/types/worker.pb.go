@@ -2,12 +2,12 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/api/types/worker.proto
+// source: github.com/talos-riscv/buildkit/api/types/worker.proto
 
 package moby_buildkit_v1_types
 
 import (
-	pb "github.com/moby/buildkit/solver/pb"
+	pb "github.com/talos-riscv/buildkit/solver/pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -323,7 +323,7 @@ var File_github_com_moby_buildkit_api_types_worker_proto protoreflect.FileDescri
 
 const file_github_com_moby_buildkit_api_types_worker_proto_rawDesc = "" +
 	"\n" +
-	"/github.com/moby/buildkit/api/types/worker.proto\x12\x16moby.buildkit.v1.types\x1a,github.com/moby/buildkit/solver/pb/ops.proto\"\xa3\x03\n" +
+	"/github.com/talos-riscv/buildkit/api/types/worker.proto\x12\x16moby.buildkit.v1.types\x1a,github.com/talos-riscv/buildkit/solver/pb/ops.proto\"\xa3\x03\n" +
 	"\fWorkerRecord\x12\x0e\n" +
 	"\x02ID\x18\x01 \x01(\tR\x02ID\x12H\n" +
 	"\x06Labels\x18\x02 \x03(\v20.moby.buildkit.v1.types.WorkerRecord.LabelsEntryR\x06Labels\x12*\n" +
@@ -354,7 +354,7 @@ const file_github_com_moby_buildkit_api_types_worker_proto_rawDesc = "" +
 	"\bOnDemand\x18\x04 \x01(\bR\bOnDemand\x1a>\n" +
 	"\x10AnnotationsEntry\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
-	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01B;Z9github.com/moby/buildkit/api/types;moby_buildkit_v1_typesb\x06proto3"
+	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x01B;Z9github.com/talos-riscv/buildkit/api/types;moby_buildkit_v1_typesb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_api_types_worker_proto_rawDescOnce sync.Once

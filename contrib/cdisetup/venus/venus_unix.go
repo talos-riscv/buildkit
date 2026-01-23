@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/moby/buildkit/solver/llbsolver/cdidevices"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/cdidevices"
 	"github.com/pkg/errors"
 	"golang.org/x/sys/unix"
 )

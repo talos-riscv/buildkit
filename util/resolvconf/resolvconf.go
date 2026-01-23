@@ -25,8 +25,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/errdefs"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/errdefs"
+	"github.com/talos-riscv/buildkit/util/bklog"
 )
 
 // Fallback nameservers, to use if none can be obtained from the host or command

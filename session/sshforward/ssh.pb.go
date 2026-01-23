@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/session/sshforward/ssh.proto
+// source: github.com/talos-riscv/buildkit/session/sshforward/ssh.proto
 
 package sshforward
 
@@ -150,7 +150,7 @@ var File_github_com_moby_buildkit_session_sshforward_ssh_proto protoreflect.File
 
 const file_github_com_moby_buildkit_session_sshforward_ssh_proto_rawDesc = "" +
 	"\n" +
-	"5github.com/moby/buildkit/session/sshforward/ssh.proto\x12\x12moby.sshforward.v1\"\"\n" +
+	"5github.com/talos-riscv/buildkit/session/sshforward/ssh.proto\x12\x12moby.sshforward.v1\"\"\n" +
 	"\fBytesMessage\x12\x12\n" +
 	"\x04data\x18\x01 \x01(\fR\x04data\"#\n" +
 	"\x11CheckAgentRequest\x12\x0e\n" +
@@ -159,7 +159,7 @@ const file_github_com_moby_buildkit_session_sshforward_ssh_proto_rawDesc = "" +
 	"\x03SSH\x12[\n" +
 	"\n" +
 	"CheckAgent\x12%.moby.sshforward.v1.CheckAgentRequest\x1a&.moby.sshforward.v1.CheckAgentResponse\x12V\n" +
-	"\fForwardAgent\x12 .moby.sshforward.v1.BytesMessage\x1a .moby.sshforward.v1.BytesMessage(\x010\x01B-Z+github.com/moby/buildkit/session/sshforwardb\x06proto3"
+	"\fForwardAgent\x12 .moby.sshforward.v1.BytesMessage\x1a .moby.sshforward.v1.BytesMessage(\x010\x01B-Z+github.com/talos-riscv/buildkit/session/sshforwardb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_session_sshforward_ssh_proto_rawDescOnce sync.Once

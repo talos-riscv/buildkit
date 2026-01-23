@@ -72,16 +72,16 @@ RUN --mount=type=bind,source=go.mod,target=/app/go.mod \
 COPY --link --from=protobuf / /usr/local
 
 FROM tools AS generated
-RUN --mount=type=bind,target=github.com/moby/buildkit <<EOT
+RUN --mount=type=bind,target=github.com/talos-riscv/buildkit <<EOT
   set -ex
   mkdir /out
-  find github.com/moby/buildkit -name '*.proto' -o -name vendor -prune -false | xargs \
+  find github.com/talos-riscv/buildkit -name '*.proto' -o -name vendor -prune -false | xargs \
     protoc --go_out=/out --go-grpc_out=require_unimplemented_servers=false:/out \
            --go-vtproto_out=features=marshal+unmarshal+size+equal+pool+clone:/out
 EOT
 
 FROM scratch AS update
-COPY --from=generated /out/github.com/moby/buildkit /
+COPY --from=generated /out/github.com/talos-riscv/buildkit /
 
 FROM gobuild-base AS validate
 RUN --mount=type=bind,target=.,rw \

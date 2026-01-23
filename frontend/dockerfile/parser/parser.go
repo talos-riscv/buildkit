@@ -12,8 +12,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/moby/buildkit/frontend/dockerfile/command"
-	"github.com/moby/buildkit/frontend/dockerfile/shell"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/command"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/shell"
 	"github.com/pkg/errors"
 )
 

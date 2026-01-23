@@ -3,7 +3,7 @@ package boltutil
 import (
 	"io/fs"
 
-	"github.com/moby/buildkit/util/db"
+	"github.com/talos-riscv/buildkit/util/db"
 	bolt "go.etcd.io/bbolt"
 )
 

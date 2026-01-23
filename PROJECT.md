@@ -66,7 +66,7 @@ BuildKit maintains backward compatibility in the gRPC API with previous releases
 
 Go modules in the BuildKit repository aren't guaranteed to be backward compatible with previous release branches.
 
-Once a new feature release is cut, no support is offered for the previous feature release. An exception might be if a security release suddenly appears very soon after a new feature release. There are no LTS releases. If you need a different support cycle, consider using a [product that includes BuildKit](https://github.com/moby/buildkit#used-by), (eg. Docker) instead.
+Once a new feature release is cut, no support is offered for the previous feature release. An exception might be if a security release suddenly appears very soon after a new feature release. There are no LTS releases. If you need a different support cycle, consider using a [product that includes BuildKit](https://github.com/talos-riscv/buildkit#used-by), (eg. Docker) instead.
 
 Anyone can ask for an issue or PR to be included in the next feature- or patch release milestone, assuming it passes the requirements.
 

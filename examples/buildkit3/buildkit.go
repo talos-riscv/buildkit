@@ -5,8 +5,8 @@ import (
 	"flag"
 	"os"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/util/system"
 )
 
 type buildOpt struct {
@@ -76,7 +76,7 @@ func containerd(version string) llb.State {
 }
 
 func buildkit(opt buildOpt) llb.State {
-	repo := "github.com/moby/buildkit"
+	repo := "github.com/talos-riscv/buildkit"
 	src := llb.Git(repo, opt.buildkit)
 	if opt.buildkit == "local" {
 		src = llb.Local("buildkit-src")

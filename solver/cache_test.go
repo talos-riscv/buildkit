@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/identity"
+	"github.com/talos-riscv/buildkit/identity"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/stretchr/testify/require"
 )

@@ -4,9 +4,9 @@ import (
 	"context"
 	"os"
 
-	"github.com/moby/buildkit/util/appcontext"
-	"github.com/moby/buildkit/util/tracing/delegated"
-	"github.com/moby/buildkit/util/tracing/detect"
+	"github.com/talos-riscv/buildkit/util/appcontext"
+	"github.com/talos-riscv/buildkit/util/tracing/delegated"
+	"github.com/talos-riscv/buildkit/util/tracing/detect"
 	"github.com/urfave/cli"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"

@@ -2,13 +2,13 @@ package policysession
 
 import (
 	"github.com/containerd/typeurl/v2"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/grpcerrors"
+	spb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
 )
 
 func init() {
-	typeurl.Register((*DecisionResponse)(nil), "github.com/moby/buildkit", "policysession.DecisionResponse+json")
+	typeurl.Register((*DecisionResponse)(nil), "github.com/talos-riscv/buildkit", "policysession.DecisionResponse+json")
 }
 
 // DenyMessagesError wraps an error with policy deny messages so they can be

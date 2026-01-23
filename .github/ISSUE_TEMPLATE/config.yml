@@ -2,10 +2,10 @@
 blank_issues_enabled: true
 contact_links:
   - name: Questions and Discussions
-    url: https://github.com/moby/buildkit/discussions/new
+    url: https://github.com/talos-riscv/buildkit/discussions/new
     about: Use Github Discussions to ask questions and/or open discussion topics.
   - name: Documentation
-    url: https://github.com/moby/buildkit/tree/master/docs
+    url: https://github.com/talos-riscv/buildkit/tree/master/docs
     about: Read the documentation.
   - name: Join the Docker Community on Slack
     url: http://dockr.ly/comm-slack

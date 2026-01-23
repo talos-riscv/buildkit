@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.11.4
-// source: github.com/moby/buildkit/session/exporter/exporter.proto
+// source: github.com/talos-riscv/buildkit/session/exporter/exporter.proto
 
 package exporter
 
@@ -173,7 +173,7 @@ var File_github_com_moby_buildkit_session_exporter_exporter_proto protoreflect.F
 
 const file_github_com_moby_buildkit_session_exporter_exporter_proto_rawDesc = "" +
 	"\n" +
-	"8github.com/moby/buildkit/session/exporter/exporter.proto\x12\x10moby.exporter.v1\"\xb9\x01\n" +
+	"8github.com/talos-riscv/buildkit/session/exporter/exporter.proto\x12\x10moby.exporter.v1\"\xb9\x01\n" +
 	"\x14FindExportersRequest\x12P\n" +
 	"\bmetadata\x18\x01 \x03(\v24.moby.exporter.v1.FindExportersRequest.MetadataEntryR\bmetadata\x12\x12\n" +
 	"\x04refs\x18\x02 \x03(\tR\x04refs\x1a;\n" +
@@ -190,7 +190,7 @@ const file_github_com_moby_buildkit_session_exporter_exporter_proto_rawDesc = ""
 	"\x03key\x18\x01 \x01(\tR\x03key\x12\x14\n" +
 	"\x05value\x18\x02 \x01(\tR\x05value:\x028\x012l\n" +
 	"\bExporter\x12`\n" +
-	"\rFindExporters\x12&.moby.exporter.v1.FindExportersRequest\x1a'.moby.exporter.v1.FindExportersResponseB+Z)github.com/moby/buildkit/session/exporterb\x06proto3"
+	"\rFindExporters\x12&.moby.exporter.v1.FindExportersRequest\x1a'.moby.exporter.v1.FindExportersResponseB+Z)github.com/talos-riscv/buildkit/session/exporterb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_session_exporter_exporter_proto_rawDescOnce sync.Once

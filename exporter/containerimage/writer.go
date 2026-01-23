@@ -16,25 +16,25 @@ import (
 	"github.com/containerd/containerd/v2/pkg/labels"
 	"github.com/containerd/platforms"
 	intoto "github.com/in-toto/in-toto-golang/in_toto"
-	"github.com/moby/buildkit/cache"
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/exporter"
-	"github.com/moby/buildkit/exporter/attestation"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/exporter/util/epoch"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/result"
-	attestationTypes "github.com/moby/buildkit/util/attestation"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/util/contentutil"
-	"github.com/moby/buildkit/util/converter"
-	"github.com/moby/buildkit/util/progress"
-	"github.com/moby/buildkit/util/purl"
-	"github.com/moby/buildkit/util/system"
-	"github.com/moby/buildkit/util/tracing"
+	"github.com/talos-riscv/buildkit/cache"
+	cacheconfig "github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/exporter"
+	"github.com/talos-riscv/buildkit/exporter/attestation"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/exporter/util/epoch"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/result"
+	attestationTypes "github.com/talos-riscv/buildkit/util/attestation"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/util/contentutil"
+	"github.com/talos-riscv/buildkit/util/converter"
+	"github.com/talos-riscv/buildkit/util/progress"
+	"github.com/talos-riscv/buildkit/util/purl"
+	"github.com/talos-riscv/buildkit/util/system"
+	"github.com/talos-riscv/buildkit/util/tracing"
 	dockerspec "github.com/moby/docker-image-spec/specs-go/v1"
 	digest "github.com/opencontainers/go-digest"
 	specs "github.com/opencontainers/image-spec/specs-go"
@@ -754,7 +754,7 @@ func patchImageConfig(dt []byte, descs []ocispecs.Descriptor, history []ocispecs
 		for i, h := range history {
 			if !divergedFromBase && baseImg != nil && i < len(baseImg.History) && reflect.DeepEqual(h, baseImg.History[i]) {
 				// Retain the timestamp for the base image layers
-				// https://github.com/moby/buildkit/issues/4614
+				// https://github.com/talos-riscv/buildkit/issues/4614
 				continue
 			}
 			divergedFromBase = true

@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )

@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver/llbsolver/ops/fileoptypes"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/ops/fileoptypes"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )

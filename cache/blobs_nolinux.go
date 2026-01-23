@@ -6,7 +6,7 @@ import (
 	"context"
 
 	"github.com/containerd/containerd/v2/core/mount"
-	"github.com/moby/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/util/compression"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

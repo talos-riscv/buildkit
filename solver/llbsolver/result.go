@@ -3,12 +3,12 @@ package llbsolver
 import (
 	"context"
 
-	cacheconfig "github.com/moby/buildkit/cache/config"
-	"github.com/moby/buildkit/frontend"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver/provenance"
-	"github.com/moby/buildkit/worker"
+	cacheconfig "github.com/talos-riscv/buildkit/cache/config"
+	"github.com/talos-riscv/buildkit/frontend"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/provenance"
+	"github.com/talos-riscv/buildkit/worker"
 	"github.com/pkg/errors"
 )
 

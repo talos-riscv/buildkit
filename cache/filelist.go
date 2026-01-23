@@ -10,7 +10,7 @@ import (
 	"slices"
 
 	cdcompression "github.com/containerd/containerd/v2/pkg/archive/compression"
-	"github.com/moby/buildkit/session"
+	"github.com/talos-riscv/buildkit/session"
 )
 
 const keyFileList = "filelist"

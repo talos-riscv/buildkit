@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/moby/buildkit/contrib/cdisetup/nvidia"
+	_ "github.com/talos-riscv/buildkit/contrib/cdisetup/nvidia"
 )

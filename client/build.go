@@ -4,12 +4,12 @@ import (
 	"context"
 	"maps"
 
-	"github.com/moby/buildkit/client/buildid"
-	gateway "github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/frontend/gateway/grpcclient"
-	gatewayapi "github.com/moby/buildkit/frontend/gateway/pb"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/apicaps"
+	"github.com/talos-riscv/buildkit/client/buildid"
+	gateway "github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/frontend/gateway/grpcclient"
+	gatewayapi "github.com/talos-riscv/buildkit/frontend/gateway/pb"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/util/apicaps"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

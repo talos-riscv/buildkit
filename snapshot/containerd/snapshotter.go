@@ -6,7 +6,7 @@ import (
 	"github.com/containerd/containerd/v2/core/mount"
 	"github.com/containerd/containerd/v2/core/snapshots"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
-	"github.com/moby/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/snapshot"
 	"github.com/moby/sys/user"
 	"github.com/pkg/errors"
 )

@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/identity"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/apicaps"
+	"github.com/talos-riscv/buildkit/identity"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/apicaps"
 	digest "github.com/opencontainers/go-digest"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 )

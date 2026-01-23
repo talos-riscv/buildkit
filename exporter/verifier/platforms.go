@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
-	"github.com/moby/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/solver/result"
 	"github.com/pkg/errors"
 )
 

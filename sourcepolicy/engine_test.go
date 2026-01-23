@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/moby/buildkit/solver/pb"
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	spb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
+	"github.com/talos-riscv/buildkit/util/bklog"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/require"
 )
@@ -421,7 +421,7 @@ func testAllowDeny(t *testing.T) {
 func testDenyAll(t *testing.T) {
 	cases := map[string]string{
 		"docker-image": "docker-image://docker.io/library/alpine:latest",
-		"https":        "https://github.com/moby/buildkit.git",
+		"https":        "https://github.com/talos-riscv/buildkit.git",
 		"http":         "http://example.com",
 	}
 

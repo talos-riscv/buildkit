@@ -9,8 +9,8 @@ import (
 	"sync"
 	"time"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
-	"github.com/moby/buildkit/session"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
+	"github.com/talos-riscv/buildkit/session"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

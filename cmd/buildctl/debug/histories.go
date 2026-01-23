@@ -6,9 +6,9 @@ import (
 	"text/tabwriter"
 	"time"
 
-	controlapi "github.com/moby/buildkit/api/services/control"
-	bccommon "github.com/moby/buildkit/cmd/buildctl/common"
-	"github.com/moby/buildkit/util/appcontext"
+	controlapi "github.com/talos-riscv/buildkit/api/services/control"
+	bccommon "github.com/talos-riscv/buildkit/cmd/buildctl/common"
+	"github.com/talos-riscv/buildkit/util/appcontext"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"
 )

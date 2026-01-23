@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/moby/buildkit/client/llb"
-	"github.com/moby/buildkit/util/testutil/integration"
-	"github.com/moby/buildkit/util/testutil/workers"
+	"github.com/talos-riscv/buildkit/client/llb"
+	"github.com/talos-riscv/buildkit/util/testutil/integration"
+	"github.com/talos-riscv/buildkit/util/testutil/workers"
 	"github.com/stretchr/testify/require"
 )
 

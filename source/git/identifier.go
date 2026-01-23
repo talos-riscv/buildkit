@@ -3,11 +3,11 @@ package git
 import (
 	"path"
 
-	"github.com/moby/buildkit/solver/llbsolver/provenance"
-	provenancetypes "github.com/moby/buildkit/solver/llbsolver/provenance/types"
-	"github.com/moby/buildkit/source"
-	srctypes "github.com/moby/buildkit/source/types"
-	"github.com/moby/buildkit/util/gitutil"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/provenance"
+	provenancetypes "github.com/talos-riscv/buildkit/solver/llbsolver/provenance/types"
+	"github.com/talos-riscv/buildkit/source"
+	srctypes "github.com/talos-riscv/buildkit/source/types"
+	"github.com/talos-riscv/buildkit/util/gitutil"
 )
 
 type GitIdentifier struct {

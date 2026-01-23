@@ -14,11 +14,11 @@ import (
 	"github.com/containerd/containerd/v2/pkg/oci"
 	cdseccomp "github.com/containerd/containerd/v2/pkg/seccomp"
 	"github.com/containerd/continuity/fs"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/solver/llbsolver/cdidevices"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/entitlements/security"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/cdidevices"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/entitlements/security"
 	"github.com/moby/profiles/seccomp"
 	"github.com/moby/sys/user"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
@@ -43,7 +43,7 @@ func withProcessArgs(args ...string) oci.SpecOpts {
 
 func generateMountOpts(resolvConf, hostsFile string) []oci.SpecOpts {
 	return []oci.SpecOpts{
-		// https://github.com/moby/buildkit/issues/429
+		// https://github.com/talos-riscv/buildkit/issues/429
 		withRemovedMount("/run"),
 		withROBind(resolvConf, "/etc/resolv.conf"),
 		withROBind(hostsFile, "/etc/hosts"),
@@ -272,7 +272,7 @@ func cgroupV2NamespaceSupported() bool {
 	// Check if cgroups v2 namespaces are supported.  Trying to do cgroup
 	// namespaces with cgroups v1 results in EINVAL when we encounter a
 	// non-standard hierarchy.
-	// See https://github.com/moby/buildkit/issues/4108
+	// See https://github.com/talos-riscv/buildkit/issues/4108
 	cgroupNSOnce.Do(func() {
 		if _, err := os.Stat("/proc/self/ns/cgroup"); os.IsNotExist(err) {
 			return

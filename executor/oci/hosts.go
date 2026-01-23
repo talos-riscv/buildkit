@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/identity"
+	"github.com/talos-riscv/buildkit/executor"
+	"github.com/talos-riscv/buildkit/identity"
 	"github.com/moby/sys/user"
 	"github.com/pkg/errors"
 )

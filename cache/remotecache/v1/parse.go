@@ -3,9 +3,9 @@ package cacheimport
 import (
 	"encoding/json"
 
-	cacheimporttypes "github.com/moby/buildkit/cache/remotecache/v1/types"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/contentutil"
+	cacheimporttypes "github.com/talos-riscv/buildkit/cache/remotecache/v1/types"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/contentutil"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/pkg/errors"
 )

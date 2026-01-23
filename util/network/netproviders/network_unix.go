@@ -3,8 +3,8 @@
 package netproviders
 
 import (
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/network"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/network"
 )
 
 func getHostProvider() (network.Provider, bool) {

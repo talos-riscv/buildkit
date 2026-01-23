@@ -3,7 +3,7 @@ package policysession
 import (
 	context "context"
 
-	pb "github.com/moby/buildkit/frontend/gateway/pb"
+	pb "github.com/talos-riscv/buildkit/frontend/gateway/pb"
 	"github.com/pkg/errors"
 	grpc "google.golang.org/grpc"
 )

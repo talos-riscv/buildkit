@@ -4,13 +4,13 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/moby/buildkit/worker"
+	"github.com/talos-riscv/buildkit/worker"
 	"github.com/pkg/errors"
 
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/llbsolver/ops/opsutils"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/llbsolver/ops/opsutils"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 )
 

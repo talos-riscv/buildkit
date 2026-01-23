@@ -3,7 +3,7 @@ package progresswriter
 import (
 	"time"
 
-	"github.com/moby/buildkit/client"
+	"github.com/talos-riscv/buildkit/client"
 )
 
 func ResetTime(in Writer) Writer {

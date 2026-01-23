@@ -24,7 +24,7 @@ func NewReader(srcContent io.Reader, headerConverter HeaderConverter) io.ReadClo
 				// Signals end of archive.
 				rebasedTar.Close()
 				// drain the reader into io.Discard, until hitting EOF
-				// https://github.com/moby/buildkit/pull/4807#discussion_r1544621787
+				// https://github.com/talos-riscv/buildkit/pull/4807#discussion_r1544621787
 				_, err = io.Copy(io.Discard, srcContent)
 				if err != nil {
 					w.CloseWithError(err)

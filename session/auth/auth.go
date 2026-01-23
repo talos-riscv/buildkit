@@ -6,8 +6,8 @@ import (
 	"crypto/subtle"
 	"sync"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/util/grpcerrors"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/util/grpcerrors"
 	"github.com/pkg/errors"
 	"golang.org/x/crypto/nacl/sign"
 	"google.golang.org/grpc/codes"

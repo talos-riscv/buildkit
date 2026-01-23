@@ -15,15 +15,15 @@ import (
 
 	ctdsnapshot "github.com/containerd/containerd/v2/core/snapshots"
 	"github.com/containerd/containerd/v2/plugins/snapshots/overlay"
-	"github.com/moby/buildkit/cache"
-	"github.com/moby/buildkit/client"
-	"github.com/moby/buildkit/executor"
-	"github.com/moby/buildkit/executor/oci"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/snapshot"
-	"github.com/moby/buildkit/util/network/netproviders"
-	"github.com/moby/buildkit/worker/base"
-	"github.com/moby/buildkit/worker/tests"
+	"github.com/talos-riscv/buildkit/cache"
+	"github.com/talos-riscv/buildkit/client"
+	"github.com/talos-riscv/buildkit/executor"
+	"github.com/talos-riscv/buildkit/executor/oci"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/snapshot"
+	"github.com/talos-riscv/buildkit/util/network/netproviders"
+	"github.com/talos-riscv/buildkit/worker/base"
+	"github.com/talos-riscv/buildkit/worker/tests"
 	"github.com/stretchr/testify/require"
 )
 
@@ -142,7 +142,7 @@ func TestRuncWorker(t *testing.T) {
 	target, err = lm.Mount()
 	require.NoError(t, err)
 
-	// verifies fix for issue https://github.com/moby/buildkit/issues/429
+	// verifies fix for issue https://github.com/talos-riscv/buildkit/issues/429
 	dt, err := os.ReadFile(filepath.Join(target, "run", "bar"))
 
 	require.NoError(t, err)

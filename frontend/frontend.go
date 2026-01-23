@@ -3,13 +3,13 @@ package frontend
 import (
 	"context"
 
-	"github.com/moby/buildkit/client/llb/sourceresolver"
-	"github.com/moby/buildkit/executor"
-	gw "github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/solver/result"
+	"github.com/talos-riscv/buildkit/client/llb/sourceresolver"
+	"github.com/talos-riscv/buildkit/executor"
+	gw "github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/solver/result"
 	digest "github.com/opencontainers/go-digest"
 )
 

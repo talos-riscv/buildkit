@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"sync"
 
-	spb "github.com/moby/buildkit/sourcepolicy/pb"
-	"github.com/moby/buildkit/util/wildcard"
+	spb "github.com/talos-riscv/buildkit/sourcepolicy/pb"
+	"github.com/talos-riscv/buildkit/util/wildcard"
 	"github.com/pkg/errors"
 )
 

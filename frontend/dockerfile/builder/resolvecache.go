@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/mitchellh/hashstructure/v2"
-	"github.com/moby/buildkit/client/llb/sourceresolver"
-	"github.com/moby/buildkit/frontend/gateway/client"
-	"github.com/moby/buildkit/util/flightcontrol"
+	"github.com/talos-riscv/buildkit/client/llb/sourceresolver"
+	"github.com/talos-riscv/buildkit/frontend/gateway/client"
+	"github.com/talos-riscv/buildkit/util/flightcontrol"
 	digest "github.com/opencontainers/go-digest"
 )
 

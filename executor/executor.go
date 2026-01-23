@@ -7,8 +7,8 @@ import (
 	"syscall"
 
 	"github.com/containerd/containerd/v2/core/mount"
-	resourcestypes "github.com/moby/buildkit/executor/resources/types"
-	"github.com/moby/buildkit/solver/pb"
+	resourcestypes "github.com/talos-riscv/buildkit/executor/resources/types"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	"github.com/moby/sys/user"
 )
 

@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/moby/buildkit/frontend/dockerfile/parser"
+	"github.com/talos-riscv/buildkit/frontend/dockerfile/parser"
 	"github.com/pkg/errors"
 )
 

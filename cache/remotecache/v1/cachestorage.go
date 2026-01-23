@@ -5,10 +5,10 @@ import (
 	"slices"
 	"time"
 
-	"github.com/moby/buildkit/session"
-	"github.com/moby/buildkit/solver"
-	"github.com/moby/buildkit/util/compression"
-	"github.com/moby/buildkit/worker"
+	"github.com/talos-riscv/buildkit/session"
+	"github.com/talos-riscv/buildkit/solver"
+	"github.com/talos-riscv/buildkit/util/compression"
+	"github.com/talos-riscv/buildkit/worker"
 	digest "github.com/opencontainers/go-digest"
 	"github.com/pkg/errors"
 )

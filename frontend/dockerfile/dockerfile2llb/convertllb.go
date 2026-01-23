@@ -3,8 +3,8 @@ package dockerfile2llb
 import (
 	"context"
 
-	"github.com/moby/buildkit/frontend/subrequests/convertllb"
-	"github.com/moby/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/frontend/subrequests/convertllb"
+	"github.com/talos-riscv/buildkit/solver/pb"
 	digest "github.com/opencontainers/go-digest"
 )
 

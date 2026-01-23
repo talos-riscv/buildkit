@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/containerd/platforms"
-	"github.com/moby/buildkit/exporter/containerimage/exptypes"
+	"github.com/talos-riscv/buildkit/exporter/containerimage/exptypes"
 	ocispecs "github.com/opencontainers/image-spec/specs-go/v1"
 	"github.com/stretchr/testify/require"
 )
@@ -25,7 +25,7 @@ func TestNormalizePlatform(t *testing.T) {
 				OS:           "linux",
 			},
 			expected: exptypes.Platform{
-				ID: "linux/arm64", // Not "linux/arm64/v8" https://github.com/moby/buildkit/issues/5915
+				ID: "linux/arm64", // Not "linux/arm64/v8" https://github.com/talos-riscv/buildkit/issues/5915
 				Platform: ocispecs.Platform{
 					Architecture: "arm64",
 					OS:           "linux",

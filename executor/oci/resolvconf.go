@@ -6,10 +6,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/moby/buildkit/solver/pb"
-	"github.com/moby/buildkit/util/bklog"
-	"github.com/moby/buildkit/util/flightcontrol"
-	"github.com/moby/buildkit/util/resolvconf"
+	"github.com/talos-riscv/buildkit/solver/pb"
+	"github.com/talos-riscv/buildkit/util/bklog"
+	"github.com/talos-riscv/buildkit/util/flightcontrol"
+	"github.com/talos-riscv/buildkit/util/resolvconf"
 	"github.com/moby/sys/user"
 	"github.com/pkg/errors"
 )
@@ -34,7 +34,7 @@ var resolvconfPath = func(netMode pb.NetMode) string {
 	// Directly return /etc/resolv.conf if the networking mode is set to host
 	// since the locally (127.0.0.53) running resolved daemon is accessible
 	// from inside a host networked container. For details of the
-	// implementation see https://github.com/moby/buildkit/pull/5207#discussion_r1705362230.
+	// implementation see https://github.com/talos-riscv/buildkit/pull/5207#discussion_r1705362230.
 	if netMode == pb.NetMode_HOST {
 		return defaultPath
 	}
