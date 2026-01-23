@@ -110,7 +110,7 @@ var File_github_com_moby_buildkit_util_apicaps_pb_caps_proto protoreflect.FileDe
 
 const file_github_com_moby_buildkit_util_apicaps_pb_caps_proto_rawDesc = "" +
 	"\n" +
-	"3github.com/talos-riscv/buildkit/util/apicaps/pb/caps.proto\x12\x18moby.buildkit.v1.apicaps\"\xda\x01\n" +
+	"3github.com/moby/buildkit/util/apicaps/pb/caps.proto\x12\x18moby.buildkit.v1.apicaps\"\xda\x01\n" +
 	"\x06APICap\x12\x0e\n" +
 	"\x02ID\x18\x01 \x01(\tR\x02ID\x12\x18\n" +
 	"\aEnabled\x18\x02 \x01(\bR\aEnabled\x12\x1e\n" +
@@ -119,7 +119,7 @@ const file_github_com_moby_buildkit_util_apicaps_pb_caps_proto_rawDesc = "" +
 	"Deprecated\x12&\n" +
 	"\x0eDisabledReason\x18\x04 \x01(\tR\x0eDisabledReason\x12,\n" +
 	"\x11DisabledReasonMsg\x18\x05 \x01(\tR\x11DisabledReasonMsg\x120\n" +
-	"\x13DisabledAlternative\x18\x06 \x01(\tR\x13DisabledAlternativeBCZAgithub.com/talos-riscv/buildkit/util/apicaps/pb;moby_buildkit_v1_apicapsb\x06proto3"
+	"\x13DisabledAlternative\x18\x06 \x01(\tR\x13DisabledAlternativeBCZAgithub.com/moby/buildkit/util/apicaps/pb;moby_buildkit_v1_apicapsb\x06proto3"
 
 var (
 	file_github_com_moby_buildkit_util_apicaps_pb_caps_proto_rawDescOnce sync.Once
